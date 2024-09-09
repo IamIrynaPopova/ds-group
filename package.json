@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "private": true,
-  "homepage": "https://IamIrynaPopova.github.io/webpack-project-template/",
+  "homepage": "https://IamIrynaPopova.github.io/ds-group/",
   "scripts": {
     "build": "webpack --env mode=production",
     "start": "webpack serve --env mode=development",
