@@ -1,0 +1,52 @@
+
+
+.gallery{
+  display: flex;
+  align-items: center;
+}
+.arrow__prev,
+.arrow__next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  cursor: pointer;
+}
+.arrow__prev {
+  width: 24px;
+  margin-right: 36px;
+}
+
+.arrow__next {
+    width: 24px;
+  margin-left: 36px;
+  z-index: 99;
+}
+
+.arrow__back-svg {
+  display: inline-block;
+  width: 32px;
+  height: 16px;
+  color: rgb(201, 243, 14);
+}
+.swiper {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: auto;
+  }
+
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+
+

@@ -1,5 +1,8 @@
-@import "./utils/reset";
+@import "./utils/common";
 @import "./utils/container";
+@import "./utils/reset";
 @import "./utils/variables";
 
-
+@import "./components/team-gallery";
+@import "./components/team-video";
+// видалити?

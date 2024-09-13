@@ -1,0 +1,35 @@
+[
+  {
+    "id": "chic_crew",
+    "name": "Chic Crew",
+    "mainPhoto": "../images/chic-crew/img-сhic-crew_2.jpg",
+    "age": "15-18 років",
+    "choreographers": "Анна Скопненко, Олександра Вахліовська, Юлія Циб",
+    "description": "Команда CHIC CREW з танцем Сповідь 24.02.2024 року перемогла у відбірковому етапі найпрестижнішого світового чемпіонату з хореографії World of dance, Париж, Франція. Ми забрали усі призові місця -1,2,3 та 2 спеціальні нагороди «Найкраща тема» та «Найкращий костюм». До речі, такий феномен вперше трапився за всю історію існування чемпіонату.  Колектив запросили до фіналу цього чемпіонату, який відбудеться у США. Там зійдуться найкращі команди з усього світу, і ми маємо достойно представити нашу країну на світовому танцювальному форумі",
+    "photos": [
+      "../images/chic-crew/img-сhic-crew_1.jpg",
+      "../images/chic-crew/img-сhic-crew_2.jpg",
+      "../images/chic-crew/img-сhic-crew_3.jpg",
+      "../images/chic-crew/img-сhic-crew_4.jpg",
+      "../images/chic-crew/img-сhic-crew_5.jpg",
+      "../images/chic-crew/img-сhic-crew_6.jpg",
+      "../images/chic-crew/img-сhic-crew_7.jpg",
+      "../images/chic-crew/img-сhic-crew_8.jpg",
+      "../images/chic-crew/img-сhic-crew_9.jpg",
+      "../images/chic-crew/img-сhic-crew_10.jpg"
+    ],
+    "video": "https://youtube.com/@chiccrew?feature=shared"
+  },
+  {
+    "id": "crash_bang_crew",
+    "name": "Crash Bang Crew",
+    "mainPhoto": "../images/chic-crew/img-сhic-crew_2.jpg",
+    "age": "12-14 років",
+    "choreographers": "Анна Скопненко, Олександра Вахліовська, Юлія Циб",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "photos": [
+      
+    ],
+    "video": ""
+  }
+]
