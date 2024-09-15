@@ -8,8 +8,12 @@ import "swiper/css/pagination";
 import css from "../styles/components/team-gallery.scss";
 import sprite from "../images/sprite/sprite.svg";
 
+const isProduction = process.env.NODE_ENV === "production";
 
-const TeamGallery = ({photos}) => {
+const TeamGallery = ({ photos }) => {
+  const getPhotoPath = (photo) => {
+    return isProduction ? `/assets/${photo.split("/").pop()}` : photo;
+  };
 
   return (
     <section className="gallery container">
@@ -40,11 +44,11 @@ const TeamGallery = ({photos}) => {
         }}
         className="mySwiper"
       >
-        {photos.map((image, index) => (
+        {photos.map((photo, index) => (
           <SwiperSlide key={index} className="swiper-slide">
             <img
               className="gallery__image"
-              src={image}
+              src={getPhotoPath(photo)}
               alt={`Slide ${index}`}
             />
           </SwiperSlide>
