@@ -12,7 +12,7 @@ const isProduction = process.env.NODE_ENV === "production";
 
 const TeamGallery = ({ photos }) => {
   const getPhotoPath = (photo) => {
-    return isProduction ? `/assets/${photo.split("/").pop()}` : photo;
+    return isProduction ? `assets/${photo.split("/").pop()}` : photo;
   };
 
   return (
