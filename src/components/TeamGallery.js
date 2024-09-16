@@ -23,6 +23,7 @@ const TeamGallery = ({ photos }) => {
         </svg>
       </div>
       <Swiper
+        lazy={true}
         modules={[Navigation, EffectCoverflow]}
         navigation={{
           nextEl: ".arrow__next",
