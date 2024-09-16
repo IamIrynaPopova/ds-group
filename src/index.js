@@ -16,9 +16,10 @@ const imagesСhicСrew = importAll(
 export default imagesСhicСrew;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+const basename = process.env.NODE_ENV === "production" ? "/ds-group" : "/";
 root.render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <App />
     </BrowserRouter>
   </StrictMode>
