@@ -1,7 +1,7 @@
 import React from "react";
 
-const TeamVideo = () => {
+const WorldDancing = () => {
   return <section className="container"></section>;
 };
 
-export default TeamVideo;
+export default WorldDancing;

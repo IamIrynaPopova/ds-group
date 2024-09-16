@@ -6,7 +6,13 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
 
+const isProduction = process.env.NODE_ENV === "production";
+
 const Feedback = () => {
+const getPhotoPath = (photo) => {
+  return isProduction ? `assets/${photo.split("/").pop()}` : photo;
+};
+  
   return (
     <section className="feedback container">
       <h2 className="feedback__title">Відгуки</h2>
@@ -25,7 +31,7 @@ const Feedback = () => {
             <article className="feedback__card">
               <img
                 className="feedback__img"
-                src={feedback.photo}
+                src={getPhotoPath(feedback.photo)}
                 alt={`${feedback.name} photo`}
               ></img>
               <div className="feedback__wrapper">

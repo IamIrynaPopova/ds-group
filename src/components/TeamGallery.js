@@ -5,7 +5,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import css from "../styles/components/team-gallery.scss";
 import sprite from "../images/sprite/sprite.svg";
 
 const isProduction = process.env.NODE_ENV === "production";
@@ -23,7 +22,6 @@ const TeamGallery = ({ photos }) => {
         </svg>
       </div>
       <Swiper
-        lazy={true}
         modules={[Navigation, EffectCoverflow]}
         navigation={{
           nextEl: ".arrow__next",
