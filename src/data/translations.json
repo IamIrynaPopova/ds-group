@@ -1,0 +1,24 @@
+{
+  "en": {
+    "menu": {
+      "about_us": "about us",
+      "choreographers": "choreographers",
+      "teams": "teams",
+      "time_table": "time table",
+      "photo": "photo",
+      "world_of_dance": "world of dance",
+      "contacts": "contacts"
+    }
+  },
+  "ua": {
+    "menu": {
+      "about_us": "про нас",
+      "choreographers": "хореографи",
+      "teams": "команди",
+      "time_table": "розклад",
+      "photo": "фото",
+      "world_of_dance": "world of dance",
+      "contacts": "контакти"
+    }
+  }
+}

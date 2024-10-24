@@ -1,19 +1,16 @@
 import React from "react";
 import logo from "../images/logo.png";
 import sprite from "../images/sprite/sprite.svg";
+import translations from "../data/translations.json";
 import { NavLink } from "react-router-dom";
-import LanguageSwitcher from "../components/LanguageSwitcher"
+import LanguageSwitcher from "../components/LanguageSwitcher";
 
-const Menu = ({ onCloseMenu }) => {
+const Menu = ({ onCloseMenu, languageChange, selectLanguage }) => {
   return (
-    <div id="menu" className="menu">
+    <div id="menu" className="menu container">
       <div className="menu__header">
         <img src={logo} alt="logo" className="menu__logo" />
-        <button
-          type="button"
-          className="menu__button"
-          onClick={onCloseMenu}
-        >
+        <button type="button" className="menu__button" onClick={onCloseMenu}>
           <svg className="menu__svg">
             <use href={`${sprite}#close`}></use>
           </svg>
@@ -25,7 +22,7 @@ const Menu = ({ onCloseMenu }) => {
             <li className="social__item">
               <a
                 className="social__link"
-                href="https://facebook.com"
+                href="https://www.instagram.com/dsgroup.kyiv?igsh=MXAwZ2liZXMwOXZpOA=="
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -37,7 +34,7 @@ const Menu = ({ onCloseMenu }) => {
             <li className="social__item">
               <a
                 className="social__link"
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=100061422600837"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -49,7 +46,7 @@ const Menu = ({ onCloseMenu }) => {
             <li className="social__item">
               <a
                 className="social__link"
-                href="https://facebook.com"
+                href="https://www.tiktok.com/@dsgroup.kyiv?_t=8orQq0D0dq1&_r=1"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -60,42 +57,45 @@ const Menu = ({ onCloseMenu }) => {
             </li>
           </ul>
         </nav>
-        <LanguageSwitcher />
+        <LanguageSwitcher
+          onLanguageChange={languageChange}
+          language={selectLanguage}
+        />
         <nav className="nav">
           <ul className="nav__list">
             <li className="nav__list-item">
               <NavLink className="nav__list-link" to="/" onClick={onCloseMenu}>
-                про нас
+                {translations[selectLanguage].menu.about_us}
               </NavLink>
             </li>
             <li className="nav__list-item">
               <NavLink className="nav__list-link" to="" onClick={onCloseMenu}>
-                хореографи
+                {translations[selectLanguage].menu.choreographers}
               </NavLink>
             </li>
             <li className="nav__list-item">
               <NavLink className="nav__list-link" to="" onClick={onCloseMenu}>
-                команди
+                {translations[selectLanguage].menu.teams}
               </NavLink>
             </li>
             <li className="nav__list-item">
               <NavLink className="nav__list-link" to="" onClick={onCloseMenu}>
-                розклад
+                {translations[selectLanguage].menu.time_table}
               </NavLink>
             </li>
             <li className="nav__list-item">
               <NavLink className="nav__list-link" to="" onClick={onCloseMenu}>
-                фото
+                {translations[selectLanguage].menu.photo}
               </NavLink>
             </li>
             <li className="nav__list-item">
               <NavLink className="nav__list-link" to="" onClick={onCloseMenu}>
-                world of dance
+                {translations[selectLanguage].menu.world_of_dance}
               </NavLink>
             </li>
             <li className="nav__list-item">
               <NavLink className="nav__list-link" to="" onClick={onCloseMenu}>
-                контакти
+                {translations[selectLanguage].menu.contacts}
               </NavLink>
             </li>
           </ul>

@@ -1,13 +1,13 @@
 .menu {
   width: 100%;
-  padding: 32px 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   position: absolute;
   z-index: 999;
   left: 0px;
   top: 0px;
   overflow: hidden;
   background-color: var(--background-default);
-
 }
 
 .menu__header {

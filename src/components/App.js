@@ -11,15 +11,27 @@ import Menu from "./Menu";
 
 const App = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
+  const [language, setLanguage] = useState("ua");
 
-  const toggleMenu = (e) => {
+  const toggleMenu = () => {
     setMenuIsOpen((prevState) => !prevState);
+  };
+
+  const handleLanguageChange = (lang) => {
+    console.log(lang);
+    setLanguage(lang);
   };
 
   return (
     <>
       <Header onShowMenu={toggleMenu} />
-      {menuIsOpen && <Menu onCloseMenu={toggleMenu} />}
+      {menuIsOpen && (
+        <Menu
+          onCloseMenu={toggleMenu}
+          languageChange={handleLanguageChange}
+          selectLanguage={language}
+        />
+      )}
       <main>
         {/* <Suspense fallback={<PageLoader />}> */}
         <Routes>
