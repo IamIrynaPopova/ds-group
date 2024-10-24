@@ -3,7 +3,9 @@
 @import "./utils/reset";
 @import "./utils/variables";
 
-
+@import "./components/header";
+@import "./components/menu";
+@import "./components/languageSwitcher";
 @import "./components/feedback";
 
 @import "./components/teamGallery";

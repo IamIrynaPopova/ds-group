@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(90deg, #1877f2 0%, #c70c4d 100%);
+}
+
+.header__logo {
+  width: 24px;
+  height: 33px;
+  cursor: pointer;
+}
+.header__button {
+  background-color: inherit;
+  cursor: pointer;
+}
+.header__svg {
+  width: 24px;
+  height: 24px;
+  fill: #f4f4f4;
+}

@@ -1,0 +1,90 @@
+.menu {
+  width: 100%;
+  padding: 32px 24px;
+  position: absolute;
+  z-index: 999;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+  background-color: var(--background-default);
+
+}
+
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.menu__logo {
+  width: 24px;
+  height: 33px;
+  cursor: pointer;
+}
+
+.menu__button {
+  background-color: inherit;
+}
+
+.menu__svg {
+  width: 24px;
+  height: 24px;
+  fill: #f4f4f4;
+}
+
+.menu__svg:hover {
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social {
+  width: 108px;
+  margin-bottom: 64px;
+}
+.social__list {
+  display: flex;
+  justify-content: space-between;
+}
+.social__item {
+}
+.social__link {
+}
+.social__svg {
+  width: 20px;
+  height: 20px;
+}
+
+.nav {
+  margin-bottom: 147px;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav__list-item {
+  padding: 8px 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.nav__list-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.nav__list-link {
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+  color: var(--text-default);
+}
+
+.nav__list-link:hover,
+.nav__list-link:focus {
+}

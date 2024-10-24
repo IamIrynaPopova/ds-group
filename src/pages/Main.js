@@ -19,7 +19,7 @@ const Main = () => {
       <Timetable />
       <PhotoGallery />
       <WorldDancing />
-      <Feedback />
+      {/* <Feedback /> */}
       <Contacts />
     </>
   );

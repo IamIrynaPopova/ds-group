@@ -1,6 +1,9 @@
 .container {
-  max-width: 1440px;
+  max-width: 375px;
   margin: 0 auto;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding: 0 24px;
+  @media screen and (min-width: 768px) {
+    // padding: 0 80px;
+    // max-width: 768px;
+  }
 }

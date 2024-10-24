@@ -1,0 +1,23 @@
+.language__switcher {
+  margin-bottom: 64px;
+}
+
+.language__button {
+  background: inherit;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 154%;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  padding: 0 9px;
+  margin: 4px 0;
+  cursor: pointer;
+}
+
+.language__switcher button:first-child {
+  border-right: 1px solid var(--text-secondary);
+}
+
+.language__button.active {
+  color: var(--text-default);
+}
