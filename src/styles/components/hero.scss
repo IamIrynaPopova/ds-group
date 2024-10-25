@@ -1,0 +1,90 @@
+.hero {
+  padding: 50px 16px 0 16px;
+  position: relative;
+}
+
+.hero__title {
+  font-family: var(--third-font);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 133%;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.hero__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+}
+.hero__title,
+.hero__subtitle {
+  opacity: 0;
+  animation: titleInUp 1s forwards 0.3s;
+}
+
+.hero__background {
+  display: flex;
+}
+
+.hero__background-image:nth-child(odd) {
+  width: 120px;
+  height: 180px;
+}
+.hero__background-image:nth-child(even) {
+  width: 170px;
+  height: 250px;
+  margin-left: -33px;
+  margin-top: 8px;
+  transform: translateY(40px);
+  animation: backgroundInUp 1s forwards 0.3s;
+}
+.hero__background-image:nth-child(3) {
+  margin-left: -33px;
+}
+
+// animation----------
+
+.hero__background-logo {
+  position: absolute;
+  width: 200px;
+  height: 273px;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+  animation: logoOut 1s forwards 0.3s;
+}
+
+
+@keyframes logoOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes titleInUp {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes backgroundInUp {
+  to {
+    transform: translateY(0);
+  }
+}

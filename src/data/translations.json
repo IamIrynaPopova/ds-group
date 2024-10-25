@@ -8,6 +8,10 @@
       "photo": "photo",
       "world_of_dance": "world of dance",
       "contacts": "contacts"
+    },
+    "hero": {
+      "title": "ds group",
+      "subtitle": "discover the world of dance with ds group"
     }
   },
   "ua": {
@@ -19,6 +23,10 @@
       "photo": "фото",
       "world_of_dance": "world of dance",
       "contacts": "контакти"
+    },
+    "hero": {
+      "title": "ds group",
+      "subtitle": "Вривайся у світ танцю разом з нами"
     }
   }
 }

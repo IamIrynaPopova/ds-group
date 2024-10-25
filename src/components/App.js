@@ -12,30 +12,41 @@ import Menu from "./Menu";
 const App = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const [language, setLanguage] = useState("ua");
+  const [showTitle, setShowTitle] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowTitle(true);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const toggleMenu = () => {
     setMenuIsOpen((prevState) => !prevState);
   };
 
   const handleLanguageChange = (lang) => {
-    console.log(lang);
     setLanguage(lang);
   };
 
   return (
     <>
-      <Header onShowMenu={toggleMenu} />
+      {showTitle && <Header onShowMenu={toggleMenu} animate={showTitle} />}
       {menuIsOpen && (
         <Menu
           onCloseMenu={toggleMenu}
           languageChange={handleLanguageChange}
-          selectLanguage={language}
+          language={language}
         />
       )}
       <main>
         {/* <Suspense fallback={<PageLoader />}> */}
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route
+            path="/"
+            element={<Main selectLanguage={language} animate={showTitle} />}
+          />
           <Route path="/teams/:teamId" element={<Team />} />
           <Route path="/choreographers/:teacherId" element={<Teacher />} />
         </Routes>

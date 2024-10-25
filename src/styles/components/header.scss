@@ -4,6 +4,8 @@
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
+  opacity: 0;
+  animation: showHeader 1s forwards 0.3s;
 }
 
 .header::after {
@@ -29,4 +31,19 @@
   width: 24px;
   height: 24px;
   fill: #f4f4f4;
+}
+
+// animation----------
+
+
+@keyframes showHeader {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -9,18 +9,18 @@ import WorldDancing from "../components/WorldDancing";
 import Feedback from "../components/Feedback";
 import Contacts from "../components/Contacts";
 
-const Main = () => {
+const Main = ({selectLanguage,animate}) => {
   return (
     <>
-      <Hero />
-      <Preferences />
-      <Choreographers />
-      <Teams />
-      <Timetable />
-      <PhotoGallery />
-      <WorldDancing />
-      {/* <Feedback /> */}
-      <Contacts />
+      <Hero language={selectLanguage} showTitle={animate} />
+      <Preferences language={selectLanguage} />
+      <Choreographers language={selectLanguage} />
+      <Teams language={selectLanguage} />
+      <Timetable language={selectLanguage} />
+      <PhotoGallery language={selectLanguage} />
+      <WorldDancing language={selectLanguage} />
+      {/* <Feedback language={selectLanguage} /> */}
+      <Contacts language={selectLanguage} />
     </>
   );
 };
