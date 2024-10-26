@@ -12,15 +12,7 @@ import Menu from "./Menu";
 const App = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const [language, setLanguage] = useState("ua");
-  const [showTitle, setShowTitle] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowTitle(true);
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   const toggleMenu = () => {
     setMenuIsOpen((prevState) => !prevState);
@@ -32,7 +24,7 @@ const App = () => {
 
   return (
     <>
-      {showTitle && <Header onShowMenu={toggleMenu} animate={showTitle} />}
+      <Header onShowMenu={toggleMenu}  />
       {menuIsOpen && (
         <Menu
           onCloseMenu={toggleMenu}
@@ -45,7 +37,7 @@ const App = () => {
         <Routes>
           <Route
             path="/"
-            element={<Main selectLanguage={language} animate={showTitle} />}
+            element={<Main selectLanguage={language} />}
           />
           <Route path="/teams/:teamId" element={<Team />} />
           <Route path="/choreographers/:teacherId" element={<Teacher />} />

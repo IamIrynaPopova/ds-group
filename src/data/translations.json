@@ -12,6 +12,18 @@
     "hero": {
       "title": "ds group",
       "subtitle": "discover the world of dance with ds group"
+    },
+    "about": {
+      "title": "About Us",
+      "subtitle": "Hello!",
+      "text1": "We are DS group! A dance space where your creative ambitions come to life!",
+      "text2": "In 2009, our collective was founded by two ambitious dancers and best friends, Oleksandra and Anna.",
+      "text3": "The students of DS group are multiple winners of national and international competitions in Bulgaria, Germany, and France. Participants in prestigious championships such as World of Dance, Feel The Beat, The Challenge, The Battle of The Stars, ArtDance.",
+      "text4": "Our collective has collaborated with the Kyiv theater of Personalities, participating in 4 performances, where the choreographers were the founders of the collective.",
+      "text5": "We organize and hold charity concerts.",
+      "text6": "Every summer, DS group organizes a Dance camp in some cozy city in Europe by the sea.",
+      "text7": "The team consists of 6 Pro teams and preparation groups for preschool children. Join us!",
+      "text_main": "The main thing is your desire! We will take care of the rest!"
     }
   },
   "ua": {
@@ -27,6 +39,18 @@
     "hero": {
       "title": "ds group",
       "subtitle": "Вривайся у світ танцю разом з нами"
+    },
+    "about": {
+      "title": "про нас",
+      "subtitle": "Привіт!",
+      "text1": "Ми - DS group! Танцювальний простір, місце, де твої творчі амбіції допоможуть втілити в реальність!",
+      "text2": "У 2009 році наш колектив заснували дуже амбіційні танцівниці та найкращі подружки, Олександра та Анна.",
+      "text3": "Учні DS group - багаторазові переможці всеукраїнських та міжнародних конкурсів Болгарії, Німеччини, Франції. Учасники найпрестижніших чемпіонатів, таких як:World of Dance, Feel The Beat, The Challenge, The Battle of The Stars, ArtDance.",
+      "text4": "Наш колектив співпрацював із київським театром Особистості, брав участь у 4 виставах, де балетмейстерками були засновниці колективу.",
+      "text5": "Ми організовуємо та проводимо благодійні концерти.",
+      "text6": "Щороку влітку DS group організовує Dance camp в якомусь затишному місті Європи на березі моря.",
+      "text7": "У складі колективу є 6 Pro-команд і групи підготовки для дітей дошкільного віку. Приєднуйся до нас!",
+      "text_main": "Головне - твоє бажання! Про інше ми подбаємо!"
     }
   }
 }

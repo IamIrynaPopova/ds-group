@@ -1,6 +1,8 @@
 .hero {
   padding: 50px 16px 0 16px;
   position: relative;
+  transform: translateY(-40px);
+  animation: backgroundInUp 1s forwards 0.3s;
 }
 
 .hero__title {
@@ -33,13 +35,14 @@
   width: 120px;
   height: 180px;
 }
+
 .hero__background-image:nth-child(even) {
   width: 170px;
   height: 250px;
   margin-left: -33px;
   margin-top: 8px;
   transform: translateY(40px);
-  animation: backgroundInUp 1s forwards 0.3s;
+  animation: imageInUp 1s forwards 0.3s;
 }
 .hero__background-image:nth-child(3) {
   margin-left: -33px;
@@ -57,7 +60,6 @@
   opacity: 1;
   animation: logoOut 1s forwards 0.3s;
 }
-
 
 @keyframes logoOut {
   0% {
@@ -86,5 +88,12 @@
 @keyframes backgroundInUp {
   to {
     transform: translateY(0);
+  }
+}
+
+@keyframes imageInUp {
+  to {
+    transform: translateY(0);
+    opacity: 0.5;
   }
 }

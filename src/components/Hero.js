@@ -5,27 +5,27 @@ import danser2 from "../images/danser2.png";
 import danser3 from "../images/danser3.png";
 import logo from "../images/logo.png";
 
-const Hero = ({ language, showTitle }) => {
+const Hero = ({language}) => {
 
   return (
-    <section className={`container hero ${showTitle ? "animate" : ""}`}>
-      <h1 className={`hero__title ${showTitle ? "animate" : ""}`}>
+    <section className="container hero">
+      <h1 className="hero__title">
         {translations[language].hero.title}
       </h1>
-      <p className={`hero__subtitle ${showTitle ? "animate" : ""}`}>
+      <p className="hero__subtitle">
         {translations[language].hero.subtitle}
       </p>
-      <div className={`hero__background ${showTitle ? "animate" : ""}`}>
+      <div className="hero__background">
         <img className="hero__background-image" src={danser1} alt="danser" />
         <img
-          className={`hero__background-image ${showTitle ? "animate" : ""}`}
+          className="hero__background-image"
           src={danser2}
           alt="danser"
         />
         <img className="hero__background-image" src={danser3} alt="danser" />
       </div>
       <img className="hero__background-logo" src={logo} alt="logo" />
-    </section>
+        </section>
   );
 };
 
