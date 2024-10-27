@@ -1,5 +1,6 @@
 import React from "react";
 import aboutUs from "../images/aboutUs.jpg";
+import wave from "../images/wave.png";
 import translations from "../data/translations.json";
 
 const AboutUs = ({ language }) => {
@@ -27,6 +28,10 @@ const AboutUs = ({ language }) => {
       <p className="about__text-main">
         {translations[language].about.text_main}
       </p>
+      <img src={wave} alt="owners" className="about__wave"></img>
+      <button className="about__button" type="submit">
+        {translations[language].about.button}
+      </button>
     </section>
   );
 };

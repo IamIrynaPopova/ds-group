@@ -23,7 +23,8 @@
       "text5": "We organize and hold charity concerts.",
       "text6": "Every summer, DS group organizes a Dance camp in some cozy city in Europe by the sea.",
       "text7": "The team consists of 6 Pro teams and preparation groups for preschool children. Join us!",
-      "text_main": "The main thing is your desire! We will take care of the rest!"
+      "text_main": "The main thing is your desire! We will take care of the rest!",
+      "button": "Contact us"
     }
   },
   "ua": {
@@ -50,7 +51,8 @@
       "text5": "Ми організовуємо та проводимо благодійні концерти.",
       "text6": "Щороку влітку DS group організовує Dance camp в якомусь затишному місті Європи на березі моря.",
       "text7": "У складі колективу є 6 Pro-команд і групи підготовки для дітей дошкільного віку. Приєднуйся до нас!",
-      "text_main": "Головне - твоє бажання! Про інше ми подбаємо!"
+      "text_main": "Головне - твоє бажання! Про інше ми подбаємо!",
+      "button": "Зв’язатися з нами"
     }
   }
 }
