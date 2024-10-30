@@ -1,5 +1,5 @@
 import React from "react";
-import ContactForm from "./ContactForm"
+import Form from "./Form"
 
 const Teams = () => {
   // return <ContactForm title="Хочу записатись на заняття" />;

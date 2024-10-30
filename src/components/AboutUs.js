@@ -1,9 +1,10 @@
 import React from "react";
 import aboutUs from "../images/aboutUs.jpg";
 import wave from "../images/wave.png";
+import Form from "../components/Form"
 import translations from "../data/translations.json";
 
-const AboutUs = ({ language }) => {
+const AboutUs = ({ language, closeForm, openForm }) => {
   return (
     <section className="container about">
       <h2 className="about__title">{translations[language].about.title}</h2>
@@ -29,9 +30,14 @@ const AboutUs = ({ language }) => {
         {translations[language].about.text_main}
       </p>
       <img src={wave} alt="owners" className="about__wave"></img>
-      <button className="about__button" type="submit">
+      <button className="about__button" type="button" onClick={openForm}>
         {translations[language].about.button}
       </button>
+      <Form
+        language={language}
+        title={"Хочу дізнатись більше про колектив"}
+        onCloseForm={closeForm}
+      />
     </section>
   );
 };

@@ -11,8 +11,9 @@ import Menu from "./Menu";
 
 const App = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
+  const [formIsOpen, setFormIsOpen] = useState(false);
   const [language, setLanguage] = useState("ua");
-
+    const form = document.getElementById("form");
 
   const toggleMenu = () => {
     setMenuIsOpen((prevState) => !prevState);
@@ -21,10 +22,21 @@ const App = () => {
   const handleLanguageChange = (lang) => {
     setLanguage(lang);
   };
-
+  const closeForm = () => {
+    const form = document.getElementById("form");
+     setFormIsOpen(false);
+    form.classList.add("hidden")
+  };
+  
+  const openForm = () => {
+    const form = document.getElementById("form");
+      setFormIsOpen(true);
+    form.classList.remove("hidden")
+};
+  
   return (
     <>
-      <Header onShowMenu={toggleMenu}  />
+      <Header onShowMenu={toggleMenu} />
       {menuIsOpen && (
         <Menu
           onCloseMenu={toggleMenu}
@@ -37,7 +49,13 @@ const App = () => {
         <Routes>
           <Route
             path="/"
-            element={<Main selectLanguage={language} />}
+            element={
+              <Main
+                selectLanguage={language}
+                onCloseForm={closeForm}
+                onOpenForm ={openForm}
+              />
+            }
           />
           <Route path="/teams/:teamId" element={<Team />} />
           <Route path="/choreographers/:teacherId" element={<Teacher />} />

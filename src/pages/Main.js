@@ -10,11 +10,15 @@ import WorldDancing from "../components/WorldDancing";
 import Feedback from "../components/Feedback";
 import Contacts from "../components/Contacts";
 
-const Main = ({selectLanguage}) => {
+const Main = ({ selectLanguage, onCloseForm, onOpenForm }) => {
   return (
     <>
       <Hero language={selectLanguage} />
-      <AboutUs language={selectLanguage} />
+      <AboutUs
+        language={selectLanguage}
+        closeForm={onCloseForm}
+        openForm={onOpenForm}
+      />
       <Preferences language={selectLanguage} />
       <Choreographers language={selectLanguage} />
       <Teams language={selectLanguage} />

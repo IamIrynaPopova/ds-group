@@ -25,6 +25,15 @@
       "text7": "The team consists of 6 Pro teams and preparation groups for preschool children. Join us!",
       "text_main": "The main thing is your desire! We will take care of the rest!",
       "button": "Contact us"
+    },
+    "form": {
+      "title": "Have questions or suggestions? Write to us, we are always in touch",
+      "error_message_name": "Must contain at least 3 letters",
+      "error_message_tel": "You entered an invalid number",
+      "placeholder_name": "Name",
+      "placeholder_tel": "Phone number",
+      "placeholder_message": "Message",
+      "button": "Send"
     }
   },
   "ua": {
@@ -53,6 +62,15 @@
       "text7": "У складі колективу є 6 Pro-команд і групи підготовки для дітей дошкільного віку. Приєднуйся до нас!",
       "text_main": "Головне - твоє бажання! Про інше ми подбаємо!",
       "button": "Зв’язатися з нами"
+    },
+    "form": {
+      "title": "Залишились питання або побажання, пишіть нам, ми завжди на зв`язку",
+      "error_message_name": "Має складатись мінімум з 3x літер",
+      "error_message_tel": "Ви ввели не вірний номер",
+      "placeholder_name": "Ім'я",
+      "placeholder_tel": "Номер телeфону",
+      "placeholder_message": "Повідомлення",
+      "button": "Відправити"
     }
   }
 }
