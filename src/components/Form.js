@@ -1,33 +1,45 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
+import Loader from "../components/Loader";
+import Notification from "../components/Notification";
 import translations from "../data/translations.json";
 import sprite from "../images/sprite/sprite.svg";
 import emailjs from "@emailjs/browser";
 
-const Form = ({ language, title, onCloseForm, children }) => {
+const Form = ({ language, title, onCloseForm }) => {
   const form = useRef();
+  const [isLoading, setIsLoading] = useState(false);
+  const [notification, setNotification] = useState(null);
+  const [isError, setIsError] = useState(false);
 
-  const sendEmail = (e, data) => {
-    console.log("Sending email...");
+  const sendEmail = async () => {
+    setIsLoading(true);
+    setIsError(false);
+    setNotification(null);
 
-    emailjs
-      .sendForm(
+    try {
+      const result = await emailjs.sendForm(
         "service_1r9qyyx",
         "template_olucgmg",
         form.current,
         "ygNyvuGy1WrEg5acp"
-      )
-      .then(
-        (result) => {
-          reset();
-          onCloseForm();
-          alert("Повідомлення надіслано!");
-        },
-        (error) => {
-          console.log(error.text);
-          alert("Сталася помилка при надсиланні повідомлення.");
-        }
       );
+
+      if (result.status === 200) {
+        setNotification(translations[language].form.notification_success);
+        reset();
+        onCloseForm();
+      }
+    } catch (error) {
+      if (error.status === 400) {
+        setNotification(translations[language].form.notification_error1);
+      } else {
+        setNotification(translations[language].form.notification_error2);
+      }
+      setIsError(true);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const {
@@ -38,19 +50,24 @@ const Form = ({ language, title, onCloseForm, children }) => {
   } = useForm();
 
   return (
-    <section id="form" className="form hidden">
-      <div className="form__button-wrapper">
-        <button
-          type="button"
-          className="form__button-close"
-          onClick={onCloseForm}
-        >
-          <svg className="form__svg">
-            <use href={`${sprite}#close-form`}></use>
-          </svg>
-        </button>
-      </div>
-      <form ref={form} onSubmit={handleSubmit(sendEmail)}>
+    <section>
+      <form
+        id="form"
+        ref={form}
+        className="form hidden"
+        onSubmit={handleSubmit(sendEmail)}
+      >
+        <div className="form__button-wrapper">
+          <button
+            type="button"
+            className="form__button-close"
+            onClick={onCloseForm}
+          >
+            <svg className="form__svg">
+              <use href={`${sprite}#close-form`}></use>
+            </svg>
+          </button>
+        </div>
         <input type="hidden" name="title" value={title} />
         <p className="form__title">{translations[language].form.title}</p>
         <ul className="form__list">
@@ -104,7 +121,10 @@ const Form = ({ language, title, onCloseForm, children }) => {
           </button>
         </div>
       </form>
-      {children}
+      {isLoading && <Loader />}
+      {notification && (
+        <Notification message={notification} isError={isError} />
+      )}
     </section>
   );
 };

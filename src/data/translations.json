@@ -33,7 +33,10 @@
       "placeholder_name": "Name",
       "placeholder_tel": "Phone number",
       "placeholder_message": "Message",
-      "button": "Send"
+      "button": "Send",
+      "notification_success": "Message sent!",
+      "notification_error1": "Server error ☹️",
+      "notification_error2": "An error occurred ☹️ Please try again."
     }
   },
   "ua": {
@@ -70,7 +73,10 @@
       "placeholder_name": "Ім'я",
       "placeholder_tel": "Номер телeфону",
       "placeholder_message": "Повідомлення",
-      "button": "Відправити"
+      "button": "Відправити",
+      "notification_success": "Повідомлення надіслано!",
+      "notification_error1": "Помилка на сервері ☹️",
+      "notification_error2": "Сталася помилка ☹️ Спробуйте знову."
     }
   }
 }

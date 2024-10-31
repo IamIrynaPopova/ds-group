@@ -38,7 +38,7 @@ const AboutUs = ({ language, closeForm, openForm }) => {
         title={"Хочу дізнатись більше про колектив"}
         onCloseForm={closeForm}
       />
-    </section>
+     </section>
   );
 };
 

@@ -1,10 +1,10 @@
 import React from "react";
-import PulseLoader from "react-spinners/PulseLoader";
+import logo from "../images/logo.png";
 
 const Loader = () => {
   return (
-    <div id="loader" className="loader hidden">
-      <PulseLoader color="var(--main-color)" size="30px" />;
+    <div className="loader">
+      <img src={logo} alt="Loading..." className="loader__logo" />
     </div>
   );
 };

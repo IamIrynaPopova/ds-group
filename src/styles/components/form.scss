@@ -30,6 +30,7 @@
 .form__button-close {
   padding: 0;
   background-color: inherit;
+  cursor: pointer;
 }
 
 .form__svg {
@@ -54,9 +55,9 @@
 .form__input {
   border: 0;
   border-bottom: 1px solid var(--input-border);
+  box-sizing: border-box;
   padding: 12px 16px;
-  width: 100%;
-  max-width: 240px;
+  max-width: 272px;
 }
 
 .form__input::placeholder {
@@ -76,7 +77,7 @@
   border-bottom: 1px solid #900b09;
   padding: 12px 16px;
   width: 100%;
-  min-width: 240px;
+ 
 }
 .form__input-error:focus-visible {
   border: 1px solid #900b09;
@@ -102,7 +103,7 @@
   border: 1px solid var(--input-border);
   border-radius: 8px;
   padding: 12px 16px;
-  width: 100%;
+max-width: 272px;
   height: 80px;
   margin-bottom: 24px;
 }
