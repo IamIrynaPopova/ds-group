@@ -1,0 +1,31 @@
+.preferences__title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 44px;
+}
+.preferences__list {
+  counter-reset: item;
+  margin-bottom: 100px;
+}
+
+.preferences__item {
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 150%;
+}
+.preferences__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.preferences__item::before {
+  counter-increment: item;
+  content: "0" counter(item);
+  display: flex;
+  margin-bottom: 12px;
+  border-bottom: 2px solid var(--color-pink);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  color: var(--color-pink);
+}

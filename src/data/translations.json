@@ -37,6 +37,15 @@
       "notification_success": "Message sent!",
       "notification_error1": "Server error ☹️",
       "notification_error2": "An error occurred ☹️ Please try again."
+    },
+    "preferences": {
+      "title": "Our Advantages",
+      "preference1": "Winners and regular participants of national and international competitions",
+      "preference2": "Children from age 3, growing and succeeding in the dance industry",
+      "preference3": "A team with an incredible atmosphere, where you can forget the worries of the outside world",
+      "preference4": "Participants in theatrical performances, organizers, and participants of charity concerts",
+      "preference5": "Support and development of talents under the guidance of professional instructors",
+      "preference6": "A cozy and modern hall, making practice enjoyable"
     }
   },
   "ua": {
@@ -77,6 +86,15 @@
       "notification_success": "Повідомлення надіслано!",
       "notification_error1": "Помилка на сервері ☹️",
       "notification_error2": "Сталася помилка ☹️ Спробуйте знову."
+    },
+    "preferences": {
+      "title": "наші переваги",
+      "preference1": "Переможці і постійні учасники всеукраїнських та міжнародних конкурсів",
+      "preference2": "Діти від 3 років, які зростають і досягають успіху в танцювальній індустрії",
+      "preference3": "Колектив із шаленою атмосферою, з яким ти забуваєш про всі турботи зовнішнього світу",
+      "preference4": "Учасники театральних вистав Організатори та учасники благодійних концертів",
+      "preference5": "Підтримка та розвиток талантів під керівництвом професійних викладачів",
+      "preference6": "Затишний і сучасний зал, в якому приємно займатися"
     }
   }
 }
