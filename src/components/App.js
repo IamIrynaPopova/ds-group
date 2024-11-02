@@ -44,7 +44,7 @@ const App = () => {
           language={language}
         />
       )}
-      <main>
+      <main style={{ position: "relative" }}>
         {/* <Suspense fallback={<PageLoader />}> */}
         <Routes>
           <Route
@@ -53,12 +53,15 @@ const App = () => {
               <Main
                 selectLanguage={language}
                 onCloseForm={closeForm}
-                onOpenForm ={openForm}
+                onOpenForm={openForm}
               />
             }
           />
           <Route path="/teams/:teamId" element={<Team />} />
-          <Route path="/choreographers/:teacherId" element={<Teacher />} />
+          <Route
+            path="/choreographer/:teacherId"
+            element={<Teacher language={language} />}
+          />
         </Routes>
         {/* </Suspense> */}
       </main>

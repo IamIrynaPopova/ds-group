@@ -1,0 +1,17 @@
+[
+  {
+    "teacherId": "anna_skopnenko",
+    "ua": {
+      "name": "анна скопненко",
+      "image": "../images/choreographer1.jpg",
+      "text1": "Професійний режисер, хореограф та театральний балетмейстер",
+      "text2": "Педагогічний стаж - 15 років ",
+      "text3": "Балетмейстер - постановник 4-х вистав у театрі «Особистості» м. Київ",
+      "text4": "Організатор танцювального чемпіонату The Battle of the Stars.",
+      "phone": "+38 (093) 682-32-86",
+      "instagram": "https://www.instagram.com/annaskopnenko?igsh=eGJzNWl5MHR5cmp3",
+      "facebook": "https://www.facebook.com/profile.php?id=100006428206642&ref=xav_ig_profile_web",
+      "button": "повернутись"
+    }
+  }
+]

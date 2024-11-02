@@ -16,8 +16,10 @@
 <path d="M18.4188 5.29817V4.59874C17.5623 4.60004 16.7226 4.35932 15.996 3.90411C16.6392 4.61089 17.4863 5.09822 18.4188 5.29817ZM13.9056 0.799986C13.8838 0.674926 13.867 0.549042 13.8554 0.422678V0H10.5617V13.1257C10.5564 14.6556 9.3191 15.8946 7.79303 15.8946C7.345 15.8946 6.92199 15.7879 6.54737 15.5983C7.05331 16.2645 7.85216 16.6946 8.75137 16.6946C10.2772 16.6946 11.5148 15.4558 11.5201 13.9256V0.799986H13.9056ZM8.63345 7.85284V7.10824C8.35823 7.07049 8.08076 7.05155 7.80294 7.05169C4.45993 7.05162 1.75 9.77116 1.75 13.1257C1.75 15.2288 2.81505 17.0822 4.43347 18.1725C3.36603 17.0775 2.70834 15.5787 2.70834 13.9255C2.70834 10.6138 5.34936 7.92093 8.63345 7.85284Z" fill="#00F2EA"/>
 </symbol><symbol id ="close-form" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M12 4L4 12M4 4L12 12" stroke="#1E1E1E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-</symbol><symbol  id ="arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+</symbol><symbol  id ="arrow"  viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M1 11L11 1M11 1H1M11 1V11" stroke="#00BEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</symbol><symbol id ="arrow-left" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12.6673 7.99992H3.33398M3.33398 7.99992L8.00065 12.6666M3.33398 7.99992L8.00065 3.33325" stroke="#F4F4F4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
 </symbol>
 
 </defs></svg>

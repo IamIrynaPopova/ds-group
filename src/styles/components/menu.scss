@@ -2,8 +2,8 @@
   width: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
-  position: absolute;
-  z-index: 999;
+  position: fixed;
+  z-index: 11;
   right: 0;
   top: 0;
   left: 0;
@@ -26,7 +26,7 @@
 
 .menu__button {
   background-color: inherit;
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .menu__svg {

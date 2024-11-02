@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import translations from "../data/translations.json";
 import sprite from "../images/sprite/sprite.svg";
 import choreographer1 from "../images/choreographer1.jpg";
@@ -25,12 +26,15 @@ const Choreographers = ({ language }) => {
           <h3 className="choreographers__name">
             {translations[language].choreographers.choreographer1_name}
           </h3>
-          <button className="choreographers__button">
+          <NavLink
+            to="/choreographer/anna_skopnenko"
+            className="choreographers__button"
+          >
             {translations[language].choreographers.button}
             <svg className="choreographers__svg">
               <use href={`${sprite}#arrow`}></use>
             </svg>
-          </button>
+          </NavLink>
         </li>
         <li className="choreographers__item">
           <img
@@ -39,14 +43,17 @@ const Choreographers = ({ language }) => {
             className="choreographers__image"
           ></img>
           <h3 className="choreographers__name">
-            {translations[language].choreographers.choreographer1_name}
+            {translations[language].choreographers.choreographer2_name}
           </h3>
-          <button className="choreographers__button">
+          <NavLink
+            to="/choreographer/oleksandra_vakhliovska"
+            className="choreographers__button"
+          >
             {translations[language].choreographers.button}
             <svg className="choreographers__svg">
               <use href={`${sprite}#arrow`}></use>
             </svg>
-          </button>
+          </NavLink>
         </li>
         <li className="choreographers__item">
           <img
@@ -55,14 +62,17 @@ const Choreographers = ({ language }) => {
             className="choreographers__image"
           ></img>
           <h3 className="choreographers__name">
-            {translations[language].choreographers.choreographer1_name}
+            {translations[language].choreographers.choreographer3_name}
           </h3>
-          <button className="choreographers__button">
+          <NavLink
+            to="/choreographer/anton_vakhliovskyi"
+            className="choreographers__button"
+          >
             {translations[language].choreographers.button}
             <svg className="choreographers__svg">
               <use href={`${sprite}#arrow`}></use>
             </svg>
-          </button>
+          </NavLink>
         </li>
         <li className="choreographers__item">
           <img
@@ -71,14 +81,17 @@ const Choreographers = ({ language }) => {
             className="choreographers__image"
           ></img>
           <h3 className="choreographers__name">
-            {translations[language].choreographers.choreographer1_name}
+            {translations[language].choreographers.choreographer4_name}
           </h3>
-          <button className="choreographers__button">
+          <NavLink
+            to="/choreographer/julia_tsyb"
+            className="choreographers__button"
+          >
             {translations[language].choreographers.button}{" "}
             <svg className="choreographers__svg">
               <use href={`${sprite}#arrow`}></use>
             </svg>
-          </button>
+          </NavLink>
         </li>
       </ul>
     </section>
