@@ -1,6 +1,7 @@
 import React from "react";
+import translations from "../data/translations.json";
 
-const Footer = () => {
+const Footer = ({ language }) => {
   return <section className="container"></section>;
 };
 

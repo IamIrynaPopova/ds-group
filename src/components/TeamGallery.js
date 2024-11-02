@@ -1,4 +1,5 @@
 import React from "react";
+import translations from "../data/translations.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectCoverflow } from "swiper/modules";
 import "swiper/css";
@@ -9,7 +10,7 @@ import sprite from "../images/sprite/sprite.svg";
 
 const isProduction = process.env.NODE_ENV === "production";
 
-const TeamGallery = ({ photos }) => {
+const TeamGallery = ({ photos, language}) => {
   const getPhotoPath = (photo) => {
     return isProduction ? `assets/${photo.split("/").pop()}` : photo;
   };

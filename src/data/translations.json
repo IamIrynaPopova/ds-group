@@ -46,6 +46,15 @@
       "preference4": "Participants in theatrical performances, organizers, and participants of charity concerts",
       "preference5": "Support and development of talents under the guidance of professional instructors",
       "preference6": "A cozy and modern hall, making practice enjoyable"
+    },
+    "choreographers": {
+      "title": "Choreographers",
+      "text": "Whether you’re just starting or already a true dance enthusiast, you’ll find your place with us. Our classes are always fun and held in a friendly atmosphere. Join our team!",
+      "choreographer1_name": "Anna Skopnenko",
+      "choreographer2_name": "Oleksandra Vakhliovska",
+      "choreographer3_name": "Anton Vakhliovskyi",
+      "choreographer4_name": "Yuliia Tsyb",
+      "button": "More"
     }
   },
   "ua": {
@@ -95,6 +104,15 @@
       "preference4": "Учасники театральних вистав Організатори та учасники благодійних концертів",
       "preference5": "Підтримка та розвиток талантів під керівництвом професійних викладачів",
       "preference6": "Затишний і сучасний зал, в якому приємно займатися"
+    },
+    "choreographers": {
+      "title": "хореографи",
+      "text": "Незалежно від того, чи ви тільки починаєте, чи вже є справжнім фанатом танців — у нас ви знайдете своє місце. Наші заняття завжди проходять весело і в дружній атмосфері. Приєднуйтесь до нашої команди!",
+      "choreographer1_name": "анна скопненко",
+      "choreographer2_name": "олександра вахліовська",
+      "choreographer3_name": "антон вахліовський",
+      "choreographer4_name": "юлія циб",
+      "button": "докладніше"
     }
   }
 }

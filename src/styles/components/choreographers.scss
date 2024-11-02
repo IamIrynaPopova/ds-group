@@ -1,0 +1,67 @@
+.choreographers {
+}
+
+.choreographers__title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 44px;
+}
+
+.choreographers__text {
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.choreographers__list {
+}
+.choreographers__item {
+}
+.choreographers__item:not(:last-child) {
+  margin-bottom: 44px;
+}
+
+.choreographers__image {
+  width: 343px;
+  height: 350px;
+  object-fit: cover;
+  border: 3px solid var(--color-blue);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.choreographers__item:first-child .choreographers__image,
+.choreographers__item:last-child .choreographers__image {
+  border: 3px solid var(--color-pink);
+}
+
+.choreographers__name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.choreographers__button {
+  max-width: 135px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 154%;
+  padding: 6px 8px;
+  background-color: inherit;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #00befe;
+  border-radius: 4px 4px 0 0;
+}
+.choreographers__svg {
+  margin-left: 11px;
+  width: 12px;
+  height: 12px;
+}

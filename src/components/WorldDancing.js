@@ -1,6 +1,7 @@
 import React from "react";
+import translations from "../data/translations.json";
 
-const WorldDancing = () => {
+const WorldDancing = ({ language }) => {
   return <section className="container"></section>;
 };
 

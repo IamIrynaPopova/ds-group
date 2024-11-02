@@ -1,5 +1,6 @@
 import React from "react";
 import data from "../data/feedback.json";
+import translations from "../data/translations.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -8,11 +9,11 @@ import "swiper/css/navigation";
 
 const isProduction = process.env.NODE_ENV === "production";
 
-const Feedback = () => {
-const getPhotoPath = (photo) => {
-  return isProduction ? `assets/${photo.split("/").pop()}` : photo;
-};
-  
+const Feedback = ({ language }) => {
+  const getPhotoPath = (photo) => {
+    return isProduction ? `assets/${photo.split("/").pop()}` : photo;
+  };
+
   return (
     <section className="feedback container">
       <h2 className="feedback__title">Відгуки</h2>
@@ -23,7 +24,7 @@ const getPhotoPath = (photo) => {
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
-          pauseOnMouseEnter:true,
+          pauseOnMouseEnter: true,
         }}
       >
         {data.map((feedback, index) => (

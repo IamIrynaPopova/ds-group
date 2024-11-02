@@ -1,6 +1,7 @@
 import React from "react";
+import translations from "../data/translations.json";
 
-const PhotoGallery = () => {
+const PhotoGallery = ({ language }) => {
   return <section className="container"></section>;
 };
 
