@@ -18,7 +18,7 @@ module.exports = (env) => {
       path: path.resolve(__dirname, "dist"),
       filename: "[name][contenthash].js",
       clean: true,
-      assetModuleFilename: "assets/[name][ext]",
+      assetModuleFilename: "images/[name][ext]",
     },
     devtool: "source-map",
     devServer: {

@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 const Teacher = ({ language, backToMain }) => {
   const { teacherId } = useParams();
   const teacher = teachers.find((teacher) => teacher.teacherId === teacherId);
+  console.log(teacher[language].image);
 
   if (!teacher) {
     return <p>Choreographer not found.</p>;
