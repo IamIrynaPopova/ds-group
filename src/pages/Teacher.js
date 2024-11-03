@@ -1,24 +1,24 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import teachers from "../data/teachers.json";
 import sprite from "../images/sprite/sprite.svg";
 import { useParams } from "react-router-dom";
 
-const Teacher = ({ language, backToMain }) => {
+const Teacher = ({ language}) => {
   const { teacherId } = useParams();
   const teacher = teachers.find((teacher) => teacher.teacherId === teacherId);
-  console.log(teacher[language].image);
 
   if (!teacher) {
-    return <p>Choreographer not found.</p>;
+    return <p className="container">Choreographer not found.</p>;
   }
   return (
     <section className="teacher container">
-      <button className="teacher__button" type="button" onClick={backToMain}>
+      <NavLink className="teacher__button" type="button" to="/" >
         <svg className="teacher__svg">
           <use href={`${sprite}#arrow-left`}></use>
         </svg>
         {teacher[language].button}
-      </button>
+      </NavLink>
       <h2 className="teacher__name">{teacher[language].name}</h2>
       <div className="teacher__image-wrapper">
         <img
@@ -33,6 +33,34 @@ const Teacher = ({ language, backToMain }) => {
       <p className="teacher__text"> {teacher[language].text3}</p>
       <p className="teacher__text"> {teacher[language].text4}</p>
       <p className="teacher__text"> {teacher[language].phone}</p>
+      <nav className="teacher__social">
+        <ul className="teacher__social-list">
+          <li className="teacher__social-item">
+            <a
+              className="teacher__social-link"
+              href={teacher[language].instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg className="teacher__social-svg">
+                <use href={`${sprite}#instagram`}></use>
+              </svg>
+            </a>
+          </li>
+          <li className="teacher__social-item">
+            <a
+              className="teacher__social-link"
+              href={teacher[language].facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg className="teacher__social-svg">
+                <use href={`${sprite}#facebook`}></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </section>
   );
 };

@@ -1,10 +1,9 @@
 .teacher {
 }
 .teacher__button {
-  width: 90px;
+  max-width: 90px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   font-size: 10px;
   line-height: 150%;
   background-color: inherit;
@@ -13,25 +12,26 @@
   margin-top: 16px;
   margin-bottom: 49px;
   padding: 0;
+  text-decoration: none;
 }
 .teacher__svg {
   width: 16px;
   height: 16px;
+  margin-right: 12px;
 }
 .teacher__name {
   text-transform: uppercase;
-font-weight: 400;
-font-size: 24px;
-line-height: 150%;
-margin-bottom: 44px;
-
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 44px;
 }
 .teacher__image-wrapper {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 46px;
   position: relative;
-    margin-bottom: 46px;
+  margin-bottom: 46px;
 }
 .teacher__image {
   width: 321px;
@@ -49,7 +49,23 @@ margin-bottom: 44px;
   z-index: 9;
 }
 .teacher__text {
-font-size: 16px;
-line-height: 150%;
-margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 16px;
+}
+.teacher__social {
+  width: 72px;
+  margin-bottom: 65px;
+}
+.teacher__social-list {
+  display: flex;
+  justify-content: space-between;
+}
+.teacher__social-item {
+}
+.teacher__social-link {
+}
+.teacher__social-svg {
+  width: 24px;
+  height: 24px;
 }

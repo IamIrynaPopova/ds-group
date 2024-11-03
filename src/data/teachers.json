@@ -7,11 +7,103 @@
       "text1": "Професійний режисер, хореограф та театральний балетмейстер",
       "text2": "Педагогічний стаж - 15 років ",
       "text3": "Балетмейстер - постановник 4-х вистав у театрі «Особистості» м. Київ",
-      "text4": "Організатор танцювального чемпіонату The Battle of the Stars.",
+      "text4": "Організатор танцювального чемпіонату The Battle of the Stars. Ліцензована суддя",
       "phone": "+38 (093) 682-32-86",
       "instagram": "https://www.instagram.com/annaskopnenko?igsh=eGJzNWl5MHR5cmp3",
       "facebook": "https://www.facebook.com/profile.php?id=100006428206642&ref=xav_ig_profile_web",
       "button": "повернутись"
+    },
+    "en": {
+      "name": "anna skopnenko",
+      "image": "../images/choreographer1.jpg",
+      "text1": "Professional director, choreographer, and theater ballet master",
+      "text2": "Teaching experience - 15 years",
+      "text3": "Choreographer - director of 4 performances at the 'Personalities' Theater in Kyiv",
+      "text4": "Organizer of the dance championship The Battle of the Stars. Licensed judge",
+      "phone": "+38 (093) 682-32-86",
+      "instagram": "https://www.instagram.com/annaskopnenko?igsh=eGJzNWl5MHR5cmp3",
+      "facebook": "https://www.facebook.com/profile.php?id=100006428206642&ref=xav_ig_profile_web",
+      "button": "return"
+    }
+  },
+  {
+    "teacherId": "oleksandra_vakhliovska",
+    "ua": {
+      "name": "олександра вахліовська",
+      "image": "../images/choreographer2.jpg",
+      "text1": "Професійний режисер, хореограф та театральний балетмейстер",
+      "text2": "Педагогічний стаж - 15 років ",
+      "text3": "Балетмейстер - постановник 4-х вистав у театрі «Особистості» м. Київ",
+      "text4": "Організатор танцювального чемпіонату The Battle of the Stars. Ліцензована суддя",
+      "phone": "+38 (093) 905-68-16",
+      "instagram": "https://www.instagram.com/vahliovskaya/?fbclid=IwY2xjawEsEDBleHRuA2FlbQIxMAABHXsNE_MHY_mqfsb1Y6gdbGhl4ZEwvBy2-BSXkNJHQzOvyy1VtS7R6-Re-Q_aem_-cXX3917Up56DHFtDIMgnQ",
+      "facebook": "https://www.facebook.com/share/cDN1ejmkEiS5KCtW/?mibextid=LQQJ4d",
+      "button": "повернутись"
+    },
+    "en": {
+      "name": "oleksandra vakhliovska",
+      "image": "../images/choreographer2.jpg",
+      "text1": "Professional director, choreographer, and theater ballet master",
+      "text2": "Teaching experience - 15 years",
+      "text3": "Choreographer - director of 4 performances at the 'Personalities' Theater in Kyiv",
+      "text4": "Organizer of the dance championship The Battle of the Stars. Licensed judge",
+      "phone": "+38 (093) 905-68-16",
+      "instagram": "https://www.instagram.com/vahliovskaya/?fbclid=IwY2xjawEsEDBleHRuA2FlbQIxMAABHXsNE_MHY_mqfsb1Y6gdbGhl4ZEwvBy2-BSXkNJHQzOvyy1VtS7R6-Re-Q_aem_-cXX3917Up56DHFtDIMgnQ",
+      "facebook": "https://www.facebook.com/share/cDN1ejmkEiS5KCtW/?mibextid=LQQJ4d",
+      "button": "return"
+    }
+  },
+  {
+    "teacherId": "anton_vakhliovskyi",
+    "ua": {
+      "name": "антон вахліовський",
+      "image": "../images/choreographer3.jpg",
+      "text1": "Хореограф-постановник, викладач акторської майстерності",
+      "text2": "Педагогічний стаж - 15 років ",
+      "text3": "Актор театру і кіно, балетмейстер",
+      "text4": "Організатор танцювального чемпіонату The Battle of the Stars.",
+      "phone": "",
+      "instagram": "https://www.instagram.com/antonvaxliov.sky?igsh=cWwybGN2cXo5bHA4",
+      "facebook": "https://www.facebook.com/vaxliov.sky",
+      "button": "повернутись"
+    },
+    "en": {
+      "name": "anton vakhliovskyi",
+      "image": "../images/choreographer3.jpg",
+      "text1": "Choreographer, acting coach",
+      "text2": "Teaching experience - 15 years",
+      "text3": "Theater and film actor, ballet master",
+      "text4": "Organizer of the dance championship The Battle of the Stars.",
+      "phone": "",
+      "instagram": "https://www.instagram.com/antonvaxliov.sky?igsh=cWwybGN2cXo5bHA4",
+      "facebook": "https://www.facebook.com/vaxliov.sky",
+      "button": "return"
+    }
+  },  {
+    "teacherId": "julia_tsyb",
+    "ua": {
+      "name": "юлія циб",
+      "image": "../images/choreographer4.jpg",
+      "text1": "Професійний хореограф та танцівниця",
+      "text2": "Топ 10 World of Dance Kyiv 2023р. 6 місце World of Dance Kyiv 2024р.",
+      "text3": "Танцювала в Харківських компаніях «Martina Dance Company » і «Leroy Dance Company»",
+      "text4": "Учасниця «Totem Dance Theatre» 2023-2024р.",
+      "phone": "",
+      "instagram": "https://www.instagram.com/jj.yuli_tsyb?igsh=MXMwYWo0YTlqYXAzNg==",
+      "facebook": "",
+      "button": "повернутись"
+    },
+    "en": {
+      "name": "Yulia Tsyb",
+      "image": "../images/choreographer4.jpg",
+      "text1": "Professional choreographer and dancer",
+      "text2": "Top 10 World of Dance Kyiv 2023, 6th place World of Dance Kyiv 2024",
+      "text3": "Danced with Kharkiv companies ‘Martina Dance Company’ and ‘Leroy Dance Company’",
+      "text4": "Member of ‘Totem Dance Theatre’ 2023-2024",
+      "phone": "",
+      "instagram": "https://www.instagram.com/jj.yuli_tsyb?igsh=MXMwYWo0YTlqYXAzNg==",
+      "facebook": "",
+      "button": "return"
     }
   }
 ]
