@@ -9,11 +9,11 @@ const importAll = (requireContext) => {
   return requireContext.keys().map(requireContext);
 };
 
-const imagesСhicСrew = importAll(
-  require.context("./images/chic-crew", false, /\.(png|jpe?g|svg)$/)
+const images = importAll(
+  require.context("./images", true, /\.(png|jpe?g|svg)$/)
 );
 
-export default imagesСhicСrew;
+export default images;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const basename = process.env.NODE_ENV === "production" ? "/ds-group" : "/";
