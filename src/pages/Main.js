@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import AboutUs from "../components/AboutUs";
 import Preferences from "../components/Preferences";
 import Choreographers from "../components/Choreographers";
-import Teams from "../components/Teams";
+import Teams from "../components/Teams"
 import Timetable from "../components/Timetable";
 import PhotoGallery from "../components/PhotoGallery";
 import WorldDancing from "../components/WorldDancing";

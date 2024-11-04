@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import teachers from "../data/teachers.json";
 import sprite from "../images/sprite/sprite.svg";
 import { useParams } from "react-router-dom";

@@ -53,11 +53,38 @@
       "choreographer1_name": "anna skopnenko",
       "choreographer2_name": "oleksandra vakhliovska",
       "choreographer3_name": "anton vakhliovskyi",
-      "choreographer4_name": "julia tsyb",
-      "button": "More"
+      "choreographer4_name": "julia tsyb"
     },
-    "button_return": {
-      "button": "return"
+    "button": {
+      "return": "return",
+      "more": "more"
+    },
+    "teams": {
+      "title": "Teams"
+    },
+    "chic_crew": {
+      "name": "Chic Crew",
+      "text": "Age group 15-18 years"
+    },
+    "crash_bang_crew": {
+      "name": "Crash Bang Crew",
+      "text": "Age group 12-14 years"
+    },
+    "bon_bon_crew": {
+      "name": "Bon Bon Crew",
+      "text": "Age group 11-13 years"
+    },
+    "titan_crew": {
+      "name": "Titan Crew",
+      "text": "Age group 9-11 years"
+    },
+    "honey_crew": {
+      "name": "Honey Crew",
+      "text": "Age group 6-9 years"
+    },
+    "gali_baluvani": {
+      "name": "Hali Baluvani",
+      "text": "Age group mixed"
     }
   },
   "ua": {
@@ -114,11 +141,38 @@
       "choreographer1_name": "анна скопненко",
       "choreographer2_name": "олександра вахліовська",
       "choreographer3_name": "антон вахліовський",
-      "choreographer4_name": "юлія циб",
-      "button": "докладніше"
+      "choreographer4_name": "юлія циб"
     },
-    "button_return": {
-      "button": "повернутись"
+    "button": {
+      "return": "повернутись",
+      "more": "докладніше"
+    },
+    "teams": {
+      "title": "команди"
+    },
+    "chic_crew": {
+      "name": "Chic Crew",
+      "text": "Вікова група 15-18 років"
+    },
+    "crash_bang_crew": {
+      "name": "Crash Bang Crew",
+      "text": "Вікова група 12-14 років"
+    },
+    "bon_bon_crew": {
+      "name": "Bon Bon Crew",
+      "text": "Вікова група 11-13 років"
+    },
+    "titan_crew": {
+      "name": "Titan Crew",
+      "text": "Вікова група 9-11 років"
+    },
+    "honey_crew": {
+      "name": "Honey Crew",
+      "text": "Вікова група 6-9 років"
+    },
+    "gali_baluvani": {
+      "name": "Галі Балувані",
+      "text": "Вікова група mix"
     }
   }
 }

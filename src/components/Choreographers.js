@@ -1,7 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import ButtonMore from "../components/ButtonMore";
 import translations from "../data/translations.json";
-import sprite from "../images/sprite/sprite.svg";
 import choreographer1 from "../images/choreographer1.jpg";
 import choreographer2 from "../images/choreographer2.jpg";
 import choreographer3 from "../images/choreographer3.jpg";
@@ -26,15 +25,10 @@ const Choreographers = ({ language }) => {
           <h3 className="choreographers__name">
             {translations[language].choreographers.choreographer1_name}
           </h3>
-          <NavLink
-            to="/choreographer/anna_skopnenko"
-            className="choreographers__button"
-          >
-            {translations[language].choreographers.button}
-            <svg className="choreographers__svg">
-              <use href={`${sprite}#arrow`}></use>
-            </svg>
-          </NavLink>
+          <ButtonMore
+            path="/choreographer/anna_skopnenko"
+            language={language}
+          />
         </li>
         <li className="choreographers__item">
           <img
@@ -45,15 +39,10 @@ const Choreographers = ({ language }) => {
           <h3 className="choreographers__name">
             {translations[language].choreographers.choreographer2_name}
           </h3>
-          <NavLink
-            to="/choreographer/oleksandra_vakhliovska"
-            className="choreographers__button"
-          >
-            {translations[language].choreographers.button}
-            <svg className="choreographers__svg">
-              <use href={`${sprite}#arrow`}></use>
-            </svg>
-          </NavLink>
+          <ButtonMore
+            path="/choreographer/oleksandra_vakhliovska"
+            language={language}
+          />
         </li>
         <li className="choreographers__item">
           <img
@@ -64,15 +53,10 @@ const Choreographers = ({ language }) => {
           <h3 className="choreographers__name">
             {translations[language].choreographers.choreographer3_name}
           </h3>
-          <NavLink
-            to="/choreographer/anton_vakhliovskyi"
-            className="choreographers__button"
-          >
-            {translations[language].choreographers.button}
-            <svg className="choreographers__svg">
-              <use href={`${sprite}#arrow`}></use>
-            </svg>
-          </NavLink>
+          <ButtonMore
+            path="/choreographer/anton_vakhliovskyi"
+            language={language}
+          />
         </li>
         <li className="choreographers__item">
           <img
@@ -83,15 +67,7 @@ const Choreographers = ({ language }) => {
           <h3 className="choreographers__name">
             {translations[language].choreographers.choreographer4_name}
           </h3>
-          <NavLink
-            to="/choreographer/julia_tsyb"
-            className="choreographers__button"
-          >
-            {translations[language].choreographers.button}{" "}
-            <svg className="choreographers__svg">
-              <use href={`${sprite}#arrow`}></use>
-            </svg>
-          </NavLink>
+          <ButtonMore path="/choreographer/julia_tsyb" language={language} />
         </li>
       </ul>
     </section>

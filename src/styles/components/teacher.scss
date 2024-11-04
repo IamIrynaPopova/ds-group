@@ -1,4 +1,8 @@
 .teacher {
+  background-color: var(--background-default);
+  background-image: url(../images/wave_teacher.png);
+  background-repeat: no-repeat;
+  background-position: 0 -90px;
 }
 
 .teacher__name {
@@ -37,7 +41,7 @@
 }
 .teacher__social {
   width: 72px;
-  margin-bottom: 65px;
+  padding-bottom: 65px;
 }
 .teacher__social-list {
   display: flex;

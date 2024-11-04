@@ -9,7 +9,7 @@ const ButtonReturn = ({ language }) => {
       <svg className="button__return-svg">
         <use href={`${sprite}#arrow-left`}></use>
       </svg>
-      {translations[language].button_return.button}
+      {translations[language].button.return}
     </NavLink>
   );
 };
