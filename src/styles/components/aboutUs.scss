@@ -1,6 +1,5 @@
 .about {
-  position: relative;
-  overflow: hidden;
+
 }
 
 .about__title {
@@ -48,12 +47,7 @@
   line-height: 150%;
   margin-bottom: 44px;
 }
-.about__wave {
-  position: absolute;
-  top: 0;
-  left: -170%;
-  z-index: -1;
-}
+
 .about__button {
   border: 2px solid var(--color-blue);
   padding: 12px;

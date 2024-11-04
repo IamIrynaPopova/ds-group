@@ -3,4 +3,13 @@ body {
   color: var(--text-default);
   background-color: var(--background-default);
   font-weight: 400;
+  background-image: url(../images/wave.png);
+  background-repeat: no-repeat;
+    background-position: -485px 446px;
+
+}
+@media screen and (min-width: 768px) {
+ body {
+  // background-position: -485px 446px;
+  }
 }

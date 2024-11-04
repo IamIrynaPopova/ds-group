@@ -1,0 +1,19 @@
+.button__return {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  line-height: 150%;
+  background-color: inherit;
+  color: inherit;
+  cursor: pointer;
+  margin-top: 16px;
+  margin-bottom: 49px;
+  padding: 0;
+  text-decoration: none;
+}
+.button__return-svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+}

@@ -29,8 +29,7 @@ const AboutUs = ({ language, closeForm, openForm }) => {
       <p className="about__text-main">
         {translations[language].about.text_main}
       </p>
-      <img src={wave} alt="owners" className="about__wave"></img>
-      <button className="about__button" type="button" onClick={openForm}>
+         <button className="about__button" type="button" onClick={openForm}>
         {translations[language].about.button}
       </button>
       <Form

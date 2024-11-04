@@ -3,8 +3,9 @@ import { NavLink } from "react-router-dom";
 import teachers from "../data/teachers.json";
 import sprite from "../images/sprite/sprite.svg";
 import { useParams } from "react-router-dom";
+import ButtonReturn from "../components/ButtonReturn";
 
-const Teacher = ({ language}) => {
+const Teacher = ({ language }) => {
   const { teacherId } = useParams();
   const teacher = teachers.find((teacher) => teacher.teacherId === teacherId);
 
@@ -13,12 +14,7 @@ const Teacher = ({ language}) => {
   }
   return (
     <section className="teacher container">
-      <NavLink className="teacher__button" type="button" to="/" >
-        <svg className="teacher__svg">
-          <use href={`${sprite}#arrow-left`}></use>
-        </svg>
-        {teacher[language].button}
-      </NavLink>
+      <ButtonReturn language={language} />
       <h2 className="teacher__name">{teacher[language].name}</h2>
       <div className="teacher__image-wrapper">
         <img

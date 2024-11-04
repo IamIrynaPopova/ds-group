@@ -44,7 +44,7 @@ const App = () => {
           language={language}
         />
       )}
-      <main style={{ position: "relative" }}>
+      <main >
         {/* <Suspense fallback={<PageLoader />}> */}
         <Routes>
           <Route

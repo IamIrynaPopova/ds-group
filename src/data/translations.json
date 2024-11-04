@@ -55,6 +55,9 @@
       "choreographer3_name": "anton vakhliovskyi",
       "choreographer4_name": "julia tsyb",
       "button": "More"
+    },
+    "button_return": {
+      "button": "return"
     }
   },
   "ua": {
@@ -113,6 +116,9 @@
       "choreographer3_name": "антон вахліовський",
       "choreographer4_name": "юлія циб",
       "button": "докладніше"
+    },
+    "button_return": {
+      "button": "повернутись"
     }
   }
 }
