@@ -44,7 +44,7 @@ const App = () => {
           language={language}
         />
       )}
-      <main >
+      <main>
         {/* <Suspense fallback={<PageLoader />}> */}
         <Routes>
           <Route
@@ -57,7 +57,16 @@ const App = () => {
               />
             }
           />
-          <Route path="/teams/:teamId" element={<Team />} />
+          <Route
+            path="/teams/:teamId"
+            element={
+              <Team
+                language={language}
+                onCloseForm={closeForm}
+                onOpenForm={openForm}
+              />
+            }
+          />
           <Route
             path="/choreographer/:teacherId"
             element={<Teacher language={language} />}

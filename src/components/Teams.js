@@ -1,12 +1,12 @@
 import React from "react";
 import translations from "../data/translations.json";
 import ButtonMore from "../components/ButtonMore";
-import chicCrew from "../images/chic-crew/img-сhic-crew_main.jpg";
-import crashBangCrew from "../images/crash_bang_crew/crash_bang_crew_main.jpg";
-import bonBonCrew from "../images/bon_bon_crew/bon_bon_crew_main.jpg";
-import titanCrew from "../images/titan_crew/titan_crew_main.jpg";
-import honeyCrew from "../images/honey_crew/honey_crew_main.jpg";
-import galiBaluvani from "../images/gali_baluvani/gali_baluvani_main.jpg";
+import chicCrew from "../images/img-сhic-crew_main.jpg";
+import crashBangCrew from "../images/crash_bang_crew_main.jpg";
+import bonBonCrew from "../images/bon_bon_crew_main.jpg";
+import titanCrew from "../images/titan_crew_main.jpg";
+import honeyCrew from "../images/honey_crew_main.jpg";
+import galiBaluvani from "../images/gali_baluvani_main.jpg";
 
 const Teams = ({ language }) => {
   return (

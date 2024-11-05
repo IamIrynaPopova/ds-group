@@ -30,7 +30,7 @@ const AboutUs = ({ language, closeForm, openForm }) => {
         {translations[language].about.text_main}
       </p>
          <button className="about__button" type="button" onClick={openForm}>
-        {translations[language].about.button}
+        {translations[language].button.contact}
       </button>
       <Form
         language={language}

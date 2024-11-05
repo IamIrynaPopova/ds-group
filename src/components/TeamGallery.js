@@ -1,5 +1,4 @@
 import React from "react";
-import translations from "../data/translations.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectCoverflow } from "swiper/modules";
 import "swiper/css";
@@ -10,7 +9,7 @@ import sprite from "../images/sprite/sprite.svg";
 
 const isProduction = process.env.NODE_ENV === "production";
 
-const TeamGallery = ({ photos, language}) => {
+const TeamGallery = ({ photos }) => {
   const getPhotoPath = (photo) => {
     return isProduction ? `assets/${photo.split("/").pop()}` : photo;
   };
@@ -18,8 +17,8 @@ const TeamGallery = ({ photos, language}) => {
   return (
     <section className="gallery container">
       <div className="arrow__prev">
-        <svg className="arrow__back-svg">
-          <use href={`${sprite}#arrow-left`}></use>
+        <svg className="arrow__svg">
+          <use href={`${sprite}#swiper-arrow-left`}></use>
         </svg>
       </div>
       <Swiper
@@ -42,8 +41,7 @@ const TeamGallery = ({ photos, language}) => {
           modifier: 2.2,
           slideShadows: true,
         }}
-        className="mySwiper"
-      >
+            >
         {photos.map((photo, index) => (
           <SwiperSlide key={index} className="swiper-slide">
             <img
@@ -55,8 +53,8 @@ const TeamGallery = ({ photos, language}) => {
         ))}
       </Swiper>
       <div className="arrow__next">
-        <svg className="arrow__back-svg">
-          <use href={`${sprite}#arrow-left`}></use>
+        <svg className="arrow__svg">
+          <use href={`${sprite}#swiper-arrow-right`}></use>
         </svg>
       </div>
     </section>

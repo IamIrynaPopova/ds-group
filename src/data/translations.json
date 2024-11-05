@@ -23,8 +23,7 @@
       "text5": "We organize and hold charity concerts.",
       "text6": "Every summer, DS group organizes a Dance camp in some cozy city in Europe by the sea.",
       "text7": "The team consists of 6 Pro teams and preparation groups for preschool children. Join us!",
-      "text_main": "The main thing is your desire! We will take care of the rest!",
-      "button": "Contact us"
+      "text_main": "The main thing is your desire! We will take care of the rest!"
     },
     "form": {
       "title": "Have questions or suggestions? Write to us, we are always in touch",
@@ -57,7 +56,8 @@
     },
     "button": {
       "return": "return",
-      "more": "more"
+      "more": "more",
+      "contact":"Contact us"
     },
     "teams": {
       "title": "Teams"
@@ -111,9 +111,8 @@
       "text5": "Ми організовуємо та проводимо благодійні концерти.",
       "text6": "Щороку влітку DS group організовує Dance camp в якомусь затишному місті Європи на березі моря.",
       "text7": "У складі колективу є 6 Pro-команд і групи підготовки для дітей дошкільного віку. Приєднуйся до нас!",
-      "text_main": "Головне - твоє бажання! Про інше ми подбаємо!",
-      "button": "Зв’язатися з нами"
-    },
+      "text_main": "Головне - твоє бажання! Про інше ми подбаємо!"
+       },
     "form": {
       "title": "Залишились питання або побажання, пишіть нам, ми завжди на зв`язку",
       "error_message_name": "Має складатись мінімум з 3x літер",
@@ -145,7 +144,8 @@
     },
     "button": {
       "return": "повернутись",
-      "more": "докладніше"
+      "more": "докладніше",
+      "contact": "Зв’язатися з нами"
     },
     "teams": {
       "title": "команди"
