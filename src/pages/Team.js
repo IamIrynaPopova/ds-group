@@ -49,10 +49,15 @@ const Team = ({ language, onCloseForm, onOpenForm }) => {
         <p className="team__text">Хореографи:</p>
         <p className="team__text"> {team[language].choreographers}</p>
       </div>
-      <p className="team__text">Вікова група:{team[language].description}</p>
+      <p className="team__text">{team[language].description}</p>
       {team && <TeamGallery photos={team[language].photos} />}
       <div className="video">
-        <div id="overlay" className="video__overlay" onClick={playVideo}>
+        <div
+          id="overlay"
+          className="video__overlay"
+          onClick={playVideo}
+          style={{ backgroundImage: `url(${team[language].photos[2]})` }}
+        >
           <div className="video__button">
             <svg className="video__button-svg">
               <use href={`${sprite}#button-youtube`}></use>

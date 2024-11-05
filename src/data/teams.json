@@ -61,7 +61,7 @@
         "../images/crash_bang_crew8.jpg",
         "../images/crash_bang_crew9.jpg"
       ],
-      "video": ""
+      "video": "https://www.youtube.com/embed/QbrAsOWVs2A"
     },
     "en": {
       "name": "Crash Bang Crew",
@@ -80,7 +80,161 @@
         "../images/crash_bang_crew8.jpg",
         "../images/crash_bang_crew9.jpg"
       ],
-      "video": ""
+      "video": "https://www.youtube.com/embed/QbrAsOWVs2A"
+    }
+  },
+  {
+    "teamId": "bon_bon_crew",
+    "ua": {
+      "name": "Bon Bon Crew",
+      "main_photo": "../images/bon_bon_crew_main.jpg",
+      "age": "11-13 років",
+      "choreographers": "Анна Скопненко, Олександра Вахліовська, Юлія Циб",
+      "description": "",
+      "photos": [
+        "../images/bon_bon_crew1.jpg",
+        "../images/bon_bon_crew2.jpg",
+        "../images/bon_bon_crew3.jpg",
+        "../images/bon_bon_crew4.jpg",
+        "../images/bon_bon_crew5.jpg",
+        "../images/bon_bon_crew6.jpg",
+        "../images/bon_bon_crew7.jpg",
+        "../images/bon_bon_crew8.jpg",
+        "../images/bon_bon_crew9.jpg"
+      ],
+      "video": "https://www.youtube.com/embed/QbrAsOWVs2A"
+    },
+    "en": {
+      "name": "Bon Bon Crew",
+      "main_photo": "../images/bon_bon_crew_main.jpg",
+      "age": "11-13 years",
+      "choreographers": "Anna Skopnenko, Oleksandra Vakhliovska, Yulia Tsyb",
+      "description": "",
+      "photos": [
+        "../images/bon_bon_crew1.jpg",
+        "../images/bon_bon_crew2.jpg",
+        "../images/bon_bon_crew3.jpg",
+        "../images/bon_bon_crew4.jpg",
+        "../images/bon_bon_crew5.jpg",
+        "../images/bon_bon_crew6.jpg",
+        "../images/bon_bon_crew7.jpg",
+        "../images/bon_bon_crew8.jpg",
+        "../images/bon_bon_crew9.jpg"
+      ],
+      "video": "https://www.youtube.com/embed/QbrAsOWVs2A"
+    }
+  },
+  {
+    "teamId": "titan_crew",
+    "ua": {
+      "name": "Titan Crew",
+      "main_photo": "../images/titan_crew_main.jpg",
+      "age": "9-11 років",
+      "choreographers": "Анна Скопненко, Олександра Вахліовська, Юлія Циб",
+      "description": "",
+      "photos": [
+        "../images/titan_crew1.jpg",
+        "../images/titan_crew2.jpg",
+        "../images/titan_crew3.jpg",
+        "../images/titan_crew4.jpg",
+        "../images/titan_crew5.jpg",
+        "../images/titan_crew6.jpg",
+        "../images/titan_crew7.jpg",
+        "../images/titan_crew8.jpg",
+        "../images/titan_crew9.jpg"
+      ],
+      "video": "https://www.youtube.com/embed/QbrAsOWVs2A"
+    },
+    "en": {
+      "name": "Titan Crew",
+      "main_photo": "../images/titan_crew_main.jpg",
+      "age": "9-11 years",
+      "choreographers": "Anna Skopnenko, Oleksandra Vakhliovska, Yulia Tsyb",
+      "description": "",
+      "photos": [
+        "../images/titan_crew1.jpg",
+        "../images/titan_crew2.jpg",
+        "../images/titan_crew3.jpg",
+        "../images/titan_crew4.jpg",
+        "../images/titan_crew5.jpg",
+        "../images/titan_crew6.jpg",
+        "../images/titan_crew7.jpg",
+        "../images/titan_crew8.jpg",
+        "../images/titan_crew9.jpg"
+      ],
+      "video": "https://www.youtube.com/embed/QbrAsOWVs2A"
+    }
+  },
+  {
+    "teamId": "honey_crew",
+    "ua": {
+      "name": "Honey Crew",
+      "main_photo": "../images/honey_crew_main.jpg",
+      "age": "6-9 років",
+      "choreographers": "Анна Скопненко, Олександра Вахліовська, Юлія Циб",
+      "description": "",
+      "photos": [
+        "../images/honey_crew1.jpg",
+        "../images/honey_crew2.jpg",
+        "../images/honey_crew3.jpg",
+        "../images/honey_crew4.jpg",
+        "../images/honey_crew5.jpg",
+        "../images/honey_crew6.jpg",
+        "../images/honey_crew7.jpg",
+        "../images/honey_crew8.jpg"
+      ],
+      "video": "https://www.youtube.com/embed/QbrAsOWVs2A"
+    },
+    "en": {
+      "name": "Honey Crew",
+      "main_photo": "../images/honey_crew_main.jpg",
+      "age": "6-9 years",
+      "choreographers": "Anna Skopnenko, Oleksandra Vakhliovska, Yulia Tsyb",
+      "description": "",
+      "photos": [
+        "../images/honey_crew1.jpg",
+        "../images/honey_crew2.jpg",
+        "../images/honey_crew3.jpg",
+        "../images/honey_crew4.jpg",
+        "../images/honey_crew5.jpg",
+        "../images/honey_crew6.jpg",
+        "../images/honey_crew7.jpg",
+        "../images/honey_crew8.jpg"
+      ],
+      "video": "https://www.youtube.com/embed/QbrAsOWVs2A"
+    }
+  },
+  {
+    "teamId": "gali_baluvani",
+    "ua": {
+      "name": "Галі Балувані",
+      "main_photo": "../images/gali_baluvani_main.jpg",
+      "age": "Вікова група mix",
+      "choreographers": "Анна Скопненко, Олександра Вахліовська, Юлія Циб",
+      "description": "",
+      "photos": [
+        "../images/gali_baluvani1.jpg",
+        "../images/gali_baluvani2.jpg",
+        "../images/gali_baluvani3.jpg",
+        "../images/gali_baluvani4.jpg",
+        "../images/gali_baluvani5.jpg"
+      ],
+      "video": "https://www.youtube.com/embed/QbrAsOWVs2A"
+    },
+    "en": {
+      "name": "Gali Baluvani",
+      "main_photo": "../images/gali_baluvani_main.jpg",
+      "age": "Age group mixed",
+      "choreographers": "Anna Skopnenko, Oleksandra Vakhliovska, Yulia Tsyb",
+      "description": "",
+      "photos": [
+        "../images/gali_baluvani1.jpg",
+        "../images/gali_baluvani2.jpg",
+        "../images/gali_baluvani3.jpg",
+        "../images/gali_baluvani4.jpg",
+        "../images/gali_baluvani5.jpg"
+      ],
+      "video": "https://www.youtube.com/embed/QbrAsOWVs2A"
     }
   }
 ]
