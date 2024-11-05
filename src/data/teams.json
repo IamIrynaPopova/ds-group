@@ -41,5 +41,46 @@
       ],
       "video": "https://www.youtube.com/embed/QbrAsOWVs2A"
     }
+  },
+  {
+    "teamId": "crash_bang_crew",
+    "ua": {
+      "name": "Crash Bang Crew",
+      "main_photo": "../images/crash_bang_crew_main.jpg",
+      "age": "12-14 років",
+      "choreographers": "Анна Скопненко, Олександра Вахліовська, Юлія Циб",
+      "description": "",
+      "photos": [
+        "../images/crash_bang_crew1.jpg",
+        "../images/crash_bang_crew2.jpg",
+        "../images/crash_bang_crew3.jpg",
+        "../images/crash_bang_crew4.jpg",
+        "../images/crash_bang_crew5.jpg",
+        "../images/crash_bang_crew6.jpg",
+        "../images/crash_bang_crew7.jpg",
+        "../images/crash_bang_crew8.jpg",
+        "../images/crash_bang_crew9.jpg"
+      ],
+      "video": ""
+    },
+    "en": {
+      "name": "Crash Bang Crew",
+      "main_photo": "../images/crash_bang_crew_main.jpg",
+      "age": "12-14 years",
+      "choreographers": "Anna Skopnenko, Oleksandra Vakhliovska, Yulia Tsyb",
+      "description": "",
+      "photos": [
+        "../images/crash_bang_crew1.jpg",
+        "../images/crash_bang_crew2.jpg",
+        "../images/crash_bang_crew3.jpg",
+        "../images/crash_bang_crew4.jpg",
+        "../images/crash_bang_crew5.jpg",
+        "../images/crash_bang_crew6.jpg",
+        "../images/crash_bang_crew7.jpg",
+        "../images/crash_bang_crew8.jpg",
+        "../images/crash_bang_crew9.jpg"
+      ],
+      "video": ""
+    }
   }
 ]

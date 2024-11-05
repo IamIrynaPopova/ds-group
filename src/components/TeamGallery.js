@@ -10,9 +10,9 @@ import sprite from "../images/sprite/sprite.svg";
 const isProduction = process.env.NODE_ENV === "production";
 
 const TeamGallery = ({ photos }) => {
-  const getPhotoPath = (photo) => {
-    return isProduction ? `images/${photo.split("/").pop()}` : photo;
-  };
+  // const getPhotoPath = (photo) => {
+  //   return isProduction ? `images/${photo.split("/").pop()}` : photo;
+  // };
 
   return (
     <section className="gallery container">
@@ -46,7 +46,7 @@ const TeamGallery = ({ photos }) => {
           <SwiperSlide key={index} className="swiper-slide">
             <img
               className="gallery__image"
-              src={getPhotoPath(photo)}
+              src={`images/${photo}`}
               alt={`Slide ${index}`}
             />
           </SwiperSlide>
