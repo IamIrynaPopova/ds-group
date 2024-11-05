@@ -41,12 +41,12 @@ const TeamGallery = ({ photos }) => {
           modifier: 2.2,
           slideShadows: true,
         }}
-            >
+      >
         {photos.map((photo, index) => (
           <SwiperSlide key={index} className="swiper-slide">
             <img
               className="gallery__image"
-              src={`images/${photo}`}
+              src={photo}
               alt={`Slide ${index}`}
             />
           </SwiperSlide>
