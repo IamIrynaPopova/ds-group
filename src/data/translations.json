@@ -57,7 +57,7 @@
     "button": {
       "return": "return",
       "more": "more",
-      "contact":"Contact us"
+      "contact": "Contact us"
     },
     "teams": {
       "title": "Teams"
@@ -85,6 +85,10 @@
     "gali_baluvani": {
       "name": "Hali Baluvani",
       "text": "Age group mixed"
+    },
+    "time_table": {
+      "title": "time table",
+      "teams": "teams"
     }
   },
   "ua": {
@@ -112,7 +116,7 @@
       "text6": "Щороку влітку DS group організовує Dance camp в якомусь затишному місті Європи на березі моря.",
       "text7": "У складі колективу є 6 Pro-команд і групи підготовки для дітей дошкільного віку. Приєднуйся до нас!",
       "text_main": "Головне - твоє бажання! Про інше ми подбаємо!"
-       },
+    },
     "form": {
       "title": "Залишились питання або побажання, пишіть нам, ми завжди на зв`язку",
       "error_message_name": "Має складатись мінімум з 3x літер",
@@ -173,6 +177,10 @@
     "gali_baluvani": {
       "name": "Галі Балувані",
       "text": "Вікова група mix"
+    },
+    "time_table": {
+      "title": "розклад занять",
+      "teams": "команди"
     }
   }
 }

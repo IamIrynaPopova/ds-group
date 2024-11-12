@@ -1,0 +1,98 @@
+.time {
+  padding-top: 100px;
+}
+
+.teams_title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 63px;
+}
+.teams__subtitle {
+  position: relative;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--text-default);
+  border: 2px dashed #1877f2;
+  margin-bottom: 63px;
+}
+
+.time__list {
+}
+
+.time__item {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--text-default);
+}
+.time__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.time__header {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text-default);
+  text-transform: uppercase;
+}
+
+.time__item:nth-child(1) .time__header,
+.time__item:nth-child(1) .time__content {
+  border: 1px solid #c70c4d;
+}
+
+.time__item:nth-child(2) .time__header,
+.time__item:nth-child(2) .time__content {
+  border: 1px solid #59fea4;
+}
+.time__item:nth-child(3) .time__header,
+.time__item:nth-child(3) .time__content {
+  border: 1px solid #00befe;
+}
+.time__item:nth-child(4) .time__header,
+.time__item:nth-child(4) .time__content {
+  border: 1px solid #ff49f0;
+}
+.time__item:nth-child(5) .time__header,
+.time__item:nth-child(5) .time__content {
+  border: 1px solid #eafd63;
+}
+.time__item:nth-child(6) .time__header,
+.time__item:nth-child(6) .time__content {
+  border: 1px solid #fff;
+}
+.time__item:nth-child(7) .time__header,
+.time__item:nth-child(7) .time__content {
+  border: 1px solid #1877f2;
+}
+
+.time__header:hover {
+}
+
+.time__header-svg {
+  width: 20px;
+  height: 20px;
+}
+.arrow-top {
+  transform: rotate(180deg);
+}
+
+.arrow-bottom {
+  transform: rotate(0deg);
+}
+
+.time__content {
+  padding: 16px;
+  padding-top: 8px;
+}
