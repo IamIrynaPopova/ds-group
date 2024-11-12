@@ -8,7 +8,7 @@ import choreographer4 from "../images/choreographer4.jpg";
 
 const Choreographers = ({ language }) => {
   return (
-    <section className="choreographers container">
+    <section className="choreographers container" id="choreographers">
       <h2 className="choreographers__title">
         {translations[language].choreographers.title}
       </h2>
@@ -16,7 +16,7 @@ const Choreographers = ({ language }) => {
         {translations[language].choreographers.text}
       </p>
       <ul className="choreographers__list">
-        <li className="choreographers__item">
+        <li className="choreographers__item" id="anna_skopnenko">
           <img
             src={choreographer1}
             alt="choreographer"
@@ -30,7 +30,7 @@ const Choreographers = ({ language }) => {
             language={language}
           />
         </li>
-        <li className="choreographers__item">
+        <li className="choreographers__item" id="oleksandra_vakhliovska">
           <img
             src={choreographer2}
             alt="choreographer"
@@ -44,7 +44,7 @@ const Choreographers = ({ language }) => {
             language={language}
           />
         </li>
-        <li className="choreographers__item">
+        <li className="choreographers__item" id="anton_vakhliovskyi">
           <img
             src={choreographer3}
             alt="choreographer"
@@ -58,7 +58,7 @@ const Choreographers = ({ language }) => {
             language={language}
           />
         </li>
-        <li className="choreographers__item">
+        <li className="choreographers__item" id="julia_tsyb">
           <img
             src={choreographer4}
             alt="choreographer"

@@ -13,7 +13,7 @@ const Teacher = ({ language }) => {
   }
   return (
     <section className="teacher container">
-      <ButtonReturn language={language} />
+      <ButtonReturn language={language} path={`/#${teacherId}`} />
       <h2 className="teacher__name">{teacher[language].name}</h2>
       <div className="teacher__image-wrapper">
         <img

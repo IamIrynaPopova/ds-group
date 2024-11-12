@@ -11,7 +11,6 @@ import TeamGallery from "../components/TeamGallery";
 const Team = ({ language, onCloseForm, onOpenForm }) => {
   const { teamId } = useParams();
   const team = teams.find((team) => team.teamId === teamId);
-
   if (!team) {
     return <p className="container">Team not found</p>;
   }
@@ -26,7 +25,7 @@ const Team = ({ language, onCloseForm, onOpenForm }) => {
 
   return (
     <section className="team container">
-      <ButtonReturn language={language} />
+      <ButtonReturn language={language} path={`/#${teamId}`} />
       <h2 className="team__name">{team[language].name}</h2>
       <button className="team__button" type="button" onClick={onOpenForm}>
         {translations[language].button.contact}

@@ -2,7 +2,6 @@ import React from "react";
 import logo from "../images/logo.png";
 import sprite from "../images/sprite/sprite.svg";
 import translations from "../data/translations.json";
-import { NavLink } from "react-router-dom";
 import LanguageSwitcher from "../components/LanguageSwitcher";
 
 const Menu = ({ onCloseMenu, languageChange, language }) => {
@@ -64,39 +63,51 @@ const Menu = ({ onCloseMenu, languageChange, language }) => {
         <nav className="nav">
           <ul className="nav__list">
             <li className="nav__list-item">
-              <NavLink className="nav__list-link" to="/" onClick={onCloseMenu}>
+              <a
+                className="nav__list-link"
+                href="#about_us"
+                onClick={onCloseMenu}
+              >
                 {translations[language].menu.about_us}
-              </NavLink>
+              </a>
             </li>
             <li className="nav__list-item">
-              <NavLink className="nav__list-link" to="" onClick={onCloseMenu}>
+              <a
+                className="nav__list-link"
+                href="#choreographers"
+                onClick={onCloseMenu}
+              >
                 {translations[language].menu.choreographers}
-              </NavLink>
+              </a>
             </li>
             <li className="nav__list-item">
-              <NavLink className="nav__list-link" to="" onClick={onCloseMenu}>
+              <a className="nav__list-link" href="#teams" onClick={onCloseMenu}>
                 {translations[language].menu.teams}
-              </NavLink>
+              </a>
             </li>
             <li className="nav__list-item">
-              <NavLink className="nav__list-link" to="" onClick={onCloseMenu}>
+              <a
+                className="nav__list-link"
+                href="#time_table"
+                onClick={onCloseMenu}
+              >
                 {translations[language].menu.time_table}
-              </NavLink>
+              </a>
             </li>
             <li className="nav__list-item">
-              <NavLink className="nav__list-link" to="" onClick={onCloseMenu}>
+              <a className="nav__list-link" href="#" onClick={onCloseMenu}>
                 {translations[language].menu.photo}
-              </NavLink>
+              </a>
             </li>
             <li className="nav__list-item">
-              <NavLink className="nav__list-link" to="" onClick={onCloseMenu}>
+              <a className="nav__list-link" href="#" onClick={onCloseMenu}>
                 {translations[language].menu.world_of_dance}
-              </NavLink>
+              </a>
             </li>
             <li className="nav__list-item">
-              <NavLink className="nav__list-link" to="" onClick={onCloseMenu}>
+              <a className="nav__list-link" href="#" onClick={onCloseMenu}>
                 {translations[language].menu.contacts}
-              </NavLink>
+              </a>
             </li>
           </ul>
         </nav>

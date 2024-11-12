@@ -6,7 +6,7 @@ import translations from "../data/translations.json";
 
 const AboutUs = ({ language, closeForm, openForm }) => {
   return (
-    <section className="container about">
+    <section className="container about" id="about_us">
       <h2 className="about__title">{translations[language].about.title}</h2>
       <div className="about__image-wrapper">
         <img src={aboutUs} alt="owners" className="about__image"></img>
@@ -29,7 +29,7 @@ const AboutUs = ({ language, closeForm, openForm }) => {
       <p className="about__text-main">
         {translations[language].about.text_main}
       </p>
-         <button className="about__button" type="button" onClick={openForm}>
+      <button className="about__button" type="button" onClick={openForm}>
         {translations[language].button.contact}
       </button>
       <Form
@@ -37,7 +37,7 @@ const AboutUs = ({ language, closeForm, openForm }) => {
         title={"Хочу дізнатись більше про колектив"}
         onCloseForm={closeForm}
       />
-     </section>
+    </section>
   );
 };
 

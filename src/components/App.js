@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Router,Routes, Route, useLocation } from "react-router-dom";
 import { lazy, Suspense } from "react";
+import ScrollToTop from "./ScrollToTop";
 import Header from "./Header";
 import Footer from "./Footer";
 import PageLoader from "./PageLoader";
@@ -13,7 +14,7 @@ const App = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const [formIsOpen, setFormIsOpen] = useState(false);
   const [language, setLanguage] = useState("ua");
-    const form = document.getElementById("form");
+  const form = document.getElementById("form");
 
   const toggleMenu = () => {
     setMenuIsOpen((prevState) => !prevState);
@@ -24,16 +25,16 @@ const App = () => {
   };
   const closeForm = () => {
     const form = document.getElementById("form");
-     setFormIsOpen(false);
-    form.classList.add("hidden")
+    setFormIsOpen(false);
+    form.classList.add("hidden");
   };
-  
+
   const openForm = () => {
     const form = document.getElementById("form");
-      setFormIsOpen(true);
-    form.classList.remove("hidden")
-};
-  
+    setFormIsOpen(true);
+    form.classList.remove("hidden");
+  };
+
   return (
     <>
       <Header onShowMenu={toggleMenu} />
@@ -45,6 +46,7 @@ const App = () => {
         />
       )}
       <main>
+        <ScrollToTop />
         {/* <Suspense fallback={<PageLoader />}> */}
         <Routes>
           <Route

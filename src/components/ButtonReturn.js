@@ -1,16 +1,17 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import translations from "../data/translations.json";
 import sprite from "../images/sprite/sprite.svg";
 
-const ButtonReturn = ({ language }) => {
+const ButtonReturn = ({ language, path }) => {
+  console.log(path);
   return (
-    <NavLink className="button__return" type="button" to="/">
+    <HashLink className="button__return" to={path}>
       <svg className="button__return-svg">
         <use href={`${sprite}#arrow-left`}></use>
       </svg>
       {translations[language].button.return}
-    </NavLink>
+    </HashLink>
   );
 };
 
