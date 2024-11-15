@@ -57,7 +57,7 @@ const PhotoGallery = ({ language }) => {
                 <img
                   className="photogallery__image"
                   src={photo.url}
-                  alt={`Slide ${index}`}
+                  alt={`photo ${index+1}`}
                 />
                 <img
                   src={logo}

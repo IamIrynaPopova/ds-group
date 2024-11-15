@@ -17,8 +17,6 @@ const Team = ({ language, onCloseForm, onOpenForm }) => {
   const playVideo = () => {
     const overlay = document.getElementById("overlay");
     const iframe = document.getElementById("video");
-    console.log(overlay);
-    console.log(iframe);
     overlay.classList.add("hidden");
     iframe.style.display = "block";
   };
