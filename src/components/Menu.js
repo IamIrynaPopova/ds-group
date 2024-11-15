@@ -95,7 +95,11 @@ const Menu = ({ onCloseMenu, languageChange, language }) => {
               </a>
             </li>
             <li className="nav__list-item">
-              <a className="nav__list-link" href="#" onClick={onCloseMenu}>
+              <a
+                className="nav__list-link"
+                href="#photogallery"
+                onClick={onCloseMenu}
+              >
                 {translations[language].menu.photo}
               </a>
             </li>

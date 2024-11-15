@@ -89,6 +89,14 @@
     "time_table": {
       "title": "time table",
       "teams": "teams"
+    },
+    "gallery": {
+      "title": "gallery",
+      "appearance": "appearances",
+      "rest": "rest",
+      "studio": "studio",
+      "subtitle": "Hello! We are DS group!",
+      "text": "A dance space, a place where your creative ambitions help bring dreams to life!"
     }
   },
   "ua": {
@@ -181,6 +189,14 @@
     "time_table": {
       "title": "розклад занять",
       "teams": "команди"
+    },
+    "gallery": {
+      "title": "галерея",
+      "appearance": "виступи",
+      "rest": "відпочинок",
+      "studio": "студія",
+      "subtitle": "Привіт! Ми - DS group!",
+      "text": "Танцювальний простір, місце, де твої творчі амбіції допоможуть втілити в реальність!"
     }
   }
 }
