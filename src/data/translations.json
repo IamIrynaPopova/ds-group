@@ -97,6 +97,13 @@
       "studio": "studio",
       "subtitle": "Hello! We are DS group!",
       "text": "A dance space, a place where your creative ambitions help bring dreams to life!"
+    },
+    "world_dancing": {
+      "title": "World of Dance",
+      "text": "Throughout the existence of our group, we have achieved great heights in the dance industry, not only in our country but also abroad. At the World of Dance Championship in Paris, we took all three top prizes. We also won two special awards: 'Best Theme' and 'Best Costume.' This phenomenon has never occurred in the history of the championship."
+    },
+    "feedback": {
+      "title": "Feedback"
     }
   },
   "ua": {
@@ -197,6 +204,13 @@
       "studio": "студія",
       "subtitle": "Привіт! Ми - DS group!",
       "text": "Танцювальний простір, місце, де твої творчі амбіції допоможуть втілити в реальність!"
+    },
+    "world_dancing": {
+      "title": "world of dance",
+      "text": "За весь час існування колективу, ми змогли досягти висот у танцювальній індустрії не тільки нашої країни, а й за кордоном. На всесвітньому чемпіонаті World of Dance у Парижі, ми посіли усі три призові місця. Забрали 2 спеціальні нагороди «Найкраща тема» та «Найкращий костюм». Такий феномен вперше трапився за всю історію існування чемпіонату."
+    },
+    "feedback": {
+      "title": "Відгуки"
     }
   }
 }

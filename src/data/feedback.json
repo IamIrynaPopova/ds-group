@@ -1,44 +1,62 @@
 [
   {
-    "photo": "../images/chic-crew/img-сhic-crew_2.jpg",
-    "name": "Іван Іванович",
-    "text": "1 відгук",
-    "date": "12 вересня 2024"
+    "photo": "./images/feedback1.png",
+    "name": {
+      "en": "Svetlana Shevchenko",
+      "ua": "Светлана Шевченко"
+    },
+    "text": {
+      "en": "Thank you! Anna Skopnenko Aleksandra Vahliovskya for your knowledge, skills, ideas, creativity, professionalism, and straightforwardness! For your care, support, and love for every member of your large friendly DS group family. You are amazing... onwards and upwards...",
+      "ua": "Дякуємо! Анна Скопненко Aleksandra Vahliovskya за Ваші знання, вміння, ідеї, навички, креатив, професіоналізм та прямолінійність! За Вашу турботу, підтримку, любов до кожного члена вашої великої дружньої родини DS group. Ви мега круті ... далі тільки більше..."
+    },
+    "date": {
+      "en": "June 5, 2020",
+      "ua": "05.06.2020"
+    }
   },
   {
-    "photo": "../images/chic-crew/img-сhic-crew_2.jpg",
-    "name": "Іван Іванович",
-    "text": "2 відгук",
-    "date": "12 вересня 2024"
+    "photo": "./images/feedback2.png",
+    "name": {
+      "en": "Elena Galdun",
+      "ua": "Елена Галдун"
+    },
+    "text": {
+      "en": "From my side, I can add that this is a super team. Dominika joined this group when she was not yet four years old, and we have never regretted choosing it. Then Damir joined – a boy who, although he only dances by protocol, does not plan to stop. The children always rush to training. Join the best DS group family.",
+      "ua": "Від себе можу додати що це супер команда. Домініка прийшла в цей колектив коли їй ще не було чотирьох років, жодного разу не пожалкували що потрапили саме сюди. А вже потім приєднався Дамір - хлопчик якй хоч і танцює тільки за протоколом кидати не планує. Діти на тренування завжди летять. Приєднуйтесь до найкращої родини DS group"
+    },
+    "date": {
+      "en": "November 10, 2022",
+      "ua": "10.11.2022"
+    }
   },
   {
-    "photo": "../images/chic-crew/img-сhic-crew_2.jpg",
-    "name": "Іван Іванович",
-    "text": "3 відгук",
-    "date": "12 вересня 2024"
+    "photo": "./images/feedback3.png",
+    "name": {
+      "en": "Roza Luniaka",
+      "ua": "Роза Луняка"
+    },
+    "text": {
+      "en": "Dear parents, if your child cannot sit still and loves to dance, our DS group invites you to join the coolest team. Believe me, my child is in love with this group and their choreographers for 11 years now! And the festivals all over Ukraine and abroad are priceless. There is so much to say, but better visit the page and see for yourself.",
+      "ua": "Увага шановні батьки, якщо ваша дитина не сидить на місці і обожнює танцювати, то наш колектив DS group запрошує прийти до нас в самий класнючий колектив, повірте мені моя дитина закохана в цей колектив і в своїх хореографів, на протязі 11 років!!! А чого варті фестивалі по всій Україні і за її межами. Можна довго писати, зайдіть краще на сторінку і самі в цьому переконайтеся"
+    },
+    "date": {
+      "en": "March 25, 2023",
+      "ua": "25.03.2023"
+    }
   },
   {
-    "photo": "../images/chic-crew/img-сhic-crew_2.jpg",
-    "name": "Іван Іванович",
-    "text": "4 відгук",
-    "date": "12 вересня 2024"
-  },
-  {
-    "photo": "../images/chic-crew/img-сhic-crew_2.jpg",
-    "name": "Іван Іванович",
-    "text": "5 відгук",
-    "date": "12 вересня 2024"
-  },
-  {
-    "photo": "../images/chic-crew/img-сhic-crew_2.jpg",
-    "name": "Іван Іванович",
-    "text": "6 відгук",
-    "date": "12 вересня 2024"
-  },
-  {
-    "photo": "../images/chic-crew/img-сhic-crew_2.jpg",
-    "name": "Іван Іванович",
-    "text": "7 відгук",
-    "date": "12 вересня 2024"
+    "photo": "./images/feedback4.png",
+    "name": {
+      "en": "Kateryna Bila",
+      "ua": "Катерина Біла"
+    },
+    "text": {
+      "en": "I can add that this is a great team. Domynika joined this group when she was still under four years old, and we have never regretted coming here. Later, Damir joined - a boy who, although he dances only according to the protocol, has no plans to quit. The children always rush to the training. Join the best family, DS group.",
+      "ua": "Від себе можу додати що це супер команда. Домініка прийшла в цей колектив коли їй ще не було чотирьох років, жодного разу не пожалкували що потрапили саме сюди. А вже потім приєднався Дамір - хлопчик якй хоч і танцює тільки за протоколом  кидати не планує. Діти на тренування завжди летять Приєднуйтесь до найкращої родини DS group"
+    },
+    "date": {
+      "en": "June 5, 2020",
+      "ua": "05.06.2020"
+    }
   }
 ]

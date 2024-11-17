@@ -25,7 +25,7 @@ const Main = ({ selectLanguage, onCloseForm, onOpenForm }) => {
       <Timetable language={selectLanguage} />
       <PhotoGallery language={selectLanguage} />
       <WorldDancing language={selectLanguage} />
-      {/* <Feedback language={selectLanguage} /> */}
+      <Feedback language={selectLanguage} />
       <Contacts language={selectLanguage} />
     </>
   );

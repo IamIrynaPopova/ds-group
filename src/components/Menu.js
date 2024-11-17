@@ -12,7 +12,7 @@ const Menu = ({ onCloseMenu, languageChange, language }) => {
         <button type="button" className="menu__button" onClick={onCloseMenu}>
           <svg className="menu__svg">
             <use href={`${sprite}#close`}></use>
-          </svg>
+          </svg> 
         </button>
       </div>
       <div className="nav-container">

@@ -7,47 +7,50 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
 
-const isProduction = process.env.NODE_ENV === "production";
 
 const Feedback = ({ language }) => {
-  const getPhotoPath = (photo) => {
-    return isProduction ? `assets/${photo.split("/").pop()}` : photo;
-  };
+
 
   return (
     <section className="feedback container">
-      <h2 className="feedback__title">Відгуки</h2>
-      <Swiper
-        modules={[Autoplay, Navigation]}
-        slidesPerView={5}
-        loop={true}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        }}
-      >
-        {data.map((feedback, index) => (
-          <SwiperSlide className="swiper-slide" key={index}>
-            <article className="feedback__card">
-              <img
-                className="feedback__img"
-                src={getPhotoPath(feedback.photo)}
-                alt={`${feedback.name} photo`}
-              ></img>
-              <div className="feedback__wrapper">
-                <div className="feedback__wrapper-text">
-                  <h3 className="feedback__name">{feedback.name}</h3>
-                  <p className="feedback__text">{feedback.text} </p>
+      <h2 className="feedback__title">
+        {translations[language].feedback.title}
+      </h2>
+      <div className="feedback__swiper">
+        <Swiper
+          modules={[Autoplay, Navigation]}
+          slidesPerView={1}
+          loop={true}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+        >
+          {data.map((feedback, index) => (
+            <SwiperSlide className="feedback__slide" key={index}>
+              <article className="feedback__card">
+                <img
+                  className="feedback__img"
+                  src={feedback.photo}
+                  alt={`${feedback.name[language]} photo`}
+                ></img>
+                <div className="feedback__wrapper">
+                  <div className="feedback__wrapper-text">
+                    <h3 className="feedback__name">
+                      {feedback.name[language]}
+                    </h3>
+                    <p className="feedback__text">{feedback.text[language]} </p>
+                  </div>
+                  <div className="feedback__wrapper-date">
+                    <p className="feedback__date">{feedback.date[language]}</p>
+                  </div>
                 </div>
-                <div className="feedback__wrapper-date">
-                  <p className="feedback__date">{feedback.date}</p>
-                </div>
-              </div>
-            </article>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+              </article>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </section>
   );
 };
