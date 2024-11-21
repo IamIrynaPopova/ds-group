@@ -104,6 +104,16 @@
     },
     "feedback": {
       "title": "Feedback"
+    },
+    "сontacts": {
+      "title": "сontacts",
+      "subtitle_address": "address",
+      "address1": "Ukraine, Kyiv,",
+      "address2": "71/2 Beresteysky prospect",
+      "subtitle_email": "e-mail",
+      "email": "dsgroupkyiv@gmail.com",
+      "subtitle_tel": "phone",
+      "tel": "+38 (099) 522-56-58"
     }
   },
   "ua": {
@@ -211,6 +221,16 @@
     },
     "feedback": {
       "title": "Відгуки"
+    },
+    "сontacts": {
+      "title": "контакти",
+      "subtitle_address": "адреса",
+      "address1": "Україна, Київ,",
+      "address2": "Берестейський проспект 71/2",
+      "subtitle_email": "електронна пошта",
+      "email": "dsgroupkyiv@gmail.com",
+      "subtitle_tel": "телефон",
+      "tel": "+38 (099) 522-56-58"
     }
   }
 }

@@ -7,10 +7,7 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
 
-
 const Feedback = ({ language }) => {
-
-
   return (
     <section className="feedback container">
       <h2 className="feedback__title">
@@ -22,13 +19,18 @@ const Feedback = ({ language }) => {
           slidesPerView={1}
           loop={true}
           autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
+            delay: 4000,
+            // disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
         >
           {data.map((feedback, index) => (
-            <SwiperSlide className="feedback__slide" key={index}>
+            <SwiperSlide
+              className={`feedback__slide ${
+                index % 2 === 1 ? "feedback__slide--even" : ""
+              }`}
+              key={index}
+            >
               <article className="feedback__card">
                 <img
                   className="feedback__img"
