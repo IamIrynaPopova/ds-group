@@ -6,7 +6,18 @@ import translations from "../data/translations.json";
 import sprite from "../images/sprite/sprite.svg";
 import emailjs from "@emailjs/browser";
 
-const Form = ({ language, title, onCloseForm }) => {
+const Form = ({
+  language,
+  title,
+  onCloseForm,
+  formStyle,
+  buttonStyle,
+  titleStyle,
+  formTitle,
+  inputStyle,
+  textareaStyle,
+  submitStyle,
+}) => {
   const form = useRef();
   const [isLoading, setIsLoading] = useState(false);
   const [notification, setNotification] = useState(null);
@@ -34,6 +45,7 @@ const Form = ({ language, title, onCloseForm }) => {
       if (error.status === 400) {
         setNotification(translations[language].form.notification_error1);
       } else {
+        console.log(error);
         setNotification(translations[language].form.notification_error2);
       }
       setIsError(true);
@@ -50,14 +62,15 @@ const Form = ({ language, title, onCloseForm }) => {
   } = useForm();
 
   return (
-    <section>
+    <>
       <form
         id="form"
         ref={form}
         className="form hidden"
         onSubmit={handleSubmit(sendEmail)}
+        style={formStyle}
       >
-        <div className="form__button-wrapper">
+        <div className="form__button-wrapper" style={buttonStyle}>
           <button
             type="button"
             className="form__button-close"
@@ -69,7 +82,9 @@ const Form = ({ language, title, onCloseForm }) => {
           </button>
         </div>
         <input type="hidden" name="title" value={title} />
-        <p className="form__title">{translations[language].form.title}</p>
+        <p className="form__title" style={titleStyle} value={formTitle}>
+          {translations[language].form.title}
+        </p>
         <ul className="form__list">
           <li className="form__item">
             <input
@@ -85,6 +100,7 @@ const Form = ({ language, title, onCloseForm }) => {
               name="name"
               id="name"
               placeholder={translations[language].form.placeholder_name}
+              style={inputStyle}
             />
             <p className="form__message">{errors.name?.message}</p>
           </li>
@@ -102,6 +118,7 @@ const Form = ({ language, title, onCloseForm }) => {
               id="tel"
               name="tel"
               placeholder={translations[language].form.placeholder_tel}
+              style={inputStyle}
             />
             <p className="form__message">{errors.tel?.message}</p>
           </li>
@@ -112,11 +129,16 @@ const Form = ({ language, title, onCloseForm }) => {
               name="message"
               id="message"
               placeholder={translations[language].form.placeholder_message}
+              style={textareaStyle}
             ></textarea>
           </li>
         </ul>
         <div className="form__button-submit-wrapper">
-          <button type="submit" className="form__button-submit">
+          <button
+            type="submit"
+            className="form__button-submit"
+            style={submitStyle}
+          >
             {translations[language].form.button}
           </button>
         </div>
@@ -125,7 +147,7 @@ const Form = ({ language, title, onCloseForm }) => {
       {notification && (
         <Notification message={notification} isError={isError} />
       )}
-    </section>
+    </>
   );
 };
 

@@ -1,21 +1,23 @@
-.сontacts {
+.contacts {
   padding-top: 100px;
+  padding-bottom: 100px;
 }
-.сontacts__title {
+.contacts__title {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 24px;
   line-height: 150%;
-  margin-bottom: 44px;
+  margin-bottom: 46px;
 }
-.сontacts__list {
+.contacts__list {
   display: flex;
   flex-direction: column;
+  margin-bottom: 100px;
 }
-.сontacts__item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-bottom: 30px;
 }
-.сontacts__subtitle {
+.contacts__subtitle {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
@@ -23,8 +25,16 @@
   text-align: center;
   margin-bottom: 14px;
 }
-.сontacts__text {
+.contacts__text {
   font-size: 14px;
   line-height: 143%;
+  text-align: center;
+}
+.contacts__title-form {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 44px;
   text-align: center;
 }
