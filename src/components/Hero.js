@@ -8,24 +8,16 @@ import logo from "../images/logo.png";
 const Hero = ({language}) => {
 
   return (
-    <section className="container hero">
-      <h1 className="hero__title">
-        {translations[language].hero.title}
-      </h1>
-      <p className="hero__subtitle">
-        {translations[language].hero.subtitle}
-      </p>
+    <section className="hero container">
+      <h1 className="hero__title">{translations[language].hero.title}</h1>
+      <p className="hero__subtitle">{translations[language].hero.subtitle}</p>
       <div className="hero__background">
         <img className="hero__background-image" src={danser1} alt="danser" />
-        <img
-          className="hero__background-image"
-          src={danser2}
-          alt="danser"
-        />
+        <img className="hero__background-image" src={danser2} alt="danser" />
         <img className="hero__background-image" src={danser3} alt="danser" />
       </div>
       <img className="hero__background-logo" src={logo} alt="logo" />
-        </section>
+    </section>
   );
 };
 

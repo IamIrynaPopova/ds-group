@@ -33,7 +33,6 @@ const Contacts = ({ language }) => {
     maxWidth: "343px",
     background: "transparent",
     borderRadius: "initial",
-    border: "1px solid #fff",
     marginBottom: "46px",
     color: "var(--text-default)",
   };
@@ -41,7 +40,7 @@ const Contacts = ({ language }) => {
     width: "343px",
   };
   return (
-    <section className="container contacts">
+    <section className="contacts container">
       <h2 className="contacts__title">
         {translations[language].contacts.title}
       </h2>

@@ -6,7 +6,7 @@ import translations from "../data/translations.json";
 
 const AboutUs = ({ language, closeForm, openForm }) => {
   return (
-    <section className="container about" id="about_us">
+    <section className="about container" id="about_us">
       <h2 className="about__title">{translations[language].about.title}</h2>
       <div className="about__image-wrapper">
         <img src={aboutUs} alt="owners" className="about__image"></img>

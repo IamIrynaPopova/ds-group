@@ -67,8 +67,13 @@
 .form__input:hover,
 .form__input:focus {
   border: 0;
-  border-bottom: 1px solid var(--color-blue);
+  border-bottom: 1px solid var(--button-hover);
 }
+.form__input:hover::placeholder,
+.form__input:focus::placeholder {
+  color: var(--text-hover);
+}
+
 .form__input-error {
   border: 0;
   border-bottom: 1px solid #900b09;
@@ -82,12 +87,17 @@
 
 .form__input:focus-visible,
 .form__textarea:focus-visible {
-  outline-color: var(--color-blue);
+  outline-color: var(--button-hover);
 }
 
+
+.form__textarea:hover::placeholder,
+.form__textarea:focus::placeholder {
+  color: var(--text-hover);
+}
 .form__textarea:hover,
 .form__textarea:focus {
-  border: 1px solid var(--color-blue);
+  border: 1px solid var(--button-hover);
 }
 
 .form__message {

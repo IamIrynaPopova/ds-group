@@ -11,7 +11,7 @@ const Timetable = ({ language }) => {
   };
 
   return (
-    <section className="container time" id="time_table">
+    <section className="time container" id="time_table">
       <h2 className="teams__title">
         {translations[language].time_table.title}
       </h2>

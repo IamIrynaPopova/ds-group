@@ -1,61 +1,28 @@
-import React,{Link} from "react";
+import React, { Link } from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../images/logo.png";
 import sprite from "../images/sprite/sprite.svg";
 import translations from "../data/translations.json";
 import LanguageSwitcher from "../components/LanguageSwitcher";
+import SocialLinks from "../components/SocialLinks";
 
 const Menu = ({ onCloseMenu, languageChange, language }) => {
   return (
-    <div id="menu" className="container menu">
+    <div id="menu" className="menu container">
       <div className="menu__header">
-        <img src={logo} alt="logo" className="menu__logo" />
+        <NavLink to="/">
+          <img src={logo} alt="logo" className="menu__logo" />
+        </NavLink>
         <button type="button" className="menu__button" onClick={onCloseMenu}>
           <svg className="menu__svg">
             <use href={`${sprite}#close`}></use>
-          </svg> 
+          </svg>
         </button>
       </div>
       <div className="nav-container">
-        <nav className="social">
-          <ul className="social__list">
-            <li className="social__item">
-              <a
-                className="social__link"
-                href="https://www.instagram.com/dsgroup.kyiv?igsh=MXAwZ2liZXMwOXZpOA=="
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg className="social__svg">
-                  <use href={`${sprite}#instagram`}></use>
-                </svg>
-              </a>
-            </li>
-            <li className="social__item">
-              <a
-                className="social__link"
-                href="https://www.facebook.com/profile.php?id=100061422600837"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg className="social__svg">
-                  <use href={`${sprite}#facebook`}></use>
-                </svg>
-              </a>
-            </li>
-            <li className="social__item">
-              <a
-                className="social__link"
-                href="https://www.tiktok.com/@dsgroup.kyiv?_t=8orQq0D0dq1&_r=1"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg className="social__svg">
-                  <use href={`${sprite}#tiktok`}></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div className="social-wrapper">
+          <SocialLinks />
+        </div>
         <LanguageSwitcher
           onLanguageChange={languageChange}
           language={language}

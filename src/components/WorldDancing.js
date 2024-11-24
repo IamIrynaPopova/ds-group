@@ -5,11 +5,11 @@ import worldOfDance from "../images/world_of_dance.jpg";
 
 const WorldDancing = ({ language }) => {
   return (
-    <section className="container worlddancing" id="world_of_dance">
+    <section className="worlddancing container" id="world_of_dance">
       <h2 className="worlddancing__title">
         {translations[language].world_dancing.title}
       </h2>
-      <div className="worlddancing__button"> 
+      <div className="worlddancing__button">
         <ButtonMore path="/" language={language} />
       </div>
       <div className="worlddancing__image-wrapper">

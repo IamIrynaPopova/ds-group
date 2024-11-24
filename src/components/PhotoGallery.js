@@ -16,7 +16,7 @@ const PhotoGallery = ({ language }) => {
     setActiveButton(category);
   };
   return (
-    <section className="container photogallery" id="photogallery">
+    <section className="photogallery container" id="photogallery">
       <h2 className="photogallery__title">
         {translations[language].gallery.title}
       </h2>
@@ -57,7 +57,7 @@ const PhotoGallery = ({ language }) => {
                 <img
                   className="photogallery__image"
                   src={photo.url}
-                  alt={`photo ${index+1}`}
+                  alt={`photo ${index + 1}`}
                 />
                 <img
                   src={logo}
