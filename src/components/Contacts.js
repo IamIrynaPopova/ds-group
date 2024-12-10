@@ -44,35 +44,37 @@ const Contacts = ({ language }) => {
       <h2 className="contacts__title">
         {translations[language].contacts.title}
       </h2>
-      <ul className="contacts__list">
-        <li className="contacts__item">
-          <h3 className="contacts__subtitle">
-            {translations[language].contacts.subtitle_address}
-          </h3>
-          <p className="contacts__text">
-            {translations[language].contacts.address1}
-          </p>
-          <p className="contacts__text">
-            {translations[language].contacts.address2}
-          </p>
-        </li>
-        <li className="contacts__item">
-          <h3 className="contacts__subtitle">
-            {translations[language].contacts.subtitle_email}
-          </h3>
-          <p className="contacts__text">
-            {translations[language].contacts.email}
-          </p>
-        </li>
-        <li className="contacts__item">
-          <h3 className="contacts__subtitle">
-            {translations[language].contacts.subtitle_tel}
-          </h3>
-          <p className="contacts__text">
-            {translations[language].contacts.tel}
-          </p>
-        </li>
-      </ul>
+      <address className="contacts__address">
+        <ul className="contacts__list">
+          <li className="contacts__item">
+            <h3 className="contacts__subtitle">
+              {translations[language].contacts.subtitle_address}
+            </h3>
+            <p className="contacts__text">
+              {translations[language].contacts.address1}
+            </p>
+            <p className="contacts__text">
+              {translations[language].contacts.address2}
+            </p>
+          </li>
+          <li className="contacts__item">
+            <h3 className="contacts__subtitle">
+              {translations[language].contacts.subtitle_email}
+            </h3>
+            <p className="contacts__text">
+              {translations[language].contacts.email}
+            </p>
+          </li>
+          <li className="contacts__item">
+            <h3 className="contacts__subtitle">
+              {translations[language].contacts.subtitle_tel}
+            </h3>
+            <p className="contacts__text">
+              {translations[language].contacts.tel}
+            </p>
+          </li>
+        </ul>
+      </address>
       <h2 className="contacts__title-form">
         {translations[language].contacts.title_form}
       </h2>

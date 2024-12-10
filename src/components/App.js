@@ -34,7 +34,7 @@ const App = () => {
     setFormIsOpen(true);
     form.classList.remove("hidden");
   };
-
+ 
   return (
     <>
       <Header onShowMenu={toggleMenu} />
@@ -76,7 +76,7 @@ const App = () => {
         </Routes>
         {/* </Suspense> */}
       </main>
-      <Footer />
+      <Footer language={language} />
     </>
   );
 };

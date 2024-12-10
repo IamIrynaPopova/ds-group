@@ -29,7 +29,10 @@
   padding: 0px 8px;
   margin-bottom: 58px;
 }
-
+.footer__address {
+  font-style: normal;
+  margin-bottom: 78px;
+}
 .footer__list {
   margin: 0 auto;
   max-width: 250px;
@@ -49,4 +52,11 @@
 
 .footer__text {
   margin-bottom: 10px;
+}
+.footer__map {
+  height: 120px;
+  margin-bottom: 78px;
+}
+.leaflet-marker-icon {
+
 }

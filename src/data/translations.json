@@ -115,6 +115,9 @@
       "email": "dsgroupkyiv@gmail.com",
       "subtitle_tel": "phone",
       "tel": "+38 (099) 522-56-58"
+    },
+    "footer": {
+      "address": "Ukraine, Kyiv, Beresteyskiy avenue 71/2"
     }
   },
   "ua": {
@@ -234,6 +237,9 @@
       "subtitle_tel": "телефон",
       "tel": "+38 (099) 522-56-58",
       "title_form": "ми завжди відкриті для спілкування"
+    },
+    "footer": {
+      "address": "Київ, Берестейський проспект 71/2"
     }
   }
 }
