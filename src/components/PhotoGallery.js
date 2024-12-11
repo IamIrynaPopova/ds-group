@@ -3,6 +3,7 @@ import translations from "../data/translations.json";
 import gallery from "../data/gallery.json";
 import logo from "../images/logo.png";
 
+
 const PhotoGallery = ({ language }) => {
   const [selectedCategory, setSelectedCategory] = useState("appearance");
   const [activeButton, setActiveButton] = useState("appearance");
