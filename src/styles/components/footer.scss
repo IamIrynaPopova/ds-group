@@ -54,9 +54,23 @@
   margin-bottom: 10px;
 }
 .footer__map {
-  height: 120px;
+  height: 180px;
   margin-bottom: 78px;
 }
-.leaflet-marker-icon {
-
+.footer__copyright {
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 154%;
+  background: linear-gradient(180deg, #1877f2 0%, #c70c4d 100%);
+}
+.footer__copyright-developers {
+ margin-top: 5px;
+}
+.footer__copyright-link {
+  color: inherit;
+  padding: 0 5px;
+  cursor: pointer;
 }

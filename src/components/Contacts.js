@@ -28,6 +28,7 @@ const Contacts = ({ language }) => {
     background: "transparent",
     marginBottom: "46px",
     color: "var(--text-default)",
+    borderRadius: "0",
   };
   const textareaStyle = {
     maxWidth: "343px",
@@ -40,7 +41,7 @@ const Contacts = ({ language }) => {
     width: "343px",
   };
   return (
-    <section className="contacts container">
+    <section className="contacts container" id="contacts">
       <h2 className="contacts__title">
         {translations[language].contacts.title}
       </h2>
