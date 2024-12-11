@@ -57,7 +57,7 @@ const PhotoGallery = ({ language }) => {
               <div className="photogallery__image-wrapper">
                 <img
                   className="photogallery__image"
-                  src={photo.url}
+                  src={`ds-group/${photo.url}`}
                   alt={`photo ${index + 1}`}
                 />
                 <img
