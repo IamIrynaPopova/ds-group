@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import translations from "../data/translations.json";
 import gallery from "../data/gallery.json";
 import logo from "../images/logo.png";
-
 
 const PhotoGallery = ({ language }) => {
   const [selectedCategory, setSelectedCategory] = useState("appearance");
@@ -16,6 +15,10 @@ const PhotoGallery = ({ language }) => {
     setSelectedCategory(category);
     setActiveButton(category);
   };
+  useEffect(() => {
+    setSelectedCategory("appearance");
+    setActiveButton("appearance");
+  }, []);
 
   return (
     <section className="photogallery container" id="photogallery">

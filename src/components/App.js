@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Router,Routes, Route, useLocation } from "react-router-dom";
+import React, { useState } from "react";
+import { Routes, Route} from "react-router-dom";
 import { lazy, Suspense } from "react";
 import ScrollToTop from "./ScrollToTop";
 import Header from "./Header";

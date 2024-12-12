@@ -20,7 +20,6 @@ const Team = ({ language, onCloseForm, onOpenForm }) => {
     overlay.classList.add("hidden");
     iframe.style.display = "block";
   };
-  
 
   return (
     <section className="team container">
