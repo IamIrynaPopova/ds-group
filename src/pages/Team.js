@@ -1,11 +1,11 @@
-import React, { lazy, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import teams from "../data/teams.json";
 import translations from "../data/translations.json";
 import sprite from "../images/sprite/sprite.svg";
 import ButtonReturn from "../components/ButtonReturn";
 import Form from "../components/Form";
-// const TeamGallery = lazy(() => import("../components/TeamGallery"));
+
 import TeamGallery from "../components/TeamGallery";
 
 const Team = ({ language, onCloseForm, onOpenForm }) => {
@@ -20,6 +20,7 @@ const Team = ({ language, onCloseForm, onOpenForm }) => {
     overlay.classList.add("hidden");
     iframe.style.display = "block";
   };
+  
 
   return (
     <section className="team container">

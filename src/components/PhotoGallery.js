@@ -16,6 +16,7 @@ const PhotoGallery = ({ language }) => {
     setSelectedCategory(category);
     setActiveButton(category);
   };
+
   return (
     <section className="photogallery container" id="photogallery">
       <h2 className="photogallery__title">
@@ -57,7 +58,7 @@ const PhotoGallery = ({ language }) => {
               <div className="photogallery__image-wrapper">
                 <img
                   className="photogallery__image"
-                  src={`ds-group/${photo.url}`}
+                  src={photo.url}
                   alt={`photo ${index + 1}`}
                 />
                 <img
