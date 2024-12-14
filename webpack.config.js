@@ -19,7 +19,7 @@ module.exports = (env) => {
       filename: "[name][contenthash].js",
       clean: true,
       assetModuleFilename: "images/[name][ext]",
-      // publicPath: "/ds-group/",
+      publicPath: "/",
     },
     devtool: "source-map",
     devServer: {
@@ -96,6 +96,12 @@ module.exports = (env) => {
         template: "src/index.html",
         filename: "index.html",
         inject: true,
+      }),
+      new HtmlWebpackPlugin({
+        title: "Page Not Found",
+        template: "src/404.html",
+        filename: "404.html",
+        inject: false,
       }),
       new MiniCssExtractPlugin({
         filename: devMode ? "[name].css" : "[name].[contenthash].css",

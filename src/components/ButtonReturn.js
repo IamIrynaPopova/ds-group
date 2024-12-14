@@ -2,7 +2,6 @@ import React from "react";
 import { HashLink } from "react-router-hash-link";
 import translations from "../data/translations.json";
 import sprite from "../images/sprite/sprite.svg";
-import { NavLink } from "react-router-dom";
 
 const ButtonReturn = ({ language, path }) => {
   console.log(path);
