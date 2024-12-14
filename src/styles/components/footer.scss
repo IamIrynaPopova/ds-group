@@ -67,10 +67,17 @@
   background: linear-gradient(180deg, #1877f2 0%, #c70c4d 100%);
 }
 .footer__copyright-developers {
- margin-top: 5px;
+  margin-top: 5px;
 }
 .footer__copyright-link {
   color: inherit;
   padding: 0 5px;
   cursor: pointer;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 5px;
+}
+.leaflet-popup-content {
+  margin: 10px 24px 10px 10px;
 }

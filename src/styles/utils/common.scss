@@ -3,13 +3,13 @@ body {
   color: var(--text-default);
   background-color: var(--background-default);
   font-weight: 400;
-  background-image: url(../images/wave.png);
+  background-image: url(../images/wave.png), url(../images/wave.png),
+    url(../images/wave.png), url(../images/wave.png), url(../images/wave.png), url(../images/wave.png);
   background-repeat: no-repeat;
-    background-position: -485px 446px;
-
+  background-position: -485px 446px, -480px 2300px, -500px 4845px, -390px 6625px, -360px 9300px, -490px 11460px;
 }
 @media screen and (min-width: 768px) {
- body {
-  // background-position: -485px 446px;
+  body {
+    // background-position: -485px 446px;
   }
 }

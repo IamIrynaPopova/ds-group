@@ -1,6 +1,5 @@
 import React from "react";
 import aboutUs from "../images/aboutUs.jpg";
-import wave from "../images/wave.png";
 import Form from "../components/Form"
 import translations from "../data/translations.json";
 
