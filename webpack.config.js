@@ -19,7 +19,7 @@ module.exports = (env) => {
       filename: "[name][contenthash].js",
       clean: true,
       assetModuleFilename: "images/[name][ext]",
-      publicPath: "/",
+      publicPath: "/ds-group/",
     },
     devtool: "source-map",
     devServer: {
