@@ -5,17 +5,11 @@
   position: fixed;
   z-index: 9999;
   right: 0;
-  top: 0;
+  top: 80px;
   left: 0;
   margin: 0 auto;
   overflow: hidden;
   background-color: var(--background-default);
-}
-
-.menu__header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 64px;
 }
 
 .menu__logo {
@@ -48,8 +42,6 @@
   margin-bottom: 64px;
 }
 
-
-
 .nav {
   margin-bottom: 147px;
 }
@@ -79,4 +71,26 @@
 
 .nav__list-link:hover,
 .nav__list-link:focus {
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    padding: 0;
+    background-image: url(../images/wave-menu.png);
+    background-repeat: no-repeat;
+    background-position: 100px -20px;
+  }
+  .social-wrapper {
+    margin: 0;
+  }
+  .nav {
+    margin: 0;
+    margin-top: 150px;
+  }
+  .nav__list-item {
+    padding: 20px 0;
+  }
+  .nav__list-item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }

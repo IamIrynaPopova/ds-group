@@ -3,7 +3,7 @@
   position: relative;
   transform: translateY(-40px);
   animation: backgroundInUp 1s forwards 0.3s;
-    margin-top: 100px; 
+  margin-top: 100px;
 }
 
 .hero__title {
@@ -22,6 +22,7 @@
   line-height: 150%;
   text-align: center;
 }
+
 .hero__title,
 .hero__subtitle {
   opacity: 0;
@@ -45,6 +46,7 @@
   transform: translateY(40px);
   animation: imageInUp 1s forwards 0.3s;
 }
+
 .hero__background-image:nth-child(3) {
   margin-left: -33px;
 }
@@ -66,9 +68,11 @@
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.5;
   }
+
   100% {
     opacity: 0;
   }
@@ -78,9 +82,11 @@
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0.5;
   }
+
   100% {
     opacity: 1;
   }
@@ -96,5 +102,78 @@
   to {
     transform: translateY(0);
     opacity: 0.5;
+  }
+}
+
+@keyframes imageOpacityTablet {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+@keyframes imageInUpTablet {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 110px 60px 110px 60px;
+  }
+
+  .hero__title {
+    font-family: var(--third-font);
+    font-size: 128px;
+    line-height: 37%;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    margin-bottom: 178px;
+  }
+
+  .hero__subtitle {
+    opacity: 1;
+    font-weight: 500;
+    font-size: 48px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  .hero__background-logo {
+    width: 450px;
+    height: 616px;
+  }
+
+  .hero__background-image:nth-child(1) {
+    width: 304px;
+    height: 495px;
+    margin-top: -180px;
+    margin-left: -40px;
+    animation: imageOpacityTablet 1s forwards 0.3s;
+  }
+
+  .hero__background-image:nth-child(even) {
+    width: 450px;
+    height: 671px;
+    margin-left: -170px;
+    margin-top: -295px;
+    transform: translateY(40px);
+    animation: imageInUpTablet 1s forwards 0.3s,
+      imageOpacityTablet 1s forwards 0.3s;
+  }
+
+  .hero__background-image:nth-child(3) {
+    width: 200px;
+    height: 300px;
+    margin-top: -10px;
+    margin-left: -80px;
+    animation: imageOpacityTablet 1s forwards 0.3s;
   }
 }

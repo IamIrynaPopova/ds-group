@@ -1,16 +1,23 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  padding: 32px 24px;
+  padding: 32px 40px;
   opacity: 0;
   animation: showHeader 1s forwards 0.3s;
   background-color: var(--background-default);
   z-index: 10;
+}
+.header .language__switcher {
+  display: none;
+}
+.header .social {
+  display: none;
 }
 
 .header::after {
@@ -22,16 +29,22 @@
   height: 1px;
   background: linear-gradient(90deg, #1877f2 0%, #c70c4d 100%);
 }
+.header__menu {
+  display: flex;
+  align-items: center;
+}
 
 .header__logo {
   width: 24px;
   height: 33px;
   cursor: pointer;
 }
+
 .header__button {
   background-color: inherit;
   cursor: pointer;
 }
+
 .header__svg {
   width: 24px;
   height: 24px;
@@ -44,10 +57,32 @@
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0.5;
   }
+
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 13px 40px;
+  }
+  .header__logo {
+    width: 40px;
+    height: 54px;
+  }
+
+  .header .language__switcher {
+    display: block;
+    margin: 0;
+    margin-right: 30px;
+  }
+  .header .social {
+    display: block;
+    margin-right: 55px;
   }
 }

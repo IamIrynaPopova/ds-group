@@ -1,6 +1,6 @@
 import React from "react";
 
-const LanguageSwitcher = ({ onLanguageChange,language}) => {
+const LanguageSwitcher = ({ onLanguageChange, language }) => {
   return (
     <div className="language__switcher">
       <button

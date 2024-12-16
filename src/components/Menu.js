@@ -9,16 +9,6 @@ import SocialLinks from "../components/SocialLinks";
 const Menu = ({ onCloseMenu, languageChange, language }) => {
   return (
     <div id="menu" className="menu container">
-      <div className="menu__header">
-        <NavLink to="/">
-          <img src={logo} alt="logo" className="menu__logo" />
-        </NavLink>
-        <button type="button" className="menu__button" onClick={onCloseMenu}>
-          <svg className="menu__svg">
-            <use href={`${sprite}#close`}></use>
-          </svg>
-        </button>
-      </div>
       <div className="nav-container">
         <div className="social-wrapper">
           <SocialLinks />
