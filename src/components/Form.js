@@ -70,77 +70,81 @@ const Form = ({
         onSubmit={handleSubmit(sendEmail)}
         style={formStyle}
       >
-        <div className="form__button-wrapper" style={buttonStyle}>
-          <button
-            type="button"
-            className="form__button-close"
-            onClick={onCloseForm}
-          >
-            <svg className="form__svg">
-              <use href={`${sprite}#close-form`}></use>
-            </svg>
-          </button>
-        </div>
-        <input type="hidden" name="title" value={title} />
-        <p className="form__title" style={titleStyle} value={formTitle}>
-          {translations[language].form.title}
-        </p>
-        <ul className="form__list">
-          <li className="form__item">
-            <input
-              {...register("name", {
-                required: true,
-                minLength: {
-                  value: 3,
-                  message: translations[language].form.error_message_name,
-                },
-              })}
-              className={errors.name ? "form__input-error" : "form__input"}
-              type="text"
-              name="name"
-              id="name"
-              placeholder={translations[language].form.placeholder_name}
-              style={inputStyle}
-            />
-            <p className="form__message">{errors.name?.message}</p>
-          </li>
-          <li className="form__item">
-            <input
-              {...register("tel", {
-                required: true,
-                pattern: {
-                  value: /^[\d()+]+$/,
-                  message: translations[language].form.error_message_tel,
-                },
-              })}
-              className="form__input"
-              type="tel"
-              id="tel"
-              name="tel"
-              placeholder={translations[language].form.placeholder_tel}
-              style={inputStyle}
-            />
-            <p className="form__message">{errors.tel?.message}</p>
-          </li>
-          <li className="form__item">
-            <textarea
-              {...register("message")}
-              className="form__textarea"
-              name="message"
-              id="message"
-              placeholder={translations[language].form.placeholder_message}
-              style={textareaStyle}
-            ></textarea>
-          </li>
-        </ul>
-        <div className="form__button-submit-wrapper">
-          <button
-            type="submit"
-            className="form__button-submit"
-            style={submitStyle}
-          >
-            {translations[language].form.button}
-          </button>
+        <div className="form__frame">
+          <div className="form__button-wrapper" style={buttonStyle}>
+            <button
+              type="button"
+              className="form__button-close"
+              onClick={onCloseForm}
+            >
+              <svg className="form__svg">
+                <use href={`${sprite}#close-form`}></use>
+              </svg>
+            </button>
+          </div>
+          <div className="form__data">
+            <input type="hidden" name="title" value={title} />
+            <p className="form__title" style={titleStyle} value={formTitle}>
+              {translations[language].form.title}
+            </p>
+            <ul className="form__list">
+              <li className="form__item">
+                <input
+                  {...register("name", {
+                    required: true,
+                    minLength: {
+                      value: 3,
+                      message: translations[language].form.error_message_name,
+                    },
+                  })}
+                  className={errors.name ? "form__input-error" : "form__input"}
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder={translations[language].form.placeholder_name}
+                  style={inputStyle}
+                />
+                <p className="form__message">{errors.name?.message}</p>
+              </li>
+              <li className="form__item">
+                <input
+                  {...register("tel", {
+                    required: true,
+                    pattern: {
+                      value: /^[\d()+]+$/,
+                      message: translations[language].form.error_message_tel,
+                    },
+                  })}
+                  className="form__input"
+                  type="tel"
+                  id="tel"
+                  name="tel"
+                  placeholder={translations[language].form.placeholder_tel}
+                  style={inputStyle}
+                />
+                <p className="form__message">{errors.tel?.message}</p>
+              </li>
+              <li className="form__item">
+                <textarea
+                  {...register("message")}
+                  className="form__textarea"
+                  name="message"
+                  id="message"
+                  placeholder={translations[language].form.placeholder_message}
+                  style={textareaStyle}
+                ></textarea>
+              </li>
+            </ul>
+          </div>
+          <div className="form__button-submit-wrapper">
+            <button
+              type="submit"
+              className="form__button-submit"
+              style={submitStyle}
+            >
+              {translations[language].form.button}
+            </button>
+          </div>
         </div>
       </form>
       {isLoading && <Loader />}

@@ -37,7 +37,12 @@ const App = () => {
  
   return (
     <>
-      <Header onShowMenu={toggleMenu} menuIsOpen={menuIsOpen} />
+      <Header
+        onShowMenu={toggleMenu}
+        menuIsOpen={menuIsOpen}
+        languageChange={handleLanguageChange}
+        language={language}
+      />
       {menuIsOpen && (
         <Menu
           onCloseMenu={toggleMenu}
@@ -76,7 +81,7 @@ const App = () => {
         </Routes>
         {/* </Suspense> */}
       </main>
-      {/* <Footer language={language} /> */}
+      <Footer language={language} />
     </>
   );
 };

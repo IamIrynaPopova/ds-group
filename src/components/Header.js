@@ -5,14 +5,17 @@ import sprite from "../images/sprite/sprite.svg";
 import LanguageSwitcher from "./LanguageSwitcher";
 import SocialLinks from "./SocialLinks";
 
-const Header = ({ onShowMenu, menuIsOpen }) => {
+const Header = ({ onShowMenu, menuIsOpen, languageChange, language }) => {
   return (
     <header className="header container">
       <NavLink to="/">
         <img src={logo} alt="logo" className="header__logo" />
       </NavLink>
       <div className="header__menu">
-        <LanguageSwitcher />
+        <LanguageSwitcher
+          onLanguageChange={languageChange}
+          language={language}
+        />
         <SocialLinks />
         <button className="header__button" onClick={onShowMenu}>
           <svg className="header__svg">

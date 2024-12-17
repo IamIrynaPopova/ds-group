@@ -64,6 +64,7 @@
 @media screen and (min-width: 768px) {
   .about {
     position: relative;
+    padding-top: 110px;
   }
   .about__title {
     margin-bottom: 60px;
@@ -108,12 +109,12 @@
     font-size: 20px;
     line-height: 125%;
     letter-spacing: 0.01em;
-    margin-bottom: 125px;
+    margin-bottom: 110px;
   }
 
   .about__button {
     position: absolute;
-    top: 0;
+    top: 110px;
     right: 40px;
     padding: 0;
     width: 210px;
