@@ -1,5 +1,5 @@
 .choreographers {
-padding-top: 100px;
+  padding-top: 100px;
 }
 
 .choreographers__title {
@@ -17,10 +17,6 @@ padding-top: 100px;
   margin-bottom: 44px;
 }
 
-.choreographers__list {
-}
-.choreographers__item {
-}
 .choreographers__item:not(:last-child) {
   margin-bottom: 44px;
 }
@@ -31,7 +27,6 @@ padding-top: 100px;
   object-fit: cover;
   border: 3px solid var(--color-blue);
   margin-bottom: 16px;
-  text-transform: uppercase;
 }
 
 .choreographers__item:first-child .choreographers__image,
@@ -48,5 +43,59 @@ padding-top: 100px;
 }
 
 @media screen and (min-width: 768px) {
+  .choreographers {
+    padding-top: 110px;
+  }
 
+  .choreographers__title {
+    margin-bottom: 60px;
+    font-size: 32px;
+    line-height: 94%;
+    letter-spacing: 0.03em;
+  }
+
+  .choreographers__text {
+    line-height: 156%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    margin-bottom: 40px;
+  }
+
+  .choreographers__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+ 
+  .choreographers__item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  .choreographers__image {
+    width: 334px;
+    height: 334px;
+    object-fit: cover;
+    border: 2px solid var(--color-blue);
+    margin-bottom: 24px;
+  }
+
+  .choreographers__item:first-child .choreographers__image,
+  .choreographers__item:last-child .choreographers__image {
+    border: 2px solid var(--color-pink);
+  }
+
+  .choreographers__name {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    margin-bottom: 24px;
+  }
+  .choreographers .button__more {
+    border-bottom: 1px solid #0595d0;
+    padding: 4px 0px;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.01em;
+  }
 }
