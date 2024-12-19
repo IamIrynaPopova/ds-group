@@ -72,14 +72,14 @@ const PhotoGallery = ({ language }) => {
               </div>
             </li>
             {index === 0 && (
-              <div className="photogallery__description">
+              <li className="photogallery__description">
                 <h3 className="photogallery__subtitle">
                   {translations[language].gallery.subtitle}
                 </h3>
                 <p className="photogallery__text">
                   {translations[language].gallery.text}
                 </p>
-              </div>
+              </li>
             )}
           </React.Fragment>
         ))}
