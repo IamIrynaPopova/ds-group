@@ -118,6 +118,14 @@
     },
     "footer": {
       "address": "Ukraine, Kyiv, Beresteyskiy avenue 71/2"
+    },
+
+    "weekdays": {
+      "MO": "Monday",
+      "TU": "Tuesday",
+      "WE": "Wednesday",
+      "TH": "Thursday",
+      "FR": "Friday"
     }
   },
   "ua": {
@@ -240,6 +248,13 @@
     },
     "footer": {
       "address": "Київ, Берестейський проспект 71/2"
+    },
+    "weekdays": {
+      "MO": "Понеділок",
+      "TU": "Вівторок",
+      "WE": "Середа",
+      "TH": "Четвер",
+      "FR": "П'ятниця"
     }
   }
 }
