@@ -6,18 +6,7 @@ import translations from "../data/translations.json";
 import sprite from "../images/sprite/sprite.svg";
 import emailjs from "@emailjs/browser";
 
-const Form = ({
-  language,
-  title,
-  onCloseForm,
-  formStyle,
-  buttonStyle,
-  titleStyle,
-  formTitle,
-  inputStyle,
-  textareaStyle,
-  submitStyle,
-}) => {
+const Form = ({ language, title, onCloseForm, formTitle }) => {
   const form = useRef();
   const [isLoading, setIsLoading] = useState(false);
   const [notification, setNotification] = useState(null);
@@ -68,10 +57,9 @@ const Form = ({
         ref={form}
         className="form hidden"
         onSubmit={handleSubmit(sendEmail)}
-        style={formStyle}
       >
         <div className="form__frame">
-          <div className="form__button-wrapper" style={buttonStyle}>
+          <div className="form__button-wrapper">
             <button
               type="button"
               className="form__button-close"
@@ -84,7 +72,7 @@ const Form = ({
           </div>
           <div className="form__data">
             <input type="hidden" name="title" value={title} />
-            <p className="form__title" style={titleStyle} value={formTitle}>
+            <p className="form__title" value={formTitle}>
               {translations[language].form.title}
             </p>
             <ul className="form__list">
@@ -102,7 +90,6 @@ const Form = ({
                   name="name"
                   id="name"
                   placeholder={translations[language].form.placeholder_name}
-                  style={inputStyle}
                 />
                 <p className="form__message">{errors.name?.message}</p>
               </li>
@@ -120,7 +107,6 @@ const Form = ({
                   id="tel"
                   name="tel"
                   placeholder={translations[language].form.placeholder_tel}
-                  style={inputStyle}
                 />
                 <p className="form__message">{errors.tel?.message}</p>
               </li>
@@ -131,17 +117,12 @@ const Form = ({
                   name="message"
                   id="message"
                   placeholder={translations[language].form.placeholder_message}
-                  style={textareaStyle}
                 ></textarea>
               </li>
             </ul>
           </div>
           <div className="form__button-submit-wrapper">
-            <button
-              type="submit"
-              className="form__button-submit"
-              style={submitStyle}
-            >
+            <button type="submit" className="form__button-submit">
               {translations[language].form.button}
             </button>
           </div>

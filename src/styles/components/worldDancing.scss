@@ -15,20 +15,20 @@
 }
 .worlddancing__image-wrapper {
   position: relative;
-  display: flex;
+  display: inline-flex;
   justify-content: flex-end;
   margin-bottom: 65px;
+  margin-right: 21px;
 }
 .worlddancing__image {
   width: 252px;
   height: 247px;
-  margin-right: 21px;
 }
 .worlddancing__frame1 {
   position: absolute;
   content: "";
   top: -21px;
-  left: 49px;
+  left: -21px;
   border: 2px solid var(--color-pink);
   width: 252px;
   height: 247px;
@@ -38,7 +38,7 @@
   position: absolute;
   content: "";
   top: 21px;
-  right: 0;
+  right: -21px;
   border: 2px solid var(--color-blue);
   width: 252px;
   height: 247px;
@@ -49,4 +49,47 @@
   line-height: 150%;
 }
 @media screen and (min-width: 768px) {
+  .worlddancing {
+    padding-top: 110px;
+  }
+  .worlddancing__title {
+    margin-bottom: 84px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 94%;
+    letter-spacing: 0.03em;
+  }
+
+  .worlddancing__image-wrapper {
+    justify-content: start;
+    margin-left: 24px;
+    margin-right: 64px;
+  }
+  .worlddancing__image {
+    width: 200px;
+    height: 200px;
+    margin-right: 0;
+  }
+  .worlddancing__frame1 {
+    top: -24px;
+    left: -24px;
+    border: 5px solid var(--color-pink);
+    width: 200px;
+    height: 200px;
+    z-index: 9;
+  }
+  .worlddancing__frame2 {
+    top: 24px;
+    right: -24px;
+    border: 5px solid var(--color-blue);
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+  }
+  .worlddancing__text {
+    display: inline-block;
+    max-width: 400px;
+    font-size: 16px;
+    line-height: 150%;
+  }
 }

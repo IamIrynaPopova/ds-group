@@ -17,6 +17,16 @@ const Feedback = ({ language }) => {
         <Swiper
           modules={[Autoplay, Navigation]}
           slidesPerView={1}
+          breakpoints={{
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 15,
+            },
+            // 1024: {
+            //   slidesPerView: 4,
+            //   spaceBetween: 40,
+            // },
+          }}
           loop={true}
           autoplay={{
             delay: 4000,
@@ -44,9 +54,7 @@ const Feedback = ({ language }) => {
                     </h3>
                     <p className="feedback__text">{feedback.text[language]} </p>
                   </div>
-                  <div className="feedback__wrapper-date">
-                    <p className="feedback__date">{feedback.date[language]}</p>
-                  </div>
+                  <p className="feedback__date">{feedback.date[language]}</p>
                 </div>
               </article>
             </SwiperSlide>

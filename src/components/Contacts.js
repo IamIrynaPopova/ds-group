@@ -3,43 +3,6 @@ import translations from "../data/translations.json";
 import Form from "./Form";
 
 const Contacts = ({ language }) => {
-  const formStyle = {
-    visibility: "visible",
-    position: "static",
-    transform: "none",
-    animation: "none",
-    opacity: "1",
-    padding: "0",
-    maxWidth: "343px",
-    border: "none",
-    background: "transparent",
-  };
-
-  const buttonStyle = {
-    display: "none",
-  };
-  const titleStyle = {
-    color: "inherit",
-    textAlign: "center",
-    marginBottom: "46px",
-  };
-  const inputStyle = {
-    maxWidth: "343px",
-    background: "transparent",
-    marginBottom: "46px",
-    color: "var(--text-default)",
-    borderRadius: "0",
-  };
-  const textareaStyle = {
-    maxWidth: "343px",
-    background: "transparent",
-    borderRadius: "initial",
-    marginBottom: "46px",
-    color: "var(--text-default)",
-  };
-  const submitStyle = {
-    width: "343px",
-  };
   return (
     <section className="contacts container" id="contacts">
       <h2 className="contacts__title">
@@ -81,14 +44,7 @@ const Contacts = ({ language }) => {
       </h2>
       <Form
         language={language}
-        formStyle={formStyle}
-        buttonStyle={buttonStyle}
-        titleStyle={titleStyle}
         title={"Форма заповнена з головної сторінки"}
-        formTitle={translations[language].form.title_main_page}
-        inputStyle={inputStyle}
-        textareaStyle={textareaStyle}
-        submitStyle={submitStyle}
         onCloseForm={() => {}}
       />
     </section>
