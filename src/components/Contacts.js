@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import translations from "../data/translations.json";
 import Form from "./Form";
 

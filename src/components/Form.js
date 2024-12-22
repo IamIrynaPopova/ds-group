@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import Loader from "../components/Loader";
 import Notification from "../components/Notification";
@@ -11,6 +11,18 @@ const Form = ({ language, title, onCloseForm, formTitle }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [notification, setNotification] = useState(null);
   const [isError, setIsError] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
+  useEffect(() => {
+    const checkIsTablet = () => {
+      setIsTablet(window.innerWidth > 768);
+    };
+
+    checkIsTablet();
+
+    window.addEventListener("resize", checkIsTablet);
+
+    return () => window.removeEventListener("resize", checkIsTablet);
+  }, []);
 
   const sendEmail = async () => {
     setIsLoading(true);
@@ -89,7 +101,11 @@ const Form = ({ language, title, onCloseForm, formTitle }) => {
                   type="text"
                   name="name"
                   id="name"
-                  placeholder={translations[language].form.placeholder_name}
+                  placeholder={
+                    isTablet
+                      ? translations[language].form.placeholder_name_tablet
+                      : translations[language].form.placeholder_name
+                  }
                 />
                 <p className="form__message">{errors.name?.message}</p>
               </li>
@@ -106,7 +122,11 @@ const Form = ({ language, title, onCloseForm, formTitle }) => {
                   type="tel"
                   id="tel"
                   name="tel"
-                  placeholder={translations[language].form.placeholder_tel}
+                  placeholder={
+                    isTablet
+                      ? translations[language].form.placeholder_tel_tablet
+                      : translations[language].form.placeholder_tel
+                  }
                 />
                 <p className="form__message">{errors.tel?.message}</p>
               </li>
@@ -116,14 +136,23 @@ const Form = ({ language, title, onCloseForm, formTitle }) => {
                   className="form__textarea"
                   name="message"
                   id="message"
-                  placeholder={translations[language].form.placeholder_message}
+                  placeholder={
+                    isTablet
+                      ? translations[language].form.placeholder_message_tablet
+                      : translations[language].form.placeholder_message
+                  }
                 ></textarea>
               </li>
             </ul>
           </div>
+          <p className="form__required-fields">
+            {translations[language].form.required}
+          </p>
           <div className="form__button-submit-wrapper">
             <button type="submit" className="form__button-submit">
-              {translations[language].form.button}
+              {isTablet
+                ? translations[language].form.button_tablet
+                : translations[language].form.button}
             </button>
           </div>
         </div>

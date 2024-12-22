@@ -81,6 +81,95 @@
 .leaflet-popup-content {
   margin: 10px 24px 10px 10px;
 }
+.footer__social .social {
+  display: none;
+}
 @media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 40px;
+    margin-bottom: 17px;
+  }
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  .footer__logo {
+    width: 34px;
+    height: 46px;
+  }
 
+  .footer__nav {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .footer__address {
+    margin-bottom: 0;
+    display: inline-block;
+  }
+  .footer__list {
+    display: flex;
+    max-width: 614px;
+    font-size: 14px;
+    line-height: 179%;
+    letter-spacing: 0.07em;
+    margin-bottom: 0;
+  }
+  .footer__item {
+    text-align: start;
+  }
+  .footer__item:not(:last-child) {
+    padding-bottom: 0;
+    border-bottom: none;
+    border-right: 1px solid #6d6d6d;
+    padding-right: 16px;
+  }
+  .footer__item:not(:first-child) {
+    padding-top: 0;
+    padding-left: 16px;
+  }
+
+  .footer__text {
+    margin-bottom: 0;
+  }
+  .footer__map {
+    width: 316px;
+    height: 120px;
+    margin-bottom: 17px;
+    margin-right: 20px;
+  }
+  .footer__map-wrapper {
+    display: flex;
+  }
+  .footer__social .social {
+    display: inline-block;
+  }
+  .footer__social .social__svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 14px;
+  }
+
+  .footer__social .social__item {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 145%;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .footer__social .social__item:nth-child(1)::after {
+    content: "instagram";
+  }
+  .footer__social .social__item:nth-child(2)::after {
+    content: "facebook";
+  }
+  .footer__social .social__item:nth-child(3)::after {
+    content: "TIKTOK";
+  }
 }

@@ -113,6 +113,9 @@
   height: 80px;
   margin-bottom: 24px;
 }
+.form__required-fields {
+  display: none;
+}
 
 .form__button-submit-wrapper {
   display: flex;
@@ -225,6 +228,15 @@
     height: auto;
     max-width: 520px;
     margin-bottom: 60px;
+  }
+  .form__required-fields {
+    display: block;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    margin-bottom: 35px;
+    color: var( --text-form);
   }
 
   .form__button-submit-wrapper {

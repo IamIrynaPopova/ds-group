@@ -31,12 +31,17 @@
       "error_message_name": "Must contain at least 3 letters",
       "error_message_tel": "You entered an invalid number",
       "placeholder_name": "Name",
+      "placeholder_name_tablet": "Enter your name*",
       "placeholder_tel": "Phone number",
+      "placeholder_tel_tablet": "Enter your phone*",
       "placeholder_message": "Message",
+      "placeholder_message_tablet": "Comment",
       "button": "Send",
+      "button_tablet": "Contact us",
       "notification_success": "Message sent!",
       "notification_error1": "Server error ☹️",
-      "notification_error2": "An error occurred ☹️ Please try again."
+      "notification_error2": "An error occurred ☹️ Please try again.",
+      "required": "*required fields"
     },
     "preferences": {
       "title": "Our Advantages",
@@ -114,7 +119,8 @@
       "subtitle_email": "e-mail",
       "email": "dsgroupkyiv@gmail.com",
       "subtitle_tel": "phone",
-      "tel": "+38 (099) 522-56-58"
+      "tel": "+38 (099) 522-56-58",
+      "title_form": "we are always open for communication"
     },
     "footer": {
       "address": "Ukraine, Kyiv, Beresteyskiy avenue 71/2"
@@ -160,12 +166,17 @@
       "error_message_name": "Має складатись мінімум з 3x літер",
       "error_message_tel": "Ви ввели не вірний номер",
       "placeholder_name": "Ім'я",
+      "placeholder_name_tablet": "Введіть Ваше ім’я*",
       "placeholder_tel": "Номер телeфону",
+      "placeholder_tel_tablet": "Введіть Ваш телефон* ",
       "placeholder_message": "Повідомлення",
+      "placeholder_message_tablet": "Коментар",
       "button": "Відправити",
+      "button_tablet": "Зв`язатися з нами",
       "notification_success": "Повідомлення надіслано!",
       "notification_error1": "Помилка на сервері ☹️",
-      "notification_error2": "Сталася помилка ☹️ Спробуйте знову."
+      "notification_error2": "Сталася помилка ☹️ Спробуйте знову.",
+      "required": "*обов’язкові поля"
     },
     "preferences": {
       "title": "наші переваги",
