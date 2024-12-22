@@ -5,7 +5,6 @@ import translations from "../data/translations.json";
 import sprite from "../images/sprite/sprite.svg";
 import ButtonReturn from "../components/ButtonReturn";
 import Form from "../components/Form";
-
 import TeamGallery from "../components/TeamGallery";
 
 const Team = ({ language, onCloseForm, onOpenForm }) => {
@@ -24,27 +23,31 @@ const Team = ({ language, onCloseForm, onOpenForm }) => {
   return (
     <section className="team container">
       <ButtonReturn language={language} path={`/#${teamId}`} />
-      <h2 className="team__name">{team[language].name}</h2>
-      <button className="team__button" type="button" onClick={onOpenForm}>
-        {translations[language].button.contact}
-      </button>
+      <div className="team__name-wrapper">
+        <h2 className="team__name">{team[language].name}</h2>
+        <button className="team__button" type="button" onClick={onOpenForm}>
+          {translations[language].button.contact}
+        </button>
+      </div>
       <Form
         language={language}
         title={`Хочу дізнатись про ${team[language].name}`}
         onCloseForm={onCloseForm}
       />
-      <div className="team__image-wrapper">
-        <img
-          src={team[language].main_photo}
-          alt="team"
-          className="team__image"
-        ></img>
-        <div className="team__frame"></div>
-      </div>
-      <div className="team__description">
-        <p className="team__text">Вікова група:{team[language].age}</p>
-        <p className="team__text">Хореографи:</p>
-        <p className="team__text"> {team[language].choreographers}</p>
+      <div className="team__description-wrapper">
+        <div className="team__image-wrapper">
+          <img
+            src={team[language].main_photo}
+            alt="team"
+            className="team__image"
+          ></img>
+          <div className="team__frame"></div>
+        </div>
+        <div className="team__description">
+          <p className="team__text">Вікова група:{team[language].age}</p>
+          <p className="team__text">Хореографи:</p>
+          <p className="team__text"> {team[language].choreographers}</p>
+        </div>
       </div>
       <p className="team__text">{team[language].description}</p>
       {team && <TeamGallery photos={team[language].photos} />}

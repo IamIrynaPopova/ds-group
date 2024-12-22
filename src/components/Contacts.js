@@ -46,6 +46,7 @@ const Contacts = ({ language }) => {
         language={language}
         title={"Форма заповнена з головної сторінки"}
         onCloseForm={() => {}}
+        isFooter={true}
       />
     </section>
   );

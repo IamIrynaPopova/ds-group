@@ -129,4 +129,10 @@
     align-items: center;
     justify-content: center;
   }
+  .about .form__item:last-child {
+    margin-bottom: 0;
+  }
+  .about .form__required-fields {
+    display: none;
+  }
 }

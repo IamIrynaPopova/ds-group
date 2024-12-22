@@ -25,6 +25,16 @@ const TeamGallery = ({ photos }) => {
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
+          breakpoints={{
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            // 1024: {
+            //   slidesPerView: 4,
+            //   spaceBetween: 40,
+            // },
+          }}
           loop={true}
           slidesPerView="auto"
           spaceBetween={40}

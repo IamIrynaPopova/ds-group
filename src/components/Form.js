@@ -6,12 +6,12 @@ import translations from "../data/translations.json";
 import sprite from "../images/sprite/sprite.svg";
 import emailjs from "@emailjs/browser";
 
-const Form = ({ language, title, onCloseForm, formTitle }) => {
-  const form = useRef();
+const Form = ({ language, title, onCloseForm, formTitle, isFooter }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [notification, setNotification] = useState(null);
   const [isError, setIsError] = useState(false);
   const [isTablet, setIsTablet] = useState(false);
+  const form = useRef();
   useEffect(() => {
     const checkIsTablet = () => {
       setIsTablet(window.innerWidth > 768);
@@ -102,7 +102,7 @@ const Form = ({ language, title, onCloseForm, formTitle }) => {
                   name="name"
                   id="name"
                   placeholder={
-                    isTablet
+                    isTablet && isFooter
                       ? translations[language].form.placeholder_name_tablet
                       : translations[language].form.placeholder_name
                   }
@@ -123,7 +123,7 @@ const Form = ({ language, title, onCloseForm, formTitle }) => {
                   id="tel"
                   name="tel"
                   placeholder={
-                    isTablet
+                    isTablet && isFooter
                       ? translations[language].form.placeholder_tel_tablet
                       : translations[language].form.placeholder_tel
                   }
@@ -137,7 +137,7 @@ const Form = ({ language, title, onCloseForm, formTitle }) => {
                   name="message"
                   id="message"
                   placeholder={
-                    isTablet
+                    isTablet && isFooter
                       ? translations[language].form.placeholder_message_tablet
                       : translations[language].form.placeholder_message
                   }

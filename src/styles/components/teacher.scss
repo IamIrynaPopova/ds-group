@@ -18,7 +18,6 @@
   justify-content: flex-end;
   margin-bottom: 46px;
   position: relative;
-  margin-bottom: 46px;
 }
 .teacher__image {
   width: 321px;
@@ -48,15 +47,63 @@
   display: flex;
   justify-content: space-between;
 }
-.teacher__social-item {
-}
-.teacher__social-link {
-}
+
 .teacher__social-svg {
   width: 24px;
   height: 24px;
 }
 
 @media screen and (min-width: 768px) {
-
+  .teacher {
+    background-color: var(--background-default);
+    background-image: url(../images/wave-teacher-tablet.png);
+    background-repeat: no-repeat;
+    background-position: -80px -150px;
+    margin-top: 80px;
+  }
+  .teacher .button__return-svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+  }
+  .teacher .button__return {
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.06em;
+    margin-bottom: 42px;
+  }
+  .teacher__name {
+    font-size: 32px;
+    line-height: 94%;
+    letter-spacing: 0.03em;
+    margin-bottom: 60px;
+  }
+  .teacher__image-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 64px;
+    position: relative;
+    margin-left: 80px;
+  }
+  .teacher__image {
+    width: 552px;
+    height: 552px;
+  }
+  .teacher__frame {
+    top: 24px;
+    left: -24px;
+    border: 5px solid var(--color-pink);
+    width: 552px;
+    height: 552px;
+  }
+  .teacher__text {
+    font-size: 16px;
+    line-height: 156%;
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+  }
+  .teacher__social {
+    width: 78px;
+    padding-bottom: 62px;
+  }
 }
