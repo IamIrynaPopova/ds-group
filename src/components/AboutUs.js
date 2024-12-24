@@ -11,23 +11,27 @@ const AboutUs = ({ language, closeForm, openForm }) => {
         <img src={aboutUs} alt="owners" className="about__image"></img>
         <div className="about__frame"></div>
       </div>
-      <p className="about__subtitle">{translations[language].about.subtitle}</p>
-      <p className="about__text">
-        {translations[language].about.text1} <br></br>
-        {translations[language].about.text2}
-      </p>
-      <p className="about__text">{translations[language].about.text3}</p>
-      <p className="about__text">
-        {translations[language].about.text4}
-        <br></br> {translations[language].about.text5}
-      </p>
-      <p className="about__text">
-        {translations[language].about.text6}
-        <br></br> {translations[language].about.text7}
-      </p>
-      <p className="about__text-main">
-        {translations[language].about.text_main}
-      </p>
+      <div className="about__text-box">
+        <p className="about__subtitle">
+          {translations[language].about.subtitle}
+        </p>
+        <p className="about__text">
+          {translations[language].about.text1} <br></br>
+          {translations[language].about.text2}
+        </p>
+        <p className="about__text">{translations[language].about.text3}</p>
+        <p className="about__text">
+          {translations[language].about.text4}
+          <br></br> {translations[language].about.text5}
+        </p>
+        <p className="about__text">
+          {translations[language].about.text6}
+          <br></br> {translations[language].about.text7}
+        </p>
+        <p className="about__text-main">
+          {translations[language].about.text_main}
+        </p>
+      </div>
       <button className="about__button" type="button" onClick={openForm}>
         {translations[language].button.contact}
       </button>

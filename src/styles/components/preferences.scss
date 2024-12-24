@@ -42,7 +42,6 @@
   }
 
   .preferences__item:not(:last-child) {
-    padding: 0 20px;
     font-weight: 300;
     font-size: 16px;
     line-height: 156%;
@@ -55,5 +54,34 @@
     padding: 20px;
     padding-left: 0;
     line-height: 125%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .preferences {
+    padding-bottom: 50px;
+  }
+  .preferences__title {
+    font-size: 40px;
+    line-height: 75%;
+    letter-spacing: 0.03em;
+    margin-bottom: 100px;
+  }
+  .preferences__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 33px;
+  }
+  .preferences__item {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+  }
+  .preferences__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .preferences__item::before {
+    font-size: 36px;
+    line-height: 83%;
+    letter-spacing: 0.01em;
   }
 }

@@ -6,6 +6,7 @@ import translations from "../data/translations.json";
 import LanguageSwitcher from "../components/LanguageSwitcher";
 import SocialLinks from "../components/SocialLinks";
 
+
 const Menu = ({ onCloseMenu, languageChange, language }) => {
   return (
     <div id="menu" className="menu container">

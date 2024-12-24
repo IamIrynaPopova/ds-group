@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Routes, Route} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import ScrollToTop from "./ScrollToTop";
 import Header from "./Header";
@@ -34,7 +34,7 @@ const App = () => {
     setFormIsOpen(true);
     form.classList.remove("hidden");
   };
- 
+
   return (
     <>
       <Header

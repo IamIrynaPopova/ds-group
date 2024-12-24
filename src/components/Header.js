@@ -1,27 +1,143 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../images/logo.png";
+import translations from "../data/translations.json";
 import sprite from "../images/sprite/sprite.svg";
 import LanguageSwitcher from "./LanguageSwitcher";
 import SocialLinks from "./SocialLinks";
 
 const Header = ({ onShowMenu, menuIsOpen, languageChange, language }) => {
   return (
-    <header className="header container">
+    <header className="header ">
       <NavLink to="/">
         <img src={logo} alt="logo" className="header__logo" />
       </NavLink>
-      <div className="header__menu">
-        <LanguageSwitcher
-          onLanguageChange={languageChange}
-          language={language}
-        />
-        <SocialLinks />
-        <button className="header__button" onClick={onShowMenu}>
-          <svg className="header__svg">
-            <use href={menuIsOpen ? `${sprite}#close` : `${sprite}#menu`}></use>
-          </svg>
-        </button>
+      <div className="header__wrapper">
+        <div className="header__menu">
+          <LanguageSwitcher
+            onLanguageChange={languageChange}
+            language={language}
+          />
+          <SocialLinks />
+          <button className="header__button" onClick={onShowMenu}>
+            <svg className="header__svg">
+              <use
+                href={menuIsOpen ? `${sprite}#close` : `${sprite}#menu`}
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <div className="header__nav">
+          <nav className="nav">
+            <ul className="nav__list">
+              <li className="nav__list-item">
+                <a
+                  className="nav__list-link"
+                  href="#about_us"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const target = document.querySelector("#about_us");
+                    if (target) {
+                      target.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
+                  {translations[language].menu.about_us}
+                </a>
+              </li>
+              <li className="nav__list-item">
+                <a
+                  className="nav__list-link"
+                  href="#choreographers"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const target = document.querySelector("#choreographers");
+                    if (target) {
+                      target.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
+                  {translations[language].menu.choreographers}
+                </a>
+              </li>
+              <li className="nav__list-item">
+                <a
+                  className="nav__list-link"
+                  href="#teams"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const target = document.querySelector("#teams");
+                    if (target) {
+                      target.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
+                  {translations[language].menu.teams}
+                </a>
+              </li>
+              <li className="nav__list-item">
+                <a
+                  className="nav__list-link"
+                  href="#time_table"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const target = document.querySelector("#time_table");
+                    if (target) {
+                      target.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
+                  {translations[language].menu.time_table}
+                </a>
+              </li>
+              <li className="nav__list-item">
+                <a
+                  className="nav__list-link"
+                  href="#photogallery"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const target = document.querySelector("#photogallery");
+                    if (target) {
+                      target.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
+                  {translations[language].menu.photo}
+                </a>
+              </li>
+              <li className="nav__list-item">
+                <a
+                  className="nav__list-link"
+                  href="#world_of_dance"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const target = document.querySelector("#world_of_dance");
+                    if (target) {
+                      target.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
+                  {translations[language].menu.world_of_dance}
+                </a>
+              </li>
+              <li className="nav__list-item">
+                <a
+                  className="nav__list-link"
+                  href="#contacts"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const target = document.querySelector("#contacts");
+                    if (target) {
+                      target.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
+                  {translations[language].menu.contacts}
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
   );
