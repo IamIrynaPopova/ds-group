@@ -265,5 +265,45 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  .time {
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
 
+  .teams_title {
+    margin-bottom: 100px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 75%;
+    letter-spacing: 0.03em;
+  }
+
+  .teams__weekdays-item {
+    width: 186px;
+    padding: 12px 41px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+  }
+
+  .teams__weekdays-item:not(:last-child) {
+    margin-right: 31px;
+  }
+
+  .teams__weekdays-day {
+    padding: 21px 14px;
+    width: 213px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+  }
+
+  .teams__weekdays-day:first-child {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+  }
 }

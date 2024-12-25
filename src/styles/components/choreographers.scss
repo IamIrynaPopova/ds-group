@@ -131,9 +131,8 @@
     height: 624px;
     border: 3px solid var(--color-blue);
   }
-    .choreographers__item:first-child .choreographers__image,
+  .choreographers__item:first-child .choreographers__image,
   .choreographers__item:last-child .choreographers__image {
     border: 3px solid var(--color-pink);
   }
-
 }

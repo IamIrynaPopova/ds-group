@@ -22,12 +22,12 @@ const Feedback = ({ language }) => {
               slidesPerView: 2,
               spaceBetween: 15,
             },
-            // 1024: {
-            //   slidesPerView: 4,
-            //   spaceBetween: 40,
-            // },
+            1440: {
+              slidesPerView: 4,
+              spaceBetween: 10,
+            },
           }}
-          loop={true}
+          loop={data.length > 4}
           autoplay={{
             delay: 4000,
             // disableOnInteraction: false,

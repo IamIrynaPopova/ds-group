@@ -120,5 +120,56 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  .feedback {
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
 
+  .feedback__title {
+    margin-bottom: 100px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 75%;
+    letter-spacing: 0.03em;
+  }
+
+  .feedback__card {
+    padding: 20px;
+    max-width: 364px;
+    height: 300px;
+  }
+
+  .feedback__slide {
+    border: 1px solid var(--color-pink);
+
+    &.feedback__slide--even {
+      border: 1px solid var(--color-blue);
+    }
+  }
+
+  .feedback__img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .feedback__name {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+  }
+
+  .feedback__text {
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+  }
+
+  .feedback__date {
+    font-size: 14px;
+    line-height: 121%;
+    letter-spacing: 0.04em;
+  }
 }

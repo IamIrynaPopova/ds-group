@@ -91,5 +91,41 @@
   }
 }
 @media screen and (min-width: 1440px) {
+.teams {
+    padding-top: 150px;
+  }
+  .teams__title {
+    margin-bottom: 100px;
+font-weight: 400;
+font-size: 40px;
+line-height: 75%;
+letter-spacing: 0.03em;
+  }
+  .teams__list {
+  
+    gap: 32px;
+  }
+  .teams__item:not(:last-child) {
+    margin-bottom: 100px;
+  }
 
+  .teams__image {
+    border: 3px solid #0595d0;
+width: 624px;
+height: 400px;
+    }
+  .teams__item:nth-child(1) .teams__image,
+  .teams__item:nth-child(4) .teams__image,
+  .teams__item:nth-child(5) .teams__image {
+    border: 3px solid #c70c4d;
+  }
+
+
+  .teams .button__more {
+    border-bottom: 1px solid #0595d0;
+    padding: 4px 0px;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.01em;
+  }
 }
