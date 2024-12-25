@@ -44,7 +44,7 @@ const Footer = ({ language }) => {
 
   return (
     <>
-      <section className="footer container">
+      <section className="footer ">
         <div className="footer__wrapper">
           <div className="footer__nav">
             <NavLink to="/">

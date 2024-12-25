@@ -88,48 +88,52 @@ const Form = ({ language, title, onCloseForm, formTitle, isFooter }) => {
               {translations[language].form.title}
             </p>
             <ul className="form__list">
-              <li className="form__item">
-                <input
-                  {...register("name", {
-                    required: true,
-                    minLength: {
-                      value: 3,
-                      message: translations[language].form.error_message_name,
-                    },
-                  })}
-                  className={errors.name ? "form__input-error" : "form__input"}
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder={
-                    isTablet && isFooter
-                      ? translations[language].form.placeholder_name_tablet
-                      : translations[language].form.placeholder_name
-                  }
-                />
-                <p className="form__message">{errors.name?.message}</p>
-              </li>
-              <li className="form__item">
-                <input
-                  {...register("tel", {
-                    required: true,
-                    pattern: {
-                      value: /^[\d()+]+$/,
-                      message: translations[language].form.error_message_tel,
-                    },
-                  })}
-                  className="form__input"
-                  type="tel"
-                  id="tel"
-                  name="tel"
-                  placeholder={
-                    isTablet && isFooter
-                      ? translations[language].form.placeholder_tel_tablet
-                      : translations[language].form.placeholder_tel
-                  }
-                />
-                <p className="form__message">{errors.tel?.message}</p>
-              </li>
+              <div className="form__list-wrapper">
+                <li className="form__item">
+                  <input
+                    {...register("name", {
+                      required: true,
+                      minLength: {
+                        value: 3,
+                        message: translations[language].form.error_message_name,
+                      },
+                    })}
+                    className={
+                      errors.name ? "form__input-error" : "form__input"
+                    }
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder={
+                      isTablet && isFooter
+                        ? translations[language].form.placeholder_name_tablet
+                        : translations[language].form.placeholder_name
+                    }
+                  />
+                  <p className="form__message">{errors.name?.message}</p>
+                </li>
+                <li className="form__item">
+                  <input
+                    {...register("tel", {
+                      required: true,
+                      pattern: {
+                        value: /^[\d()+]+$/,
+                        message: translations[language].form.error_message_tel,
+                      },
+                    })}
+                    className="form__input"
+                    type="tel"
+                    id="tel"
+                    name="tel"
+                    placeholder={
+                      isTablet && isFooter
+                        ? translations[language].form.placeholder_tel_tablet
+                        : translations[language].form.placeholder_tel
+                    }
+                  />
+                  <p className="form__message">{errors.tel?.message}</p>
+                </li>
+              </div>
               <li className="form__item">
                 <textarea
                   {...register("message")}

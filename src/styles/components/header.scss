@@ -11,7 +11,7 @@
   opacity: 0;
   animation: showHeader 1s forwards 0.3s;
   background-color: var(--background-default);
-  z-index: 10;
+  z-index: 1001;
 }
 .header .language__switcher {
   display: none;
