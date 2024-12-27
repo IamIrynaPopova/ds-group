@@ -15,47 +15,51 @@ const Teacher = ({ language }) => {
     <section className="teacher container">
       <ButtonReturn language={language} path={`/#${teacherId}`} />
       <h2 className="teacher__name">{teacher[language].name}</h2>
-      <div className="teacher__image-wrapper">
-        <img
-          src={teacher[language].image}
-          alt="teacher"
-          className="teacher__image"
-        ></img>
-        <div className="teacher__frame"></div>
+      <div className="teacher__box">
+        <div className="teacher__image-wrapper">
+          <img
+            src={teacher[language].image}
+            alt="teacher"
+            className="teacher__image"
+          ></img>
+          <div className="teacher__frame"></div>
+        </div>
+        <div className="teacher__text-wrapper">
+          <p className="teacher__text"> {teacher[language].text1}</p>
+          <p className="teacher__text"> {teacher[language].text2}</p>
+          <p className="teacher__text"> {teacher[language].text3}</p>
+          <p className="teacher__text"> {teacher[language].text4}</p>
+          <p className="teacher__text"> {teacher[language].phone}</p>
+          <nav className="teacher__social">
+            <ul className="teacher__social-list">
+              <li className="teacher__social-item">
+                <a
+                  className="teacher__social-link"
+                  href={teacher[language].instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg className="teacher__social-svg">
+                    <use href={`${sprite}#instagram`}></use>
+                  </svg>
+                </a>
+              </li>
+              <li className="teacher__social-item">
+                <a
+                  className="teacher__social-link"
+                  href={teacher[language].facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg className="teacher__social-svg">
+                    <use href={`${sprite}#facebook`}></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <p className="teacher__text"> {teacher[language].text1}</p>
-      <p className="teacher__text"> {teacher[language].text2}</p>
-      <p className="teacher__text"> {teacher[language].text3}</p>
-      <p className="teacher__text"> {teacher[language].text4}</p>
-      <p className="teacher__text"> {teacher[language].phone}</p>
-      <nav className="teacher__social">
-        <ul className="teacher__social-list">
-          <li className="teacher__social-item">
-            <a
-              className="teacher__social-link"
-              href={teacher[language].instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg className="teacher__social-svg">
-                <use href={`${sprite}#instagram`}></use>
-              </svg>
-            </a>
-          </li>
-          <li className="teacher__social-item">
-            <a
-              className="teacher__social-link"
-              href={teacher[language].facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg className="teacher__social-svg">
-                <use href={`${sprite}#facebook`}></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </nav>
     </section>
   );
 };

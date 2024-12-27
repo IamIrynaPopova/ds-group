@@ -34,22 +34,24 @@ const Team = ({ language, onCloseForm, onOpenForm }) => {
         title={`Хочу дізнатись про ${team[language].name}`}
         onCloseForm={onCloseForm}
       />
-      <div className="team__description-wrapper">
-        <div className="team__image-wrapper">
-          <img
-            src={team[language].main_photo}
-            alt="team"
-            className="team__image"
-          ></img>
-          <div className="team__frame"></div>
+      <div className="team__description-box">
+        <div className="team__description-wrapper">
+          <div className="team__image-wrapper">
+            <img
+              src={team[language].main_photo}
+              alt="team"
+              className="team__image"
+            ></img>
+            <div className="team__frame"></div>
+          </div>
+          <div className="team__description">
+            <p className="team__text">Вікова група:{team[language].age}</p>
+            <p className="team__text">Хореографи:</p>
+            <p className="team__text"> {team[language].choreographers}</p>
+          </div>
         </div>
-        <div className="team__description">
-          <p className="team__text">Вікова група:{team[language].age}</p>
-          <p className="team__text">Хореографи:</p>
-          <p className="team__text"> {team[language].choreographers}</p>
-        </div>
+        <p className="team__text">{team[language].description}</p>
       </div>
-      <p className="team__text">{team[language].description}</p>
       {team && <TeamGallery photos={team[language].photos} />}
       <div className="video">
         <div

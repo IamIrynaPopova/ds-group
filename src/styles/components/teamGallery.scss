@@ -63,5 +63,28 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  .gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .gallery__image {
+    width: 300px;
+    height: 200px;
+  }
 
+  .gallery__swiper {
+    width: 100%;
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+
+  .arrow__svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .swiper-slide {
+    margin: 0;
+  }
 }

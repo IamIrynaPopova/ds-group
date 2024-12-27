@@ -9,7 +9,7 @@ import sprite from "../images/sprite/sprite.svg";
 
 const TeamGallery = ({ photos }) => {
   return (
-    <section className="gallery container">
+    <section className="gallery">
       <div className="arrow__prev">
         <svg className="arrow__svg">
           <use href={`${sprite}#swiper-arrow-left`}></use>
@@ -30,14 +30,14 @@ const TeamGallery = ({ photos }) => {
               slidesPerView: 2,
               spaceBetween: 10,
             },
-            // 1024: {
-            //   slidesPerView: 4,
-            //   spaceBetween: 40,
-            // },
+            1440: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+            },
           }}
           loop={true}
           slidesPerView="auto"
-          spaceBetween={40}
+          // spaceBetween={40}
           coverflowEffect={{
             rotate: 0,
             stretch: 0,

@@ -177,10 +177,27 @@
   .footer {
     padding: 33px 80px;
   }
-    .footer__map {
+  .footer__list {
+    min-width: 770px;
+    justify-content: flex-end;
+  }
+  .footer__item:not(:last-child) {
+    padding-right: 24px;
+  }
+  .footer__item:not(:first-child) {
+    padding-left: 24px;
+  }
+  .footer__social .social {
+    width: 370px;
+  }
+
+  .footer__map {
     width: 421px;
     height: 120px;
     margin-bottom: 0;
-    margin-right: 240px;
+    margin-right: 0;
+  }
+  .footer__social {
+    margin-left: auto;
   }
 }
