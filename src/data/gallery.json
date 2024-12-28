@@ -5,7 +5,7 @@
   },
   {
     "category": "appearance",
-    "url":  "images/appearance2.jpg"
+    "url": "images/appearance2.jpg"
   },
   {
     "category": "appearance",
@@ -13,14 +13,46 @@
   },
   {
     "category": "appearance",
-    "url":   "images/appearance4.jpg"
+    "url": "images/appearance4.jpg"
   },
   {
     "category": "appearance",
-    "url":  "images/appearance5.jpg"
+    "url": "images/appearance5.jpg"
   },
   {
     "category": "appearance",
-    "url":   "images/appearance6.jpg"
+    "url": "images/appearance6.jpg"
+  },
+  {
+    "category": "studio",
+    "url": "images/studio1.jpg"
+  },
+  {
+    "category": "studio",
+    "url": "images/studio2.jpg"
+  },
+  {
+    "category": "rest",
+    "url": "images/rest1.jpg"
+  },
+  {
+    "category": "rest",
+    "url": "images/rest2.jpg"
+  },
+  {
+    "category": "rest",
+    "url": "images/rest3.jpg"
+  },
+  {
+    "category": "rest",
+    "url": "images/rest4.jpg"
+  },
+  {
+    "category": "rest",
+    "url": "images/rest5.jpg"
+  },
+  {
+    "category": "rest",
+    "url": "images/rest6.jpg"
   }
 ]
