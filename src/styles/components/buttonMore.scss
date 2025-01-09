@@ -18,4 +18,17 @@
   margin-left: 11px;
   width: 12px;
   height: 12px;
+
+  stroke: #00befe;
+}
+.button__more:hover,
+.button__more:focus {
+  color: var(--text-default);
+  border-bottom: 1px solid #addeee;
+  text-shadow: 0 0 2px #0595d0, 0 0 6px #0595d0, 0 0 9px #0595d0,
+    0 0 12px #0595d0, 0 0 16px #0595d0, 0 0 20px #0595d0;
+}
+.button__more:hover .button__more-svg,
+.button__more:focus .button__more-svg {
+  stroke: #addeee;
 }

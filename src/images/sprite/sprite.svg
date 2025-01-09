@@ -17,7 +17,7 @@
 </symbol><symbol id ="close-form" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M12 4L4 12M4 4L12 12" stroke="#1E1E1E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
 </symbol><symbol  id ="arrow"  viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M1 11L11 1M11 1H1M11 1V11" stroke="#00BEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M1 11L11 1M11 1H1M11 1V11" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 </symbol><symbol id ="arrow-left" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M12.6673 7.99992H3.33398M3.33398 7.99992L8.00065 12.6666M3.33398 7.99992L8.00065 3.33325" stroke="#F4F4F4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
 </symbol><symbol id ="swiper-arrow-left" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

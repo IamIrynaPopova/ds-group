@@ -1,8 +1,4 @@
 .teacher {
-  // background-color: var(--background-default);
-  // background-image: url(../images/wave_teacher.png);
-  // background-repeat: no-repeat;
-  // background-position: 0 -90px;
   margin-top: 100px;
 }
 
@@ -13,17 +9,20 @@
   line-height: 150%;
   margin-bottom: 44px;
 }
+
 .teacher__image-wrapper {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 46px;
   position: relative;
 }
+
 .teacher__image {
   width: 321px;
   height: 327px;
   object-fit: cover;
 }
+
 .teacher__frame {
   position: absolute;
   content: "";
@@ -34,15 +33,18 @@
   height: 327px;
   z-index: 9;
 }
+
 .teacher__text {
   font-size: 16px;
   line-height: 150%;
   margin-bottom: 16px;
 }
+
 .teacher__social {
   width: 72px;
   padding-bottom: 65px;
 }
+
 .teacher__social-list {
   display: flex;
   justify-content: space-between;
@@ -55,29 +57,29 @@
 
 @media screen and (min-width: 768px) {
   .teacher {
-    // background-color: var(--background-default);
-    // background-image: url(../images/wave-teacher-tablet.png);
-    // background-repeat: no-repeat;
-    // background-position: -80px -150px;
     margin-top: 80px;
   }
+
   .teacher .button__return-svg {
     width: 24px;
     height: 24px;
     margin-right: 16px;
   }
+
   .teacher .button__return {
     font-size: 16px;
     line-height: 125%;
     letter-spacing: 0.06em;
     margin-bottom: 42px;
   }
+
   .teacher__name {
     font-size: 32px;
     line-height: 94%;
     letter-spacing: 0.03em;
     margin-bottom: 60px;
   }
+
   .teacher__image-wrapper {
     display: flex;
     justify-content: flex-start;
@@ -85,10 +87,12 @@
     position: relative;
     margin-left: 80px;
   }
+
   .teacher__image {
     width: 552px;
     height: 552px;
   }
+
   .teacher__frame {
     top: 24px;
     left: -24px;
@@ -96,17 +100,20 @@
     width: 552px;
     height: 552px;
   }
+
   .teacher__text {
     font-size: 16px;
     line-height: 156%;
     letter-spacing: 0.01em;
     margin-bottom: 20px;
   }
+
   .teacher__social {
     width: 78px;
     padding-bottom: 62px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .teacher {
     margin-top: 120px;
@@ -116,36 +123,44 @@
     padding-top: 24px;
     margin-bottom: 100px;
   }
+
   .teacher__name {
     font-size: 40px;
     line-height: 75%;
     margin-bottom: 45px;
   }
+
   .teacher__box {
     display: flex;
     flex-direction: row-reverse;
   }
+
   .teacher__image-wrapper {
     margin-top: -75px;
     display: inline-flex;
     margin-bottom: 150px;
     margin-left: 32px;
   }
+
   .teacher__text-wrapper {
   }
+
   .teacher__image {
     width: 624px;
     height: 624px;
   }
+
   .teacher__frame {
     width: 624px;
     height: 624px;
   }
+
   .teacher__text {
     font-size: 20px;
     line-height: 150%;
     margin-bottom: 35px;
   }
+
   .teacher__social {
     padding-bottom: 0;
   }

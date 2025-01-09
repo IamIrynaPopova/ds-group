@@ -1,8 +1,8 @@
 .team {
   // background-color: var(--background-default);
-  // background-image: url(../images/wave_teacher.png);
+  // background-image: url(../images/wave-team.png);
   // background-repeat: no-repeat;
-  // background-position: 0 -90px;
+  // background-position: center;
   margin-top: 100px;
   padding-bottom: 80px;
 }
@@ -107,10 +107,6 @@
 
 @media screen and (min-width: 768px) {
   .team {
-    // background-color: var(--background-default);
-    // background-image: url(../images/wave_teacher.png);
-    // background-repeat: no-repeat;
-    // background-position: 0 -90px;
     margin-top: 80px;
   }
 

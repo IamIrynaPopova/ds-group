@@ -3,6 +3,7 @@ body {
   color: var(--text-default);
   background-color: var(--background-default);
   font-weight: 400;
+
   background-image: url(../images/wave.png), url(../images/wave.png),
     url(../images/wave.png), url(../images/wave.png), url(../images/wave.png),
     url(../images/wave.png);
@@ -11,5 +12,11 @@ body {
     -360px 9300px, -490px 11460px;
 }
 @media screen and (min-width: 768px) {
- 
+  body {
+    background-position: -500px 1000px, -480px 2600px, -500px 4845px,
+      -700px 6800px, -500px 9350px, -1000px 10570px;
+    background-image: url(../images/wave-main.png), url(../images/wave-main.png),
+      url(../images/wave-main.png), url(../images/wave-main.png),
+      url(../images/wave-main.png), url(../images/wave-main.png);
+  }
 }
