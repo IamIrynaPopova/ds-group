@@ -19,14 +19,14 @@
 </symbol><symbol  id ="arrow"  viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M1 11L11 1M11 1H1M11 1V11" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 </symbol><symbol id ="arrow-left" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M12.6673 7.99992H3.33398M3.33398 7.99992L8.00065 12.6666M3.33398 7.99992L8.00065 3.33325" stroke="#F4F4F4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M12.6673 7.99992H3.33398M3.33398 7.99992L8.00065 12.6666M3.33398 7.99992L8.00065 3.33325" stroke="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
 </symbol><symbol id ="swiper-arrow-left" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M12.5 15L7.5 10L12.5 5" stroke="#F3F3F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 </symbol><symbol id ="swiper-arrow-right" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M7.5 15L12.5 10L7.5 5" stroke="#F3F3F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 </symbol><symbol id ="button-youtube" viewBox="0 0 49 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M45.7686 7.34C45.5311 6.39082 45.0472 5.52114 44.366 4.81881C43.6847 4.11648 42.8302 3.60637 41.8886 3.34C38.4486 2.5 24.6886 2.5 24.6886 2.5C24.6886 2.5 10.9286 2.5 7.48864 3.42C6.54714 3.68637 5.6926 4.19648 5.01134 4.89881C4.33008 5.60114 3.84622 6.47082 3.60864 7.42C2.97907 10.9111 2.67112 14.4526 2.68864 18C2.6662 21.5741 2.97418 25.1426 3.60864 28.66C3.87056 29.5797 4.36526 30.4163 5.04493 31.089C5.72461 31.7616 6.56628 32.2476 7.48864 32.5C10.9286 33.42 24.6886 33.42 24.6886 33.42C24.6886 33.42 38.4486 33.42 41.8886 32.5C42.8302 32.2336 43.6847 31.7235 44.366 31.0212C45.0472 30.3189 45.5311 29.4492 45.7686 28.5C46.3934 25.0352 46.7013 21.5207 46.6886 18C46.7111 14.4259 46.4031 10.8574 45.7686 7.34Z" stroke="#900B09" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M20.1886 24.54L31.6886 18L20.1886 11.46V24.54Z" stroke="#900B09" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M45.7686 7.34C45.5311 6.39082 45.0472 5.52114 44.366 4.81881C43.6847 4.11648 42.8302 3.60637 41.8886 3.34C38.4486 2.5 24.6886 2.5 24.6886 2.5C24.6886 2.5 10.9286 2.5 7.48864 3.42C6.54714 3.68637 5.6926 4.19648 5.01134 4.89881C4.33008 5.60114 3.84622 6.47082 3.60864 7.42C2.97907 10.9111 2.67112 14.4526 2.68864 18C2.6662 21.5741 2.97418 25.1426 3.60864 28.66C3.87056 29.5797 4.36526 30.4163 5.04493 31.089C5.72461 31.7616 6.56628 32.2476 7.48864 32.5C10.9286 33.42 24.6886 33.42 24.6886 33.42C24.6886 33.42 38.4486 33.42 41.8886 32.5C42.8302 32.2336 43.6847 31.7235 44.366 31.0212C45.0472 30.3189 45.5311 29.4492 45.7686 28.5C46.3934 25.0352 46.7013 21.5207 46.6886 18C46.7111 14.4259 46.4031 10.8574 45.7686 7.34Z" stroke="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M20.1886 24.54L31.6886 18L20.1886 11.46V24.54Z" stroke="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
 </symbol><symbol id ="arrow-bottom" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M5 7.5L10 12.5L15 7.5" stroke="#F4F4F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 </symbol>

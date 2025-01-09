@@ -16,4 +16,15 @@
   width: 16px;
   height: 16px;
   margin-right: 12px;
+  stroke: var(--text-default);
+ 
+}
+.button__return:hover,
+.button__return:focus {
+  text-shadow: 0 0 2px #0595d0, 0 0 6px #0595d0, 0 0 9px #0595d0,
+    0 0 12px #0595d0, 0 0 16px #0595d0, 0 0 20px #0595d0;
+}
+.button__return:hover .button__return-svg,
+.button__return:focus .button__return-svg {
+  stroke: #addeee;
 }

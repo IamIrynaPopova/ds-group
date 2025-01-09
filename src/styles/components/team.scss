@@ -1,8 +1,4 @@
 .team {
-  // background-color: var(--background-default);
-  // background-image: url(../images/wave-team.png);
-  // background-repeat: no-repeat;
-  // background-position: center;
   margin-top: 100px;
   padding-bottom: 80px;
 }
@@ -25,6 +21,14 @@
   line-height: 150%;
   cursor: pointer;
   margin-bottom: 44px;
+}
+.team__button:hover,
+.team__button:focus {
+  color: var(--text-default);
+  border: 2px solid var(--form-button);
+  box-shadow: 0 0 3px 0 #0595d0, 0 0 9px 0 #0595d0, 0 0 12px 0 #0595d0;
+  text-shadow: 0 0 2px #0595d0, 0 0 6px #0595d0, 0 0 9px #0595d0,
+    0 0 12px #0595d0, 0 0 16px #0595d0, 0 0 20px #0595d0;
 }
 
 .team__image-wrapper {
@@ -103,6 +107,20 @@
 .video__button-svg {
   width: 49px;
   height: 36px;
+  stroke: #900b09;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.video__button:hover .video__button-svg,
+.video__button:focus .video__button-svg {
+  transform: scale(1.1);
+  stroke: var(--form-button);
+  border: 1px solid var(--form-button);
+  box-shadow: 0 0 3px 0 #0595d0, 0 0 9px 0 #0595d0, 0 0 12px 0 #0595d0;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
