@@ -7,7 +7,7 @@ module.exports = (env) => {
   console.log("mode: ", env.mode);
 
   const devMode = env.mode !== "production";
-  const publicPath = devMode ? "/" : "/ds-group/";
+  // const publicPath = devMode ? "/" : "/ds-group/";
 
   return {
     mode: env.mode ?? "development",
@@ -20,7 +20,7 @@ module.exports = (env) => {
       filename: "[name][contenthash].js",
       clean: true,
       assetModuleFilename: "images/[name][ext]",
-      publicPath: publicPath,
+      publicPath: "/",
     },
     devtool: "source-map",
     devServer: {
@@ -32,10 +32,7 @@ module.exports = (env) => {
       open: true,
       hot: true,
       historyApiFallback: true,
-      devMiddleware: {
-        publicPath: publicPath,
-      },
-    },
+        },
     module: {
       rules: [
         {
