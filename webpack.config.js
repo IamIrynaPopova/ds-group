@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = (env) => {
   console.log("mode: ", env.mode);
@@ -109,6 +110,12 @@ module.exports = (env) => {
       new MiniCssExtractPlugin({
         filename: devMode ? "[name].css" : "[name].[contenthash].css",
         chunkFilename: devMode ? "[id].css" : "[id].[contenthash].css",
+      }),
+      new CopyPlugin({
+        patterns: [
+          { from: "./src/sitemap.xml", to: "sitemap.xml" },
+          { from: "./src/robots.txt", to: "robots.txt" },
+        ],
       }),
     ],
   };
