@@ -7,7 +7,6 @@ module.exports = (env) => {
   console.log("mode: ", env.mode);
 
   const devMode = env.mode !== "production";
-  // const publicPath = devMode ? "/" : "/ds-group/";
 
   return {
     mode: env.mode ?? "development",

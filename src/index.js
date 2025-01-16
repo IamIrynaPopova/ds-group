@@ -16,7 +16,6 @@ const images = importAll(
 export default images;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-// const basename = process.env.NODE_ENV === "production" ? "/ds-group/" : "/";
 root.render(
   <StrictMode>
     <BrowserRouter  >
