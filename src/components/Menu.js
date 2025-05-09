@@ -6,7 +6,6 @@ import translations from "../data/translations.json";
 import LanguageSwitcher from "../components/LanguageSwitcher";
 import SocialLinks from "../components/SocialLinks";
 
-
 const Menu = ({ onCloseMenu, languageChange, language }) => {
   return (
     <div id="menu" className="menu container">
@@ -14,10 +13,7 @@ const Menu = ({ onCloseMenu, languageChange, language }) => {
         <div className="social-wrapper">
           <SocialLinks />
         </div>
-        <LanguageSwitcher
-          onLanguageChange={languageChange}
-          language={language}
-        />
+        <LanguageSwitcher onLanguageChange={languageChange} language={language} />
         <nav className="nav">
           <ul className="nav__list">
             <li className="nav__list-item">
@@ -32,6 +28,7 @@ const Menu = ({ onCloseMenu, languageChange, language }) => {
                   }
                   onCloseMenu();
                 }}
+                aria-label={translations[language].menu.about_us}
               >
                 {translations[language].menu.about_us}
               </a>
@@ -48,6 +45,7 @@ const Menu = ({ onCloseMenu, languageChange, language }) => {
                   }
                   onCloseMenu();
                 }}
+                aria-label={translations[language].menu.choreographers}
               >
                 {translations[language].menu.choreographers}
               </a>
@@ -64,6 +62,7 @@ const Menu = ({ onCloseMenu, languageChange, language }) => {
                   }
                   onCloseMenu();
                 }}
+                aria-label={translations[language].menu.teams}
               >
                 {translations[language].menu.teams}
               </a>
@@ -80,6 +79,7 @@ const Menu = ({ onCloseMenu, languageChange, language }) => {
                   }
                   onCloseMenu();
                 }}
+                aria-label={translations[language].menu.time_table}
               >
                 {translations[language].menu.time_table}
               </a>
@@ -96,6 +96,7 @@ const Menu = ({ onCloseMenu, languageChange, language }) => {
                   }
                   onCloseMenu();
                 }}
+                aria-label={translations[language].menu.photo}
               >
                 {translations[language].menu.photo}
               </a>
@@ -112,6 +113,7 @@ const Menu = ({ onCloseMenu, languageChange, language }) => {
                   }
                   onCloseMenu();
                 }}
+                aria-label={translations[language].menu.world_of_dance}
               >
                 {translations[language].menu.world_of_dance}
               </a>
@@ -128,6 +130,7 @@ const Menu = ({ onCloseMenu, languageChange, language }) => {
                   }
                   onCloseMenu();
                 }}
+                aria-label={translations[language].menu.contacts}
               >
                 {translations[language].menu.contacts}
               </a>

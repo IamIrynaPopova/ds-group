@@ -14,16 +14,17 @@ const Header = ({ onShowMenu, menuIsOpen, languageChange, language }) => {
       </NavLink>
       <div className="header__wrapper">
         <div className="header__menu">
-          <LanguageSwitcher
-            onLanguageChange={languageChange}
-            language={language}
-          />
+          <LanguageSwitcher onLanguageChange={languageChange} language={language} />
           <SocialLinks />
-          <button className="header__button" onClick={onShowMenu} aria-label={menuIsOpen ? translations[language].menu.close : translations[language].menu.open}>
+          <button
+            className="header__button"
+            onClick={onShowMenu}
+            aria-label={
+              menuIsOpen ? translations[language].menu.close : translations[language].menu.open
+            }
+          >
             <svg className="header__svg" aria-hidden="true">
-              <use
-                href={menuIsOpen ? `${sprite}#close` : `${sprite}#menu`}
-              ></use>
+              <use href={menuIsOpen ? `${sprite}#close` : `${sprite}#menu`}></use>
             </svg>
           </button>
         </div>
@@ -41,6 +42,7 @@ const Header = ({ onShowMenu, menuIsOpen, languageChange, language }) => {
                       target.scrollIntoView({ behavior: "smooth" });
                     }
                   }}
+                  aria-label={translations[language].menu.about_us}
                 >
                   {translations[language].menu.about_us}
                 </a>
@@ -56,6 +58,7 @@ const Header = ({ onShowMenu, menuIsOpen, languageChange, language }) => {
                       target.scrollIntoView({ behavior: "smooth" });
                     }
                   }}
+                  aria-label={translations[language].menu.choreographers}
                 >
                   {translations[language].menu.choreographers}
                 </a>
@@ -71,6 +74,7 @@ const Header = ({ onShowMenu, menuIsOpen, languageChange, language }) => {
                       target.scrollIntoView({ behavior: "smooth" });
                     }
                   }}
+                  aria-label={translations[language].menu.teams}
                 >
                   {translations[language].menu.teams}
                 </a>
@@ -86,6 +90,7 @@ const Header = ({ onShowMenu, menuIsOpen, languageChange, language }) => {
                       target.scrollIntoView({ behavior: "smooth" });
                     }
                   }}
+                  aria-label={translations[language].menu.time_table}
                 >
                   {translations[language].menu.time_table}
                 </a>
@@ -101,6 +106,7 @@ const Header = ({ onShowMenu, menuIsOpen, languageChange, language }) => {
                       target.scrollIntoView({ behavior: "smooth" });
                     }
                   }}
+                  aria-label={translations[language].menu.photo}
                 >
                   {translations[language].menu.photo}
                 </a>
@@ -116,6 +122,7 @@ const Header = ({ onShowMenu, menuIsOpen, languageChange, language }) => {
                       target.scrollIntoView({ behavior: "smooth" });
                     }
                   }}
+                  aria-label={translations[language].menu.world_of_dance}
                 >
                   {translations[language].menu.world_of_dance}
                 </a>
@@ -131,6 +138,7 @@ const Header = ({ onShowMenu, menuIsOpen, languageChange, language }) => {
                       target.scrollIntoView({ behavior: "smooth" });
                     }
                   }}
+                  aria-label={translations[language].menu.contacts}
                 >
                   {translations[language].menu.contacts}
                 </a>

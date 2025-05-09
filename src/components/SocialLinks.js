@@ -11,6 +11,7 @@ const SocialLinks = () => {
             href="https://www.instagram.com/dsgroup.kyiv?igsh=MXAwZ2liZXMwOXZpOA=="
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="instagram"
           >
             <svg className="social__svg">
               <use href={`${sprite}#instagram`}></use>
@@ -23,6 +24,7 @@ const SocialLinks = () => {
             href="https://www.facebook.com/profile.php?id=100061422600837"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="facebook"
           >
             <svg className="social__svg">
               <use href={`${sprite}#facebook`}></use>
@@ -35,6 +37,7 @@ const SocialLinks = () => {
             href="https://www.tiktok.com/@dsgroup.kyiv?_t=8orQq0D0dq1&_r=1"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="tik-tok"
           >
             <svg className="social__svg">
               <use href={`${sprite}#tiktok`}></use>
