@@ -7,9 +7,7 @@ const PhotoGallery = ({ language }) => {
   const [selectedCategory, setSelectedCategory] = useState("appearance");
   const [activeButton, setActiveButton] = useState("appearance");
 
-  const filteredPhotos = gallery.filter(
-    (photo) => photo.category === selectedCategory
-  );
+  const filteredPhotos = gallery.filter((photo) => photo.category === selectedCategory);
 
   const handleButtonClick = (category) => {
     setSelectedCategory(category);
@@ -22,34 +20,29 @@ const PhotoGallery = ({ language }) => {
 
   return (
     <section className="photogallery container" id="photogallery">
-      <h2 className="photogallery__title">
-        {translations[language].gallery.title}
-      </h2>
+      <h2 className="photogallery__title">{translations[language].gallery.title}</h2>
       <div className="photogallery__button-box">
         <button
           type="button"
-          className={`photogallery__button ${
-            activeButton === "appearance" ? "active" : ""
-          }`}
+          className={`photogallery__button ${activeButton === "appearance" ? "active" : ""}`}
           onClick={() => handleButtonClick("appearance")}
+          aria-label={translations[language].gallery.appearance}
         >
           {translations[language].gallery.appearance}
         </button>
         <button
           type="button"
-          className={`photogallery__button ${
-            activeButton === "rest" ? "active" : ""
-          }`}
+          className={`photogallery__button ${activeButton === "rest" ? "active" : ""}`}
           onClick={() => handleButtonClick("rest")}
+          aria-label={translations[language].gallery.rest}
         >
           {translations[language].gallery.rest}
         </button>
         <button
           type="button"
-          className={`photogallery__button ${
-            activeButton === "studio" ? "active" : ""
-          }`}
+          className={`photogallery__button ${activeButton === "studio" ? "active" : ""}`}
           onClick={() => handleButtonClick("studio")}
+          aria-label={translations[language].gallery.studio}
         >
           {translations[language].gallery.studio}
         </button>
@@ -59,16 +52,8 @@ const PhotoGallery = ({ language }) => {
           <React.Fragment key={index}>
             <li className="photogallery__item" key={index}>
               <div className="photogallery__image-wrapper">
-                <img
-                  className="photogallery__image"
-                  src={photo.url}
-                  alt={`photo ${index + 1}`}
-                />
-                <img
-                  src={logo}
-                  alt="logo"
-                  className="photogallery__image-logo"
-                />
+                <img className="photogallery__image" src={photo.url} alt={`photo ${index + 1}`} />
+                <img src={logo} alt="logo" className="photogallery__image-logo" />
               </div>
             </li>
             {index === 0 && (
@@ -76,9 +61,7 @@ const PhotoGallery = ({ language }) => {
                 <h3 className="photogallery__subtitle">
                   {translations[language].gallery.subtitle}
                 </h3>
-                <p className="photogallery__text">
-                  {translations[language].gallery.text}
-                </p>
+                <p className="photogallery__text">{translations[language].gallery.text}</p>
               </li>
             )}
           </React.Fragment>

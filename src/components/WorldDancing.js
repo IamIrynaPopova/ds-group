@@ -9,10 +9,7 @@ const WorldDancing = ({ language }) => {
       <h2 className="worlddancing__title">
         {translations[language].world_dancing.title}
       </h2>
-      {/* <div className="worlddancing__button">
-        <ButtonMore path="/" language={language} />
-      </div> */}
-      <div className="worlddancing__image-wrapper">
+        <div className="worlddancing__image-wrapper">
         <img src={worldOfDance} alt="reward" className="worlddancing__image" />
         <div className="worlddancing__frame1"></div>
         <div className="worlddancing__frame2"></div>

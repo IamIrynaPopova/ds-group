@@ -19,8 +19,8 @@ const Header = ({ onShowMenu, menuIsOpen, languageChange, language }) => {
             language={language}
           />
           <SocialLinks />
-          <button className="header__button" onClick={onShowMenu}>
-            <svg className="header__svg">
+          <button className="header__button" onClick={onShowMenu} aria-label={menuIsOpen ? translations[language].menu.close : translations[language].menu.open}>
+            <svg className="header__svg" aria-hidden="true">
               <use
                 href={menuIsOpen ? `${sprite}#close` : `${sprite}#menu`}
               ></use>

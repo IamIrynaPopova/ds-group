@@ -1,6 +1,8 @@
 {
   "en": {
     "menu": {
+      "open": "open",
+      "close": "close",
       "about_us": "about us",
       "choreographers": "choreographers",
       "teams": "teams",
@@ -38,6 +40,7 @@
       "placeholder_message_tablet": "Comment",
       "button": "Send",
       "button_tablet": "Contact us",
+      "button_close": "Close the form",
       "notification_success": "Message sent!",
       "notification_error1": "Server error ☹️",
       "notification_error2": "An error occurred ☹️ Please try again.",
@@ -136,6 +139,8 @@
   },
   "ua": {
     "menu": {
+      "open": "відкрити",
+      "close": "закрити",
       "about_us": "про нас",
       "choreographers": "хореографи",
       "teams": "команди",
@@ -173,6 +178,7 @@
       "placeholder_message_tablet": "Коментар",
       "button": "Відправити",
       "button_tablet": "Зв`язатися з нами",
+      "button_close": "Закрити форму",
       "notification_success": "Повідомлення надіслано!",
       "notification_error1": "Помилка на сервері ☹️",
       "notification_error2": "Сталася помилка ☹️ Спробуйте знову.",

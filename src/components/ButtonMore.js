@@ -5,7 +5,7 @@ import sprite from "../images/sprite/sprite.svg";
 
 const ButtonMore = ({ language, path }) => {
   return (
-    <NavLink to={path} className="button__more">
+    <NavLink to={path} className="button__more" aria-label={translations[language].button.more}>
       {translations[language].button.more}
       <svg className="button__more-svg">
         <use href={`${sprite}#arrow`}></use>

@@ -75,9 +75,10 @@ const Form = ({ language, title, onCloseForm, formTitle, isFooter }) => {
             <button
               type="button"
               className="form__button-close"
+              aria-label={translations[language].form.button_close}
               onClick={onCloseForm}
             >
-              <svg className="form__svg">
+              <svg className="form__svg" aria-hidden="true">
                 <use href={`${sprite}#close-form`}></use>
               </svg>
             </button>
@@ -153,7 +154,9 @@ const Form = ({ language, title, onCloseForm, formTitle, isFooter }) => {
             {translations[language].form.required}
           </p>
           <div className="form__button-submit-wrapper">
-            <button type="submit" className="form__button-submit">
+            <button type="submit" className="form__button-submit" aria-label={isTablet
+                ? translations[language].form.button_tablet
+                : translations[language].form.button}>
               {isTablet
                 ? translations[language].form.button_tablet
                 : translations[language].form.button}

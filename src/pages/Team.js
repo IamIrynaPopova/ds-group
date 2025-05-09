@@ -25,7 +25,12 @@ const Team = ({ language, onCloseForm, onOpenForm }) => {
       <ButtonReturn language={language} path={`/#${teamId}`} />
       <div className="team__name-wrapper">
         <h2 className="team__name">{team[language].name}</h2>
-        <button className="team__button" type="button" onClick={onOpenForm}>
+        <button
+          className="team__button"
+          type="button"
+          onClick={onOpenForm}
+          aria-label={translations[language].button.contact}
+        >
           {translations[language].button.contact}
         </button>
       </div>
@@ -37,11 +42,7 @@ const Team = ({ language, onCloseForm, onOpenForm }) => {
       <div className="team__description-box">
         <div className="team__description-wrapper">
           <div className="team__image-wrapper">
-            <img
-              src={team[language].main_photo}
-              alt="team"
-              className="team__image"
-            ></img>
+            <img src={team[language].main_photo} alt="team" className="team__image"></img>
             <div className="team__frame"></div>
           </div>
           <div className="team__description">
