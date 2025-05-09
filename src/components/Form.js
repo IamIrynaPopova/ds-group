@@ -6,7 +6,7 @@ import translations from "../data/translations.json";
 import sprite from "../images/sprite/sprite.svg";
 import emailjs from "@emailjs/browser";
 
-const Form = ({ language, title, onCloseForm, formTitle, isFooter }) => {
+const Form = ({ language, title, onCloseForm, isFooter }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [notification, setNotification] = useState(null);
   const [isError, setIsError] = useState(false);
@@ -64,12 +64,7 @@ const Form = ({ language, title, onCloseForm, formTitle, isFooter }) => {
 
   return (
     <>
-      <form
-        id="form"
-        ref={form}
-        className="form hidden"
-        onSubmit={handleSubmit(sendEmail)}
-      >
+      <form id="form" ref={form} className="form hidden" onSubmit={handleSubmit(sendEmail)}>
         <div className="form__frame">
           <div className="form__button-wrapper">
             <button
@@ -85,56 +80,53 @@ const Form = ({ language, title, onCloseForm, formTitle, isFooter }) => {
           </div>
           <div className="form__data">
             <input type="hidden" name="title" value={title} />
-            <p className="form__title" value={formTitle}>
+            <p className="form__title" >
               {translations[language].form.title}
             </p>
             <ul className="form__list">
-              <div className="form__list-wrapper">
-                <li className="form__item">
-                  <input
-                    {...register("name", {
-                      required: true,
-                      minLength: {
-                        value: 3,
-                        message: translations[language].form.error_message_name,
-                      },
-                    })}
-                    className={
-                      errors.name ? "form__input-error" : "form__input"
-                    }
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder={
-                      isTablet && isFooter
-                        ? translations[language].form.placeholder_name_tablet
-                        : translations[language].form.placeholder_name
-                    }
-                  />
-                  <p className="form__message">{errors.name?.message}</p>
-                </li>
-                <li className="form__item">
-                  <input
-                    {...register("tel", {
-                      required: true,
-                      pattern: {
-                        value: /^[\d()+]+$/,
-                        message: translations[language].form.error_message_tel,
-                      },
-                    })}
-                    className="form__input"
-                    type="tel"
-                    id="tel"
-                    name="tel"
-                    placeholder={
-                      isTablet && isFooter
-                        ? translations[language].form.placeholder_tel_tablet
-                        : translations[language].form.placeholder_tel
-                    }
-                  />
-                  <p className="form__message">{errors.tel?.message}</p>
-                </li>
-              </div>
+              <li className="form__item">
+                <input
+                  {...register("name", {
+                    required: true,
+                    minLength: {
+                      value: 3,
+                      message: translations[language].form.error_message_name,
+                    },
+                  })}
+                  className={errors.name ? "form__input-error" : "form__input"}
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder={
+                    isTablet && isFooter
+                      ? translations[language].form.placeholder_name_tablet
+                      : translations[language].form.placeholder_name
+                  }
+                />
+                <p className="form__message">{errors.name?.message}</p>
+              </li>
+              <li className="form__item">
+                <input
+                  {...register("tel", {
+                    required: true,
+                    pattern: {
+                      value: /^[\d()+]+$/,
+                      message: translations[language].form.error_message_tel,
+                    },
+                  })}
+                  className="form__input"
+                  type="tel"
+                  id="tel"
+                  name="tel"
+                  placeholder={
+                    isTablet && isFooter
+                      ? translations[language].form.placeholder_tel_tablet
+                      : translations[language].form.placeholder_tel
+                  }
+                />
+                <p className="form__message">{errors.tel?.message}</p>
+              </li>
+
               <li className="form__item">
                 <textarea
                   {...register("message")}
@@ -150,13 +142,17 @@ const Form = ({ language, title, onCloseForm, formTitle, isFooter }) => {
               </li>
             </ul>
           </div>
-          <p className="form__required-fields">
-            {translations[language].form.required}
-          </p>
+          <p className="form__required-fields">{translations[language].form.required}</p>
           <div className="form__button-submit-wrapper">
-            <button type="submit" className="form__button-submit" aria-label={isTablet
-                ? translations[language].form.button_tablet
-                : translations[language].form.button}>
+            <button
+              type="submit"
+              className="form__button-submit"
+              aria-label={
+                isTablet
+                  ? translations[language].form.button_tablet
+                  : translations[language].form.button
+              }
+            >
               {isTablet
                 ? translations[language].form.button_tablet
                 : translations[language].form.button}
@@ -165,9 +161,7 @@ const Form = ({ language, title, onCloseForm, formTitle, isFooter }) => {
         </div>
       </form>
       {isLoading && <Loader />}
-      {notification && (
-        <Notification message={notification} isError={isError} />
-      )}
+      {notification && <Notification message={notification} isError={isError} />}
     </>
   );
 };

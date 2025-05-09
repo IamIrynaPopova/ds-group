@@ -17,10 +17,7 @@ const Footer = ({ language }) => {
   });
   useEffect(() => {
     if (!mapRef.current) {
-      const map = L.map("map").setView(
-        [50.45796495033796, 30.40239759619346],
-        13
-      );
+      const map = L.map("map").setView([50.45796495033796, 30.40239759619346], 13);
       mapRef.current = map;
 
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -35,10 +32,7 @@ const Footer = ({ language }) => {
 
       markerRef.current = marker;
     } else if (markerRef.current) {
-      markerRef.current
-        .getPopup()
-        .setContent(translations[language].footer.address)
-        .update();
+      markerRef.current.getPopup().setContent(translations[language].footer.address).update();
     }
   }, [language]);
 
@@ -55,16 +49,16 @@ const Footer = ({ language }) => {
           <address className="footer__address">
             <ul className="footer__list">
               <li className="footer__item">
-                <p className="footer__text">Ukraine, Kyiv,</p>
-                <p className="footer__text">Beresteyskiy avenue 71/2</p>
+                <span className="footer__text">Ukraine, Kyiv,</span>
+                <span className="footer__text">Beresteyskiy avenue 71/2</span>
               </li>
               <li className="footer__item">
-                <p className="footer__text">Email-address</p>
-                <p className="footer__text">dsgroupkyiv@gmail.com</p>
+                <span className="footer__text">Email-address</span>
+                <span className="footer__text">dsgroupkyiv@gmail.com</span>
               </li>
               <li className="footer__item">
-                <p className="footer__text">Phone number</p>
-                <p className="footer__text">+38 (099) 522-56-58</p>
+                <span className="footer__text">Phone number</span>
+                <span className="footer__text">+38 (099) 522-56-58</span>
               </li>
             </ul>
           </address>
