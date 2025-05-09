@@ -32,7 +32,7 @@ const AboutUs = ({ language, closeForm, openForm }) => {
           {translations[language].about.text_main}
         </p>
       </div>
-      <button className="about__button" type="button" onClick={openForm}>
+      <button className="about__button" type="button" onClick={openForm} aria-label={translations[language].button.contact}>
         {translations[language].button.contact}
       </button>
       <Form
